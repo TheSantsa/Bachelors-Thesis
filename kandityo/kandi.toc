@@ -6,10 +6,27 @@
 \contentsline {section}{Sis\"allysluettelo}{vi}{section*.5}
 \contentsline {section}{Symbolit ja lyhenteet}{vii}{section*.7}
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
-\contentsline {section}{\numberline {2}Aikaisempi tutkimus}{2}{section.2}
-\contentsline {section}{\numberline {3}Tutkimusaineisto ja -menetelm\IeC {\"a}t}{10}{section.3}
-\contentsline {section}{\numberline {4}Tulokset}{11}{section.4}
-\contentsline {section}{\numberline {5}Yhteenveto}{12}{section.5}
-\contentsline {section}{Viitteet}{13}{section*.18}
-\contentsline {section}{\numberline {A}Esimerkki liitteest\IeC {\"a}}{15}{appendix.A}
-\contentsline {section}{\numberline {B}Toinen esimerkki liitteest\IeC {\"a}}{16}{appendix.B}
+\contentsline {section}{\numberline {2}Kaivosteollisuuden erityispiirteet}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Kaivostyypit}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Ymp\IeC {\"a}rist\IeC {\"o}olosuhteet}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}S\IeC {\"a}hk\IeC {\"o}njakelu}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Kaivosteollisuuden standardit}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Koneiston sijoittelu}{2}{subsection.2.5}
+\contentsline {section}{\numberline {3}Taajuusmuuttajien k\IeC {\"a}ytt\IeC {\"o}kohteet kaivoksissa}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Taajuusmuuttajatyypit}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Sovellukset ja toiminnallisuus}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Kaivinkoneet}{3}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Liukuhihnat}{3}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Hissit}{3}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Tuulettimet ja ilmanvaihto}{3}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Pumput}{3}{subsubsection.3.2.5}
+\contentsline {section}{\numberline {4}Kaivosymp\IeC {\"a}rist\IeC {\"o}n vaatimukset taajuusmuuttajalle}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Kotelointi}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}J\IeC {\"a}\IeC {\"a}hdytys ja l\IeC {\"a}mm\IeC {\"o}nsieto}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Turvallisuus}{4}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Et\IeC {\"a}valvonta ja -ohjaus}{4}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}K\IeC {\"a}ytt\IeC {\"o}ik\IeC {\"a} ja -luotettavuus}{4}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Standardit}{4}{subsection.4.6}
+\contentsline {section}{\numberline {5}Yhteenveto}{5}{section.5}
+\contentsline {section}{Viitteet}{6}{section*.11}
+\contentsline {section}{\numberline {A}Liite 1}{7}{appendix.A}
