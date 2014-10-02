@@ -6,13 +6,13 @@
 \contentsline {section}{Sis\"allysluettelo}{vi}{section*.5}
 \contentsline {section}{Symbolit ja lyhenteet}{viii}{section*.7}
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
-\contentsline {section}{\numberline {2}Kaivosymp\IeC {\"a}rist\IeC {\"o}n vaatimukset taajuusmuuttajalle}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Ymp\IeC {\"a}rist\IeC {\"o}olosuhteet}{3}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}L\IeC {\"a}mp\IeC {\"o}}{3}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Kosteus}{3}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Pienpartikkelit}{3}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Mekaaniset rasitukset}{3}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Kaivoksen s\IeC {\"a}hk\IeC {\"o}verkko}{3}{subsection.2.2}
+\contentsline {section}{\numberline {2}Kaivosymp\IeC {\"a}rist\IeC {\"o}n vaatimukset taajuusmuuttajalle}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Ymp\IeC {\"a}rist\IeC {\"o}olosuhteet}{2}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}L\IeC {\"a}mp\IeC {\"o}}{2}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Kosteus}{2}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Pienpartikkelit}{2}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Mekaaniset rasitukset}{2}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Kaivoksen s\IeC {\"a}hk\IeC {\"o}verkko}{2}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}K\IeC {\"a}ytt\IeC {\"o}ik\IeC {\"a} ja luotettavuus}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Kaivosteollisuuden standardit}{3}{subsection.2.4}
 \contentsline {section}{\numberline {3}Taajuusmuuttajien toiminnallisuuden hy\IeC {\"o}dynt\IeC {\"a}minen}{4}{section.3}

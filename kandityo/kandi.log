@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  1 OCT 2014 21:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  2 OCT 2014 21:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1336,148 +1336,168 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--322
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 [1
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
- [2]
+(babel)             in language  on input line 325.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 324.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 326.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 327.
+(babel)             in language  on input line 328.
 
-Overfull \hbox (123.57924pt too wide) in paragraph at lines 328--332
+Overfull \hbox (123.57924pt too wide) in paragraph at lines 329--341
 \T1/cmr/m/n/12 (-20) -Kaivosten läm-pö-ti-lat -Laitteiden käyt-tö-läm-pö-ti-lat
 , de-ra-ting -Jäähdytysratkaisut(neste,kanava,perinteinen,cold
  []
 
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 332.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 338.
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--341
+
+ []
+
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 344.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 350.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 356.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 361.
 
-Overfull \hbox (61.56079pt too wide) in paragraph at lines 350--353
+Overfull \hbox (61.56079pt too wide) in paragraph at lines 362--365
 \T1/cmr/m/n/12 (-20) Kaivoksen säh-kö-verk-ko (EMC häi-riöt) -jännite,laajuus, 
 häi-riön-sie-to, EMC -kuristimien/filttereiden
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 354.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 361.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 364.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 364.
-[3
-
-]
-Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 366.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 373.
+[2]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 377.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 379.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 381.
+(babel)             in language  on input line 376.
+ [3]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 382.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 386.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 389.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 393.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 397.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 397.
  [4
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 387.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 389.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 397.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 399.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 401.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 410.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 430.
+(babel)             in language  on input line 432.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 437.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 442.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 442.
  [5
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 434.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 442.
+(babel)             in language  on input line 454.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 442.
+(babel)             in language  on input line 454.
  [6
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 445.
+(babel)             in language  on input line 457.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 460.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 448.
-
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 464.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 451.
-[7
+(babel)             in language  on input line 464.
+ [7
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 454.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+(babel)             in language  on input line 467.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 469.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 456.
+(babel)             in language  on input line 469.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 456.
+(babel)             in language  on input line 469.
  [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
- (./kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
+
+(./kandi.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 469.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
 (rerunfilecheck)             Checksum: C15A332B6DAD1C4914DD5DA4A1A2456B;2420.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 456.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 469.
  ) 
 Here is how much of TeX's memory you used:
- 17822 strings out of 493315
- 318558 string characters out of 6137904
- 848579 words of memory out of 5000000
- 20776 multiletter control sequences out of 15000+600000
- 34653 words of font info for 78 fonts, out of 8000000 for 9000
+ 17855 strings out of 493315
+ 319347 string characters out of 6137904
+ 848610 words of memory out of 5000000
+ 20796 multiletter control sequences out of 15000+600000
+ 36001 words of font info for 83 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,10n,59p,702b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,59p,703b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
@@ -1487,11 +1507,13 @@ ve/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
 3/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on kandi.pdf (16 pages, 157348 bytes).
+f-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on kandi.pdf (16 pages, 204562 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 18213 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 20773 words of extra memory for PDF output out of 24883 (max. 10000000)
 
