@@ -115,35 +115,11 @@
 %% All that is printed on paper starts here
 \begin{document}
 
-%% Korjaa vastaamaan korkeakouluasi, jos automaattisesti asetettu nimi on 
-%% virheellinen 
-%%
-%% Change the school field to specify your school if the automatically 
-%% set name is wrong
-% \university{aalto-yliopisto}
-% \school{Sähkötekniikan korkeakoulu}
-
 %% Vain kandityölle: Korjaa seuraavat vastaamaan koulutusohjelmaasi
-%%
 \degreeprogram{Automaatio- ja systeemitekniikka}
-%%
-
-%% VAIN DI/M.Sc.- JA LISENSIAATINTYÖLLE: valitse laitos, 
-%% professuuri ja sen professuurikoodi. 
-%%
-%\department{Radiotieteen ja -tekniikan laitos}
-%\professorship{Piiriteoria}
-%\code{S-55}
-%%
-
-%% Valitse yksi näistä kolmesta
-%%
 \univdegree{BSc}
-%\univdegree{MSc}
-%\univdegree{Lic}
 
 %% Oma nimi
-%%
 \author{Eero Santamala}
 
 %% Opinnäytteen otsikko tulee tähän ja uudelleen englannin- tai 
@@ -206,52 +182,10 @@ käsitteitä}
 %% eivät tule vahingossakaan samalle sivulle
 %%
 \newpage
-%
-%% English abstract. Delete if you don't need it. 
-%%
-%% Opinnäytteen ostikko englanniksi. Poista, jos et tarvitse sitä.
-\thesistitle{Thesis template}
-%\supervisor{Prof.\ Pirjo Professori}
-\advisor{D.Sc.\ (Tech.) Olli Ohjaaja}
-%\advisor{M.Sc.\ Polli Pohjaaja}
-\degreeprogram{Electronics and electrical engineering}
-\department{Department of Radio Science and Technology}
-\professorship{Circuit theory}
-%% Abstract keywords
-\keywords{Resistor, Resistance,\\ Temperature}
-%% Abstract text
-\begin{abstractpage}[english]
-Abstract in English. 
-\end{abstractpage}
 
-%% Force new page so that the Swedish abstract starts from a new page
-\newpage
-%
-%% Swedish abstract. Delete if you don't need it. 
-%% 
-%% Opinnäytteen ostikko ruotsiksi.
-\thesistitle{Arbetets titel}
-%\supervisor{Prof.\ Pirjo Professori}
-\advisor{TkD\ Olli Ohjaaja} %
-%\advisor{M.Sc.\ Tina Tutkija}
-\degreeprogram{Elektronik och elektroteknik}
-\department{Institutionen för radiovetenskap och -teknik}%
-\professorship{Kretsteori}  %
-%% Abstract keywords
-\keywords{Nyckelord p\aa{} svenska,\\ Temperatur}
-%% Abstract text
-\begin{abstractpage}[swedish]
-På svenska
-\end{abstractpage}
-
-%% Note that if you are writting your master's thesis in English, place
-%% the English abstract first followed by the possible Finnish abstract
-
-%% Esipuhe 
-%%
 \mysection{Esipuhe}
 
-Esipuhe tähän lel.\\
+Kiitos ABB ja sillee jee.\\
 
 \vspace{5cm}
 Otaniemi, 1.12.2014
@@ -283,6 +217,8 @@ Otaniemi, 1.12.2014
 \begin{tabular}{ll}
 AC         & vaihtovirta \\
 DC         & tasavirta \\
+IEC	       & International Electrotechnical commission \\
+NEMA       & National Electrical Manufacturers Association \\
 \end{tabular}
 
 
@@ -308,11 +244,12 @@ DC         & tasavirta \\
 %% Ensimmäinen sivu tyhjäksi
 %% 
 \thispagestyle{empty}
-Taajuusmuuttajia käytetään yhä enenemässä määrin vaihtovirtasähkömoottoreiden ohjaukseen kaikilla teollisuudenaloilla. Erilaiset käyttöympäristöt ja -sovellukset vaikuttavat taajuusmuuttajalta vaadittuun toiminallisuuteen ja fyysisiin ominaisuuksiin. Käyttökohteesta riippuvat ominaisuudet luovat taajuusmuuttajavalmistajille näin tarpeen kartoittaa eri teollisuudenalojen erityisvaatimuksia, jotta tuotteet pystytään kehittämään vastaamaan asiakkaiden tarpeita mahdollisimman hyvin. 
+Taajuusmuuttajia käytetään yhä enenemässä määrin vaihtovirtasähkömoottoreiden ohjaukseen kaikilla teollisuudenaloilla ja erityisesti kaivosteollisuudessa \cite[s. 262]{Hakapää}. %%s. 262: taajuusmuuttajat 
+Erilaiset käyttöympäristöt ja -sovellukset vaikuttavat taajuusmuuttajalta vaadittuun toiminallisuuteen ja fyysisiin ominaisuuksiin. Käyttökohteesta riippuvat ominaisuudet luovat taajuusmuuttajavalmistajille näin tarpeen kartoittaa eri teollisuudenalojen erityisvaatimuksia, jotta tuotteet pystytään kehittämään vastaamaan asiakkaiden tarpeita mahdollisimman hyvin. 
 \\\\
 Tämän työn tarkoituksena on tarkastella kaivosteollisuuden asettamia vaatimuksia ja tarpeita taajuusmuuttajan toiminnallisuudelle ja kestävyydelle sekä kartoittaa millaisia eri sovelluksia taajuusmuuttajille kaivostoiminnassa esiintyy. Tämän työn yhteydessä kaivosteollisuudella tarkoitetaan kaivosta ja sen välittömässä läheisyydessä tapahtuvaa malmin siirtoa ja käsittelyä ja tarkastelu keskittyy yksinomaan siihen. Mineraalien jatkokäsittely kaivosalueen ulkopuolella muistuttaa jo tavanomaista prosessiteollisuutta, eikä siksi ole tämän työn kannalta mielenkiintoista.
 \\\\
-Yleisin taajuusmuuttajan sijoituspaikka on sisätiloissa esimerkiksi tuotantolaitoksen sähköhuoneessa. Tällöin ympäristöolosuhteet saadaan pysymään hyvin tasaisina ja taajuusmuuttajan toiminnalle edullisina. Lämpötila- tai kosteusvaihteluita ei ilmastointijärjestelmän ansiosta juuri ole ja huoneen ilma on suodatettu pienpartikkeleista jo ennen sen pääsyä kosketuksiin taajuusmuuttajan kanssa. Kaivosteollisuudessa vastaavan tasaisen käyttöympäristön järjestäminen voi olla epäkäytännöllistä tai taloudellisesti kannattamatonta, jolloin taajuusmuuttajalta itseltään edellytetään kestävyyttä ja toimintavarmuutta vaativissakin käyttöympäristöissä
+Yleisin taajuusmuuttajan sijoituspaikka on sisätiloissa esimerkiksi tuotantolaitoksen sähköhuoneessa. Tällöin ympäristöolosuhteet saadaan pysymään hyvin tasaisina ja taajuusmuuttajan toiminnalle edullisina. Lämpötila- tai kosteusvaihteluita ei ilmastointijärjestelmän ansiosta juuri ole ja huoneen ilma on suodatettu pienpartikkeleista jo ennen sen pääsyä kosketuksiin taajuusmuuttajan kanssa. Kaivosteollisuudessa vastaavan tasaisen käyttöympäristön järjestäminen voi olla epäkäytännöllistä tai taloudellisesti kannattamatonta, jolloin taajuusmuuttajalta itseltään edellytetään kestävyyttä ja toimintavarmuutta vaativissakin käyttöympäristöissä. Myös kaivoksen sähköverkko asettaa taajuusmuuttajalle omat vaatimuksensa.
 \\\\
 Työn alussa selvitetään kaivosympäristön erityisvaatimukset lähtien liikkeelle ympäristöolosuhteista. Osan tarkoituksena on luoda selvä kuva kaivoksen asettamista vaatimuksista siellä käytettävälle laitteistolle jotta voidaan ymmärtää mitä taajuusmuuttajilta vaaditaan. Tarkastelun alla ovat lisäksi standardit, jotka kaivoteollisuuden laitteita koskevat.
 \\\\
@@ -320,134 +257,164 @@ Seuraavassa osassa esitetään millaista toiminnallisuutta taajuusmuuttajien sis
 \\\\
 Työssä on oleellista taajuusmuuttajien hyödyntäminen ja niistä saatava lisäarvo kaivosteollisuuden asiakkaan näkökulmasta. Se keskittyy sovelluksiin ja niiden vaatimuksiin eikä niinkään taajuusmuuttajan sisäisiin ratkaisuihin näiden hyötyjen aikaansaamiseksi. Työ esittää alan olemassa olevat taajuusmuuttajaratkaisut ja pohtii mitä lisäarvoa taajuusmuuttajilla voitaisiin vielä saavuttaa.
 
+\clearpage
 \section{Kaivosympäristön vaatimukset taajuusmuuttajalle}
 
 \subsection{Ympäristöolosuhteet}
-ympäristö rajoitta käyttöä blaablaa\\
-ipluokat lämmintä derating.
+Kuten todettu, kaivosympäristö on sähkölaitteille toimintaympäristönä erittäin rasittava \cite[s. 251]{Hakapää}. %% "Kaivoksen olosuhteet ovat raskaimpia, missä sähkölaitteita käyetetään." <-- sitaatiksi?
+Sähkölaitteille kaivoksissa rasitusta aiheuttavia tekijöitä ovat
+\begin{itemize}
+	\item[--] Lämpötila
+	\item[--] Kosteus
+	\item[--] Ilman epäpuhtaudet
+	\item[--] Mekaaniset rasitukset
+\end{itemize}
+Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavat taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
+\\\\
+Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen [LIITE 1 TÄHÄN]. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
+\\\\
+Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle.
+
 \subsubsection{Lämpö}
--Kaivosten lämpötilat
--Laitteiden käyttölämpötilat, derating
--Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
-Kaivoksissa on lämmintä, koska maaperä on lämmin :--D
-\\
+%%-Kaivosten lämpötilat
+%%-Laitteiden käyttölämpötilat, derating
+%%-Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
 Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset.
 \\\\
-Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa noin 25-30c/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40c riippuen paikallisesta ilmastosta. \cite{maanlampo}
+Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa noin 25-30c/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40c riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
+Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa olisi noin x astetta (keskilämpö pohjanmaalla+1.4*25c???) \cite{Pyhäsalmi}.
 \\\\
-Myös työkoneet tuottavat lämpöä etenkin jos käytetään dieselkäyttöisiä koneita?
+Myös työkoneet tuottavat lämpöä etenkin jos käytetään dieselkäyttöisiä koneita?\cite{Anttila}. %% dieselkoneet lämmittää -> use drives bitches!
 \\\\
 Taajuusmuuttajien ratkaisut flange ym ilmastointitavat?
 
 
 
 \subsubsection{Kosteus}
--Kaivosten kosteus
-Kaivoksissa on myös kosteaa.
+-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
+\\
 -Laitteiden kosteuskestävyys
+\\
 -IP ja - NEMA-lokitukset
 
 \subsubsection{Pienpartikkelit}
--Pöly
--Kemikaalit
--Syövyttävyys
+-Pöly\\
+-Kemikaalit\\
+-Syövyttävyys\\
 -Elektroniikan eristys (flange)
 
 \subsubsection{Mekaaniset rasitukset}
--kuljetus,asennus
+-kuljetus,asennus\\
 -Tärinä (murskaimet yms. Liikkuvat laitteet?)
 
 
 \subsection{Kaivoksen sähköverkko}
-Kaivoksen sähköverkko (EMC häiriöt)
--jännite,laajuus, häiriönsieto, EMC
+Kaivoksen sähköverkko (EMC häiriöt)\\
+-jännite,laajuus, häiriönsieto, EMC\\
 -kuristimien/filttereiden tarpeellisuus
 
 \subsection{Käyttöikä ja luotettavuus}
--kaivoksen ikä? Sama laite koko elinkaaren?
--Esim tuuletusjärjestelmän luotettavuus ensisijaisen tärkeää?
--Virran katkeaminen? varavoimalähde?
+-kaivoksen ikä? Sama laite koko elinkaaren?\\
+-Esim tuuletusjärjestelmän luotettavuus ensisijaisen tärkeää?\\
+-Redundanttius?\\
+-Virran katkeaminen? varavoimalähteet?
 
 
 
 \subsection{Kaivosteollisuuden standardit}
--ex-luoitus: Räjähdysherkkä tila?
+-ex-luoitus: Räjähdysherkkä tila?\\
 -mitä muita?
 \clearpage
 
-\section{Taajuusmuuttajien toiminnallisuuden hyödyntäminen}
-Miten taajuusmuuttajien ominaisuuksia voidaan hyödyntää? 
-Mitä on? MITÄ EI OLE??
+\section{Taajuusmuuttajien toiminnallisuus}
+Milaisia toimintoja taajuusmuuttajista löytyy?\\
+Tamujen kehitys
 
 \subsection{Toimintasyklit}
--Murskaimet
--Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)
+-Millaisia tamuista löytyy (rampit, pid, vektoriohjaus, ABB:n DTC momenttiojaus,)\\
+-Vaihtoehtoiset ohjaustavat (softstartterit yms), Hyödyt? (verkon heilahdukset, energiansäästö, tarkemmat prosessit)\\
+
+
+--Nää ehkä sovellukset osioon?----\\
+-Murskaimet \cite{Hulthen}\\
+-Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
 -Multidrives? ACS800 OPM (open pit mine) control program?
+
+
 \subsection{Turvallisuustoiminnot}
--STO, miten voisi hyödyntää?
+-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
+-STO, miten voisi hyödyntää?\\
 -Profisafe yms.
+
 \subsection{Mittaukset}
 -Kuljettimet, määrän mittaus kuormasta ja nopeudesta?
+-MItä muuta (malmivirtojen mallinnus)
+
 \subsection{Ohjaus ja -valvontajärjestelmät}
 -Keskitetty automaatiojärjestelmä?
+-Kenttäväylät?
+-
 \subsection{Verkkoon jarruttavat taajuusmuuttajat}
--Missä voidaan hyödyntää? (hissit yms.)
-
+-miten käytännössä toimii\\
+-Missä voidaan hyödyntää? (hissit, alamäkeen jarrutus, dumppitrukkien sähköraidejärjestelmä, yms.)
 
 \clearpage
 
-\section{Taajuusmuuttajien käyttökohteet kaivoksissa}
+\section{Taajuusmuuttajien sovellukset kaivoksissa}
 
 \subsection{Kokoluokat ja sijoittelu}
--Teho- ja jänniteluokat (kuvia!)
--Seinä,lattia,floorstanding
--Asennuspaikat
--fyysinen koko?
--Hyvät/huonot puolet
+-Teho- ja jänniteluokat (kuvia!)\\
+-Seinä,lattia,floorstanding\\
+-Asennuspaikat\\
+-fyysinen koko?\\
+-Hyvät/huonot puolet\\
 -kaapelien pituus, EMC
 
 \subsection{Sovellukset}
 \subsubsection{Kaivinkoneet}
--mitä erilaisia? (jäätävän isot osana sähköverkkoa vs pienet)
+-mitä erilaisia? (jäätävän isot osana sähköverkkoa vs pienet)\\
+-Multidrive ohjaamaan kaikkea?
+
 
 \subsubsection{Liukuhihnat ja kuljettimet}
--Millaisia erilaisia? (liukuhihnat,ruuvit,nostimet,yms.)
--Nykyratkaisut?
+-Millaisia erilaisia? (liukuhihnat,ruuvit,nostimet,yms.)\\
+-Nykyratkaisut?\\
 -Miten tamuja hyödynnetään? edut perinteiseen verrattuna?
 
 \subsubsection{Murskaimet}
--Millaisia? kuinka isoja?
--Toimintasyklit?
+-Millaisia? kuinka isoja?\\
+-Toimintasyklit? \cite{Hulthen}\\
 -Automaation taso?
 
 \subsubsection{Hissit}
 -Henkilöhissit, junat, kärryt. Millä ihmiset liikkuu?
 
 \subsubsection{Tuulettimet ja ilmanvaihto}
--Kaivoksen tuulettaminen!
--Miten tehty?
--Ohjaus, valvonta?
+-Kaivoksen tuulettaminen!\\
+-Miten tehty?\\
+-Ohjaus, valvonta?\\
 -Varajärjestelmät?
 
 \subsubsection{Pumput}
--mutapumput, vesipumput.
--puhdistus
+-mutapumput, vesipumput.\\
+-puhdistus\\
 -mittaukset
 
 \subsubsection{Paineilman tuottaminen?}
-Paljon sähköä kuluttava?
-Mihin käytetään kaivoksissa?
+Paljon sähköä kuluttava?\\
+Mihin käytetään kaivoksissa?\\
 Miten tamuja voidaan hyödyntää?
 %%fi.opasnet.org./fi/Metallimalmikaivostoiminnan_elinkaari
+
 \clearpage
 
-
-
 \section{Yhteenveto}
--Energiansäästö
--Kustannukset
--Tarkemmat prosessit -->value
+-Energiansäästö\\
+-Kustannukset\\
+-Tarkemmat prosessit\\
 -Tulevaisuus?
+
+-->profit
 
 %\section{Summary} 
 
@@ -457,13 +424,40 @@ Miten tamuja voidaan hyödyntää?
 \thesisbibliography
 \begin{thebibliography}{99}
 	
-\bibitem{maanlampo}  Fridleifsson, Ingvar B., Bertani, Ruggero, Huenges, Ernst, Lund, John W., Ragnarsson, Arni ja Rybach, Ladislaus. \textit{The possible role and contribution of geothermal energy to the mitigation of climate change}, IPCC Scoping Meeting on Renewable Energy Sources. Luebeck, Germany, 2008, Saatavissa: \url{http://www.ipcc.ch/pdf/supporting-material/proc-renewables-lubeck.pdf}
+\bibitem{maanlampo}Fridleifsson, Ingvar B., Bertani, Ruggero, Huenges, Ernst, Lund, John W., Ragnarsson, Arni ja Rybach, Ladislaus. \textit{The possible role and contribution of geothermal energy to the mitigation of climate change.} IPCC Scoping Meeting on Renewable Energy Sources. Luebeck, Germany, 2008, Saatavissa: \url{http://www.ipcc.ch/pdf/supporting-material/proc-renewables-lubeck.pdf}
+
+\bibitem{Hakapää}Hakapää,\ A. ja Lappalainen,\ P. \textit{Kaivos- ja louhintatekniikka.} 2.\ painos. Helsinki, Vammalan kirjapaino Oy, 2007.
+
+\bibitem{IP}IEC 60529. \textit{Degrees of protection provided by enclosures (IP Code).} Versio 2.1, Geneve, Sveitsi, International Electrotechnical Commission, 2001.
+
+\bibitem{Rumpunen}Rumpunen, A. \textit{Tuulivoiman vaatimukset taajuusmuuttajalle.} Kandidaatintyö. Aalto-yliopisto. 
+Insinööritieteiden korkeakoulu. Espoo. 2012.
+
+\bibitem{ABBtechnicalguide}ABB Drives \textit{Technical guide book}, 2008.
+
+\bibitem{Lukkarinen}Lukkarinen T. \textit{Mineraalitekniikka Osa 1 Mineraalien hienonnus.} Hki: Insinööritieto Oy, 1984.
+
+\bibitem{Anttila}Anttila A. \textit{Kaivosten tuuletusilman energiatehokas lämmitys Suomessa.} Kandidaatintyö. Aalto-yliopisto. Insinööritieteiden korkeakoulu. Espoo. 2014.
+
+\bibitem{Muttilainen}Muttilainen, A. \textit{Lifetime and Reliability of a Frequency Converter’s Fan.} Diplomityö. Aalto-yliopisto. Sähkötekniikan korkeakoulu. Espoo. 2013
+
+\bibitem{Karlsson}Karlsson, S. \textit{Murskaintyyppien ominaisuuksien vertailu}. Kandidaatintyö. Aalto-yliopisto. Insinööritieteiden korkeakoulu. Espoo. 2011.
+
+\bibitem{Hulthen}Erik Hulthén, C. Evertsson, M. \textit{Real-time algorithm for cone crusher control with two variables}. Minerals Engineering.  24. Vuosikerta. numero 9. Elokuu 2011. s. 987-994. Saatavissa: \url{http://dx.doi.org/10.1016/j.mineng.2011.04.007}.
+
+\bibitem{Pyhäsalmi}CUPP, \textit{Pyhäsalmen kaivos.} Verkkodokumentti. Päivitetty 26.3.2013. Viitattu 6.10.2014. Saatavissa: \url{http://www.cupp.fi/index.php?option=com_content&view=article&id=3&Itemid=41&lang=fi	}
+
+\bibitem{ABBinmining}ABB Oy. \textit{ABB drives in mining}. Päivitetty 2012. Viitattu 6.10.2014. Saatavissa: \url{http://www05.abb.com/global/scot/scot216.nsf/veritydisplay/2205e72865c2c747c1257a620026d001/$file/Mining%20brochure_EN_lowres.pdf}
+
 \end{thebibliography}
+
+
 
 %% Liitteet
 \clearpage
 
 \thesisappendix
 \section{Liite 1\label{LiiteA}}
+IP-luokat taulukossa
 
 \end{document}
