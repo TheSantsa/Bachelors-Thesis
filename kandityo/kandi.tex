@@ -88,6 +88,9 @@
 %%
 \usepackage{graphicx}
 
+%% Celsiusmerkille
+\usepackage{textcomp}
+
 %% Matematiikan fontteja, symboleja ja muotoiluja lisää, näitä tarvitaan usein 
 %%
 %% Use this if you write hard core mathematics, these are usually needed
@@ -269,11 +272,13 @@ Sähkölaitteille kaivoksissa rasitusta aiheuttavia tekijöitä ovat
 	\item[--] Ilman epäpuhtaudet
 	\item[--] Mekaaniset rasitukset
 \end{itemize}
-Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavat taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
+Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, ilman  epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavatkin taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
 \\\\
 Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen [LIITE 1 TÄHÄN]. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
 \\\\
-Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle.
+Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa. LÄHDE?
+\\\\
+Seuraavissa kappaleissa eritellään eri ympäristötekijöiden merkitsevyys kaivosympäristössä. Tarkastelun alla ovat myös tavat mitä vaikutuksia näillä olosuhteilla on taajuusmuuttajien toiminnalle sekä miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia avolouhosten olosuhteiden ollessa tavallista ulkoilmakäyttöä vastaavat. %%such metatext
 
 \subsubsection{Lämpö}
 %%-Kaivosten lämpötilat
@@ -281,27 +286,61 @@ Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista 
 %%-Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
 Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset.
 \\\\
-Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa noin 25-30c/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40c riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
-Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa olisi noin x astetta (keskilämpö pohjanmaalla+1.4*25c???) \cite{Pyhäsalmi}.
+Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa syvemmälle mentäessä noin 25-30\textdegree C/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40\textdegree C riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
+Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli kolmeenkymmeneen asteeseen.
 \\\\
-Myös työkoneet tuottavat lämpöä etenkin jos käytetään dieselkäyttöisiä koneita?\cite{Anttila}. %% dieselkoneet lämmittää -> use drives bitches!
+Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille.
 \\\\
-Taajuusmuuttajien ratkaisut flange ym ilmastointitavat?
+Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vastaanottamastaan energiasta moottorille\cite{ABBinmining}. Energiasta 2\% kuitenkin muuttuu taajuusmuuttajan sisäisenä häviönä lämpöenergiaksi. Tämä tarkoittaa esimerkiksi 500kW taajuusmuuttajan vaativan noin 10kW jäähdytystehon toimiakseen jatkuvasti. Tämä lämpöenergia poistetaan taajuusmuuttajasta ilma- tai nestejäähdytyksen avulla ympäristöön.
+ 
+%%derating ja muut suojat????
+
+%%Taajuusmuuttajien ratkaisut flange ym ilmastointitavat?
+
+%%flange vasta partikkeleihin???
 
 
 
 \subsubsection{Kosteus}
--Kaivosten kosteus, sumu, kaapelit vesitiiviitä
-\\
--Laitteiden kosteuskestävyys
-\\
--IP ja - NEMA-lokitukset
+%%-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
+%%-Laitteiden kosteuskestävyys?
+%%-IP ja - NEMA-luokitukset?
+Kaivoksiin kertyy vettä pääosin pohjavesien ja kaivostoiminnassa tarvittavan käyttöveden valuessa kaivokseen. Tätä vesimassaa on pumpattava pois, jotta ympäristö pysyy työskentelylle edullisena. Eniten haittaa sähkölaitteille  aiheuttaa ilmasta kondensoituva kosteus,mutta myös esimerkiksi katosta tihkuva vesi voi altistaa suojaamattoman sähkölaitteen nestemäiselle vedelle. Syvemmälle mentäessä kaivoksen ilmankosteus kasvaa korkean lämpötilan ja suljetun tilan takia. Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}.
+\\\\
+Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle.[LÄHDE] Vesijäähdytystä käytettäessä on mahdollista tehdä laite täysin tiiviiksi. Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
+\\\\
+Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osaan ja jäähdytyspuoleen, jossa jäähdytyselementin säleikkö sijaitsee. Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}.
+\\\\
+Toinen mahdollisuus on tehdä jäähdytyskanavasta kokonaan erillinen komponentti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). [Lähde] Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
+
+
+%%Pallasmaa Aaro selvitä dippatyö: ulkokäyyttöön suunnitellun tehoelektroniikkalaitteen konseptisuunnittelu.
+
+%%ACS880-01 HW manual, kuvat tuuletuskanavista ja laitteesta!!
+%%ACS880-01 Flange-manual lähteeksi?
+
+%%Kysy petriltä EMC-häiriöistä!
+%% flangen ip-luokka?
+
+%%ota mallia dippa: Lifetime and reliabilty of .... fan	
 
 \subsubsection{Pienpartikkelit}
--Pöly\\
--Kemikaalit\\
--Syövyttävyys\\
--Elektroniikan eristys (flange)
+%%-Pöly\\
+%%-Kemikaalit\\
+%%-Syövyttävyys\\
+%%-Elektroniikan eristys (flange)
+
+Kosteuden lisäksi kaivoksen ilmassa on lukuisia epäpuhtauksia
+\\\\
+\\\\
+\\\\
+\\\\
+%-kiviainesta
+%-räjähteitä
+%-Mitä aiheuttaa?
+%-tuulettimet tukkeutuu
+%-vesi + paska = korroosio
+%-elektroniikan yhteydessä läpilyöntejä
 
 \subsubsection{Mekaaniset rasitukset}
 -kuljetus,asennus\\
@@ -319,13 +358,15 @@ Kaivoksen sähköverkko (EMC häiriöt)\\
 -Redundanttius?\\
 -Virran katkeaminen? varavoimalähteet?
 
-
-
 \subsection{Kaivosteollisuuden standardit}
 -ex-luoitus: Räjähdysherkkä tila?\\
 -mitä muita?
-\clearpage
 
+
+
+
+\clearpage
+%%--------------------------TOIMINNALLISUUS-----------------------------------
 \section{Taajuusmuuttajien toiminnallisuus}
 Milaisia toimintoja taajuusmuuttajista löytyy?\\
 Tamujen kehitys
@@ -443,11 +484,14 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{Karlsson}Karlsson, S. \textit{Murskaintyyppien ominaisuuksien vertailu}. Kandidaatintyö. Aalto-yliopisto. Insinööritieteiden korkeakoulu. Espoo. 2011.
 
-\bibitem{Hulthen}Erik Hulthén, C. Evertsson, M. \textit{Real-time algorithm for cone crusher control with two variables}. Minerals Engineering.  24. Vuosikerta. numero 9. Elokuu 2011. s. 987-994. Saatavissa: \url{http://dx.doi.org/10.1016/j.mineng.2011.04.007}.
+\bibitem{Hulthen}Erik Hulthén, C. Evertsson, M. \textit{Real-time algorithm for cone crusher control with two variables}. Minerals Engineering.  24. Painos. Numero 9. Elokuu 2011. s. 987-994. Saatavissa: \url{http://dx.doi.org/10.1016/j.mineng.2011.04.007}.
 
 \bibitem{Pyhäsalmi}CUPP, \textit{Pyhäsalmen kaivos.} Verkkodokumentti. Päivitetty 26.3.2013. Viitattu 6.10.2014. Saatavissa: \url{http://www.cupp.fi/index.php?option=com_content&view=article&id=3&Itemid=41&lang=fi	}
 
 \bibitem{ABBinmining}ABB Oy. \textit{ABB drives in mining}. Päivitetty 2012. Viitattu 6.10.2014. Saatavissa: \url{http://www05.abb.com/global/scot/scot216.nsf/veritydisplay/2205e72865c2c747c1257a620026d001/$file/Mining%20brochure_EN_lowres.pdf}
+
+\bibitem{manchao}Man-chao H. \textit{Application of HEMS cooling technology in deep mine heat hazard control}. Mining Science and Technology (China). 19. Painos, Numero 3. Toukokuu 2009. S. 269-275. Saatavissa: http://dx.doi.org/10.1016/S1674-5264(09)60051-X.
+
 
 \end{thebibliography}
 
