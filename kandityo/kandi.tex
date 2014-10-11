@@ -305,13 +305,27 @@ Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vast
 %%-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
 %%-Laitteiden kosteuskestävyys?
 %%-IP ja - NEMA-luokitukset?
-Kaivoksiin kertyy vettä pääosin pohjavesien ja kaivostoiminnassa tarvittavan käyttöveden valuessa kaivokseen. Tätä vesimassaa on pumpattava pois, jotta ympäristö pysyy työskentelylle edullisena. Eniten haittaa sähkölaitteille  aiheuttaa ilmasta kondensoituva kosteus,mutta myös esimerkiksi katosta tihkuva vesi voi altistaa suojaamattoman sähkölaitteen nestemäiselle vedelle. Syvemmälle mentäessä kaivoksen ilmankosteus kasvaa korkean lämpötilan ja suljetun tilan takia. Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}.
+Kosteus voidaan jakaa kahteen luokkaan: ilmankosteuteen ja nestemäiseen veteen. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin koreaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
 \\\\
-Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle.[LÄHDE] Vesijäähdytystä käytettäessä on mahdollista tehdä laite täysin tiiviiksi. Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
+Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle\cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä. Kaivoksen tilapäisen luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
 \\\\
-Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osaan ja jäähdytyspuoleen, jossa jäähdytyselementin säleikkö sijaitsee. Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}.
+Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa. \cite{Muttilainen}.
+\\
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics{IP55}
+	\end{center}
+	\caption{ACS880-01 taajuusmuuttaja IP55-koteloinnilla
+		\cite[s.28]{880hwman}}
+	\label{fig:IP55}
+\end{figure}
+
+Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). [Lähde] Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
 \\\\
-Toinen mahdollisuus on tehdä jäähdytyskanavasta kokonaan erillinen komponentti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). [Lähde] Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
+Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
+
+
+
 
 
 %%Pallasmaa Aaro selvitä dippatyö: ulkokäyyttöön suunnitellun tehoelektroniikkalaitteen konseptisuunnittelu.
@@ -329,12 +343,11 @@ Toinen mahdollisuus on tehdä jäähdytyskanavasta kokonaan erillinen komponentt
 %%-Kemikaalit\\
 %%-Syövyttävyys\\
 %%-Elektroniikan eristys (flange)
+Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden ja räjäytysten seurauksena. 
 
-Kosteuden lisäksi kaivoksen ilmassa on lukuisia epäpuhtauksia
-\\\\
-\\\\
-\\\\
-\\\\
+MItä kaikkea kaivoksissa pölyää : \cite{Howard}
+
+
 %-kiviainesta
 %-räjähteitä
 %-Mitä aiheuttaa?
@@ -490,7 +503,15 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{ABBinmining}ABB Oy. \textit{ABB drives in mining}. Päivitetty 2012. Viitattu 6.10.2014. Saatavissa: \url{http://www05.abb.com/global/scot/scot216.nsf/veritydisplay/2205e72865c2c747c1257a620026d001/$file/Mining%20brochure_EN_lowres.pdf}
 
-\bibitem{manchao}Man-chao H. \textit{Application of HEMS cooling technology in deep mine heat hazard control}. Mining Science and Technology (China). 19. Painos, Numero 3. Toukokuu 2009. S. 269-275. Saatavissa: http://dx.doi.org/10.1016/S1674-5264(09)60051-X.
+\bibitem{manchao}Man-chao, H. \textit{Application of HEMS cooling technology in deep mine heat hazard control}. Mining Science and Technology (China). 19. Painos, Numero 3. Toukokuu 2009. S. 269-275. Saatavissa: \url{http://dx.doi.org/10.1016/S1674-5264(09)60051-X}.
+
+\bibitem{880hwman}ABB Oy. 2012. \textit{Laiteopas, ACS880-01-taajuusmuuttajat, Rev E}. Saatavissa: \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/71ce8071e2a7ae2bc1257bd70046ade1/$file/FI_ACS880-01_0_55to250kW_HW_E_plus_update_notice_screen.pdf}. Päivitetty 29.6.2012. Viitattu 9.10.2014.
+
+\bibitem{Pallasmaa}Pallasmaa, A. \textit{Ulkokäyttöön Tarkoitetun Tehoelektroniikkalaitteen Konseptisuunnittelu}. Diplomityö. Teknillinen korkeakoulu. Espoo. 2009.
+
+\bibitem{Howard}Hartman, H. Mutmansky, J. Ramani, R. Wang, Y. \textit{Mine Venilation and Air Conditioning}. New York, Yhdysvallat. John Wiley & Sons Inc. 1997.
+
+
 
 
 \end{thebibliography}
