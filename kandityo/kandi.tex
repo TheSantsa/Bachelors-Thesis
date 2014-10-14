@@ -4,7 +4,7 @@
 %% Esimerkki opinnäytteen tekemisestä LaTeX:lla                   %%
 %% Alkuperäinen versio Luis Costa,  muutokset Perttu Puska        %%
 %% Ruotsinkielen tuki lisätty 15092014                            %%
-%%                   	                                             %%
+%%                   	                                          %%
 %% An example for writting your thesis using LaTeX                %%
 %% Original version by Luis Costa,  changes by Perttu Puska       %%
 %% Support for Swedish added 15092014                             %%
@@ -222,6 +222,7 @@ AC         & vaihtovirta \\
 DC         & tasavirta \\
 IEC	       & International Electrotechnical commission \\
 NEMA       & National Electrical Manufacturers Association \\
+IP		   & Ingress Protection marking
 \end{tabular}
 
 
@@ -337,7 +338,7 @@ Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kost
 %%-Kemikaalit\\
 %%-Syövyttävyys\\
 %%-Elektroniikan eristys (flange)
-Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden toiminnan ja räjäytysten seurauksena. Samoista seikoista johtuen myös hiekkaa voi kulkeutua kosketuksiin sähkölaitteiden kanssa. Hiekkaa ja pölyä esiintyy kaikissa ulkoympäristöissä, mutta niiden laatu haitallisuus sähkölaitteiden toiminnalle määräytyy paljolti ympäröivän kosteuden ja maaperän laadun seurauksena. Kaivosympäristössä pölyn joukossa on kaivoksen luonteesta riippuen vaihtelevat määrät ioneja, jotka kosteuden kanssa voivat aiheuttaa korroosiota.
+Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden toiminnan ja räjäytysten seurauksena. Samoista seikoista johtuen myös hiekkaa voi kulkeutua kosketuksiin sähkölaitteiden kanssa. Hiekkaa ja pölyä esiintyy kaikissa ulkoympäristöissä, mutta niiden laatu haitallisuus sähkölaitteiden toiminnalle määräytyy paljolti ympäröivän kosteuden ja maaperän laadun seurauksena. Kaivosympäristössä pölyn joukossa on kaivoksen luonteesta riippuen vaihtelevat määrät yhdisteitä, jotka kosteuden kanssa voivat aiheuttaa korroosiota.
 \\\\
 Korroosio on tietyissä olosuhteissa merkittävä sähkölaitteita rasittava tekijä. Korroosiota tapahtuu varuksellisen hiukkasen joutuessa kosketuksiin sähkölaitteen metallisen pinnan kanssa elektrolyytin, esimerkiksi veden, välityksellä. Voimakas korroosiota aiheuttava ioni on esimerkiksi kloridi (Cl\textsuperscript{-}), jota esiintyy kaikissa suolaisissa ympäristöissä. Lisäksi voimakkaasti korrosoivia ioneja ovat myös dieselkoneiden pakokaasuista vapautuvat rikin (SO\textsuperscript{x}) ja typen oksidit(NO\textsuperscript{x}). Sähkölaitetta suunniteltaessa käyttöympäristön mahdolliset korroosiovaikutukset täytyy ottaa huomioon laitteen materiaalivalinnoissa. Esimerkiksi muovit ja alumiini ovat korroosionkestoltaan hyviä materiaaleja ja ovatkin yleisesti käytössä taajuusmuuttajien kuorissa.
 \\\\
@@ -345,9 +346,6 @@ Korroosion lisäksi pöly ja hiekka voivat aiheuttaa sähkölaitteen ylikuumenem
 %%miten estetään (putsaus ym. materiaalivalinnat IP9001 puhallin)
 \\\\
 Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen elektronisten osien kanssa. Yhdistettynä kosteuden kanssa elektroniikan päälle kertynyt pöly voi muuttua johtavaksi aiheuttaen pahimmassa tapauksessa vuotovirtoja tai läpilyönnin. \cite{Pallasmaa} Pölyn ja muiden hiukkasten aiheuttamien sähkö-, lämpö, ja korroosio-ongelmien takia on tärkeää huolehtia sähkölaitteiden asianmukaisesta huollosta. Sähkölaitteen kotelo tulisi säännöllisesti puhdistaa kertyneestä liasta ja tarkistaa ettei korroosiota ole päässyt syntymään. Kaivossuunnittelussa tulisi ottaa huomioon kaivoksen ilmanlaatu ja mitoittaa laitteiden suojausluokitus sitä vastaavaksi. Vaihtoehtoisesti voidaan käyttää muita tapoja kuten ulkoista sähköhuonetta tai aikaisemmin mainittua laippa-asennusta.
-
-Mitä kaikkea kaivoksissa pölyää : \cite{Hartman}
-
 
 %-kiviainesta
 %-räjähteitä
@@ -357,9 +355,18 @@ Mitä kaikkea kaivoksissa pölyää : \cite{Hartman}
 %-elektroniikan yhteydessä läpilyöntejä
 
 \subsubsection{Mekaaniset rasitukset}
--kuljetus,asennus\\
--Tärinä (murskaimet yms. Liikkuvat laitteet?)
-
+Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua tärinälle ja iskuille. Tärinä ja iskut rasittavat laitteen komponentteja lyhentäen sen elinikää. Turvatakseen toimintansa ovat useat taajuusmuuttajavalmistajat määritelleet suurimmat tärinän ja iskujen arvot, joita taajuusmuuttaja luotettavasti kestää. IEC 60082-2 standardi määrittelee sähkölaitteiden tärinänkeston [LÄHDE!!]
+%% selvitä mistä pääsee käsiksi IEC:standardeihin (ACS880HWmanual s.174)
+\\\\
+Kaivosympäristössä taajuusmuuttajaan kohdistuvat mekaaniset rasitukset riippuvat paljolti laitteen asennuspaikasta. Kaivoksen kiinteissä järjestelmissä kuten ilmanvaihdossa taajuusmuuttajat on tyypillisesti asennettu seinälle tai lattialle sähkötiloihin. Suuremmissa laitteissa kuten murskaimissa ja kaivinkoneissa taajuusmuuttajat ovat asennettuna osaksi koneen rakennetta ja liikkuvat koneen mukana altistuen täten vaihteleville olosuhteille.
+\\\\
+Kaivoksen kiinteät taajuusmuuttajat on tyypillisesti asennettu eristettyyn sähkötilaan. Jos kaivoksessa louhitaan malmia käyttäen räjähteitä täytyy laitteiden sijoittelussa ottaa huomioon etäisyys räjäytyspaikkaan tärinän kulkeutuessa kallioperässä pitkiäkin matkoja. Jos laitteita ei pystytä sijoittamaan tarpeeksi kauas, voidaan käyttää tärinänvaimentimia, jotka asennetaan taajuusmuuttajan ja asennuskohteen väliin. Tärinänvaimentimet muuttavat tärinän liike-energian kitkan avulla lämmöksi. Kumi on tyypillinen tärinänvaimentimissa käytetty materiaali sen elastisten ominaisuuksien vuoksi.
+\\\\
+Hyvin tärinäsuojatun taajuusmuuttajan suurimmat mekaaniset rasitukset aiheutuvat kuljetuksesta ja asennuksesta. Vaikkakin mahdollista, on laitteen vaurioituminen kuljetuksen tai asennuksen aikana epätodennäköistä. Sijoitetun pääoman suuruudesta johtuen kaivosteollisuuden taajuusmuuttajat asennetaan pääosin ammattilaisten toimesta. Kestävällä pakkauksella voidaan varmistaa laitteen päätyminen ehjänä sovelluskohteeseen saakka.
+\\\\ 
+Liikkuviin työkoneisiin kuten murskaimiin asennetut taajuusmuuttajat altistuvat vaihtelevalle tärinälle laitteen sovelluskohteesta riippuen. Kiinteästä asennuksesta poiketen työkoneissa voi esiintyä jatkuvaa jaksollista tärinää mikä voi aiheuttaa resonointia\footnote{resonanssi on ebin} laitteen komponenteissa. Haitallisen resonanssin kannalta olennaisimpia ovat matalat värähtelytaajuudet, jotka aiheuttavat suurimmat siirtymät ja siten myös jännitykset sähkölaitteen komponenteissa.[Lähde]. Laitteen kuori ja komponentit tulisi suunnitella siten, että matalia resonanssitaajuuksia ei olisi käytettävän moottorin käyttöalueella.[Lähde?]
+%% Viite: Vibration analysis for electronic equipment (pääkirjasto)
+%%Taajusmuuttajien käyttö tuulivoimaloissa <--- hyviä lähteitä tähän
 
 \subsection{Kaivoksen sähköverkko}
 Kaivoksen sähköverkko (EMC häiriöt)\\
@@ -512,7 +519,7 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{Hartman}Hartman, H. Mutmansky, J. Ramani, R. Wang, Y. \textit{Mine Venilation and Air Conditioning}. New York, Yhdysvallat. John Wiley \& Sons Inc. 1997.
 
-
+\bibitem{Sirkko}Louhintatyöstä syntyvän tärinän riskiarviointi. Saatavissa: http://www.theseus.fi/handle/10024/42462
 
 \end{thebibliography}
 
