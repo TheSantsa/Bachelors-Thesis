@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  9 OCT 2014 14:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  14 OCT 2014 11:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1510,124 +1510,144 @@ Package babel Info: Redefining finnish shorthand "|
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 304.
- <IP55.png, id=228, 468.24937pt x 420.82219pt>
+(babel)             in language  on input line 298.
+ <IP55.png, id=229, 468.24937pt x 420.82219pt>
 File: IP55.png Graphic file (type png)
  <use IP55.png>
-Package pdftex.def Info: IP55.png used on input line 316.
+Package pdftex.def Info: IP55.png used on input line 310.
 (pdftex.def)             Requested size: 468.24821pt x 420.82115pt.
 
-Overfull \hbox (41.45688pt too wide) in paragraph at lines 316--317
+Overfull \hbox (41.45688pt too wide) in paragraph at lines 310--311
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--322
+Underfull \hbox (badness 10000) in paragraph at lines 302--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--322
+Underfull \hbox (badness 10000) in paragraph at lines 302--316
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 316.
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 323--326
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 320.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 320.
 [5 <./IP55.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 341.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 358.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 363.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 368.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 374.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 381.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 381.
- [6]
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 383.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 335.
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--390
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 348.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 348.
+[6]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 415.
-[7
+(babel)             in language  on input line 375.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 382.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 382.
+ [7]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 388.
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
+
+ []
+
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 399.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 404.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 408.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 412.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 416.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 416.
+[8
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 419.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 420.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 428.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 433.
+(babel)             in language  on input line 429.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 438.
+(babel)             in language  on input line 434.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 446.
+(babel)             in language  on input line 444.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 452.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 457.
+(babel)             in language  on input line 453.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 462.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 462.
- [8
-
-]
+(babel)             in language  on input line 458.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 463.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 463.
- [9]
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 465.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 475.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 475.
- [10
+ [9
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 478.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 481.
+(babel)             in language  on input line 464.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 464.
+ [10]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 466.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 476.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 476.
+ [11
+
+]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 479.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 482.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -1637,64 +1657,47 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 3407) in paragraph at lines 504--505
+Underfull \hbox (badness 3407) in paragraph at lines 505--506
 \T1/cmr/m/n/12 (+20) vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com 
 / global / scot / scot216 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 \T1/cmtt/m/n/12 2205e72865c2c747c1257a620026d001 / $file / Mining % 20brochure 
 _ EN _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 \T1/cmr/m/n/12 (+20) sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com / gl
 obal / scot / scot201 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 \T1/cmtt/m/n/12 71ce8071e2a7ae2bc1257bd70046ade1 / $file / FI _ ACS880-[]01 _ 0
  _ 55to250kW _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 \T1/cmtt/m/n/12 HW _ E _ plus _ update _ notice _ screen . pdf$[][]\T1/cmr/m/n/
 12 (+20) . Päi-vi-tet-ty 29.6.2012. Vii-tat-tu
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 509.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 509.
-[11
+(babel)             in language  on input line 510.
+[12
 
 ]
-Underfull \hbox (badness 7595) in paragraph at lines 512--513
-[]\T1/cmr/m/n/12 (+20) Hartman, H. Mut-mans-ky, J. Ra-ma-ni, R. Wang, Y. \T1/cm
-r/m/it/12 (+20) Mi-ne Ve-ni-la-
- []
-
-
-Underfull \hbox (badness 3930) in paragraph at lines 512--513
-\T1/cmr/m/it/12 (+20) tion and Air Con-di-tio-ning\T1/cmr/m/n/12 (+20) . Saa-ta
--vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www . google . fi / books ?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-\T1/cmtt/m/n/12 id = xPpnf0dMwtoC&printsec = frontcover&hl = fi&source = gbs _ 
-atb # v =
- []
-
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 522.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 522.
-[12]
+ [13]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 525.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
@@ -1702,7 +1705,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 528.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 528.
- [13
+ [14
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
@@ -1714,13 +1717,13 @@ Package rerunfilecheck Info: File `kandi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 528.
  ) 
 Here is how much of TeX's memory you used:
- 18412 strings out of 493315
- 327313 string characters out of 6137904
- 852714 words of memory out of 5000000
- 21288 multiletter control sequences out of 15000+600000
- 37689 words of font info for 101 fonts, out of 8000000 for 9000
+ 18426 strings out of 493315
+ 327469 string characters out of 6137904
+ 852715 words of memory out of 5000000
+ 21290 multiletter control sequences out of 15000+600000
+ 38748 words of font info for 107 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,10n,59p,955b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,59p,954b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.Hakap\344\344} has been referenced but does 
 not exist, replaced by a fixed one
 
@@ -1732,15 +1735,16 @@ e/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/
 13/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2013/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on kandi.pdf (18 pages, 419772 bytes).
+mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on kandi.pdf (19 pages, 444876 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 21274 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 21786 words of extra memory for PDF output out of 24883 (max. 10000000)
 

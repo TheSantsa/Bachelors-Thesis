@@ -9,26 +9,26 @@
 \contentsline {subsubsection}{\numberline {2.1.1}L\IeC {\"a}mp\IeC {\"o}}{3}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Kosteus}{4}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}Pienpartikkelit}{6}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Mekaaniset rasitukset}{6}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Kaivoksen s\IeC {\"a}hk\IeC {\"o}verkko}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}K\IeC {\"a}ytt\IeC {\"o}ik\IeC {\"a} ja luotettavuus}{6}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Kaivosteollisuuden standardit}{6}{subsection.2.4}
-\contentsline {section}{\numberline {3}Taajuusmuuttajien toiminnallisuus}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Toimintasyklit}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Turvallisuustoiminnot}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Mittaukset}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Ohjaus ja -valvontaj\IeC {\"a}rjestelm\IeC {\"a}t}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Verkkoon jarruttavat taajuusmuuttajat}{7}{subsection.3.5}
-\contentsline {section}{\numberline {4}Taajuusmuuttajien sovellukset kaivoksissa}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Kokoluokat ja sijoittelu}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Sovellukset}{8}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Kaivinkoneet}{8}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Liukuhihnat ja kuljettimet}{8}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Murskaimet}{8}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Hissit}{8}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Tuulettimet ja ilmanvaihto}{8}{subsubsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.6}Pumput}{8}{subsubsection.4.2.6}
-\contentsline {subsubsection}{\numberline {4.2.7}Paineilman tuottaminen?}{9}{subsubsection.4.2.7}
-\contentsline {section}{\numberline {5}Yhteenveto}{10}{section.5}
-\contentsline {section}{Viitteet}{11}{section*.9}
-\contentsline {section}{\numberline {A}Liite 1}{13}{appendix.A}
+\contentsline {subsubsection}{\numberline {2.1.4}Mekaaniset rasitukset}{7}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Kaivoksen s\IeC {\"a}hk\IeC {\"o}verkko}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}K\IeC {\"a}ytt\IeC {\"o}ik\IeC {\"a} ja luotettavuus}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Kaivosteollisuuden standardit}{7}{subsection.2.4}
+\contentsline {section}{\numberline {3}Taajuusmuuttajien toiminnallisuus}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Toimintasyklit}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Turvallisuustoiminnot}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Mittaukset}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Ohjaus ja -valvontaj\IeC {\"a}rjestelm\IeC {\"a}t}{8}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Verkkoon jarruttavat taajuusmuuttajat}{8}{subsection.3.5}
+\contentsline {section}{\numberline {4}Taajuusmuuttajien sovellukset kaivoksissa}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Kokoluokat ja sijoittelu}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Sovellukset}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Kaivinkoneet}{9}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Liukuhihnat ja kuljettimet}{9}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Murskaimet}{9}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Hissit}{9}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Tuulettimet ja ilmanvaihto}{9}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Pumput}{9}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Paineilman tuottaminen?}{10}{subsubsection.4.2.7}
+\contentsline {section}{\numberline {5}Yhteenveto}{11}{section.5}
+\contentsline {section}{Viitteet}{12}{section*.9}
+\contentsline {section}{\numberline {A}Liite 1}{14}{appendix.A}

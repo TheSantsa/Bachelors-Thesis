@@ -278,38 +278,32 @@ Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytii
 \\\\
 Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa. LÄHDE?
 \\\\
-Seuraavissa kappaleissa eritellään eri ympäristötekijöiden merkitsevyys kaivosympäristössä. Tarkastelun alla ovat myös tavat mitä vaikutuksia näillä olosuhteilla on taajuusmuuttajien toiminnalle sekä miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia avolouhosten olosuhteiden ollessa tavallista ulkoilmakäyttöä vastaavat. %%such metatext
+Seuraavissa kappaleissa eritellään eri ympäristötekijöiden merkitsevyys kaivosympäristössä. Tarkastelun alla ovat myös vaikutukset mitä näillä olosuhteilla on taajuusmuuttajien toiminnalle sekä miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia avolouhosten olosuhteiden ollessa tavallista ulkoilmakäyttöä vastaavat. %%such metatext
 
 \subsubsection{Lämpö}
 %%-Kaivosten lämpötilat
 %%-Laitteiden käyttölämpötilat, derating
 %%-Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
-Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset.
+Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset\cite[s.305]{Hakapää}.
 \\\\
 Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa syvemmälle mentäessä noin 25-30\textdegree C/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40\textdegree C riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
 Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli kolmeenkymmeneen asteeseen.
 \\\\
-Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille.
+Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille. Taajuusmuuttajien käyttöä osana kaivoksen ilmanvaihtojärjestelmää käsitellään tarkemmin luvussa \textit{4.2.5 Tuulettimet ja ilmanvaihto}.
 \\\\
 Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vastaanottamastaan energiasta moottorille\cite{ABBinmining}. Energiasta 2\% kuitenkin muuttuu taajuusmuuttajan sisäisenä häviönä lämpöenergiaksi. Tämä tarkoittaa esimerkiksi 500kW taajuusmuuttajan vaativan noin 10kW jäähdytystehon toimiakseen jatkuvasti. Tämä lämpöenergia poistetaan taajuusmuuttajasta ilma- tai nestejäähdytyksen avulla ympäristöön.
  
 %%derating ja muut suojat????
 
-%%Taajuusmuuttajien ratkaisut flange ym ilmastointitavat?
-
-%%flange vasta partikkeleihin???
-
-
-
 \subsubsection{Kosteus}
 %%-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
 %%-Laitteiden kosteuskestävyys?
 %%-IP ja - NEMA-luokitukset?
-Kosteus voidaan jakaa kahteen luokkaan: ilmankosteuteen ja nestemäiseen veteen. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin koreaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
+Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä vetenä. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin koreaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
 \\\\
-Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle\cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä. Kaivoksen tilapäisen luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
+Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle\cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä, jolloin ilmalla ei ole lainkaan pääsyä kosketuksiin elektroniikan kanssa. Kaivoksen tilapäisen luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
 \\\\
-Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa. \cite{Muttilainen}.
+Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
 \\
 \begin{figure}[h]
 	\begin{center}
@@ -320,7 +314,7 @@ Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa
 	\label{fig:IP55}
 \end{figure}
 
-Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). [Lähde] Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
+Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation) [Lähde]. Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
 \\\\
 Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
 
@@ -343,9 +337,16 @@ Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kost
 %%-Kemikaalit\\
 %%-Syövyttävyys\\
 %%-Elektroniikan eristys (flange)
-Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden ja räjäytysten seurauksena. 
+Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden toiminnan ja räjäytysten seurauksena. Samoista seikoista johtuen myös hiekkaa voi kulkeutua kosketuksiin sähkölaitteiden kanssa. Hiekkaa ja pölyä esiintyy kaikissa ulkoympäristöissä, mutta niiden laatu haitallisuus sähkölaitteiden toiminnalle määräytyy paljolti ympäröivän kosteuden ja maaperän laadun seurauksena. Kaivosympäristössä pölyn joukossa on kaivoksen luonteesta riippuen vaihtelevat määrät ioneja, jotka kosteuden kanssa voivat aiheuttaa korroosiota.
+\\\\
+Korroosio on tietyissä olosuhteissa merkittävä sähkölaitteita rasittava tekijä. Korroosiota tapahtuu varuksellisen hiukkasen joutuessa kosketuksiin sähkölaitteen metallisen pinnan kanssa elektrolyytin, esimerkiksi veden, välityksellä. Voimakas korroosiota aiheuttava ioni on esimerkiksi kloridi (Cl\textsuperscript{-}), jota esiintyy kaikissa suolaisissa ympäristöissä. Lisäksi voimakkaasti korrosoivia ioneja ovat myös dieselkoneiden pakokaasuista vapautuvat rikin (SO\textsuperscript{x}) ja typen oksidit(NO\textsuperscript{x}). Sähkölaitetta suunniteltaessa käyttöympäristön mahdolliset korroosiovaikutukset täytyy ottaa huomioon laitteen materiaalivalinnoissa. Esimerkiksi muovit ja alumiini ovat korroosionkestoltaan hyviä materiaaleja ja ovatkin yleisesti käytössä taajuusmuuttajien kuorissa.
+\\\\
+Korroosion lisäksi pöly ja hiekka voivat aiheuttaa sähkölaitteen ylikuumenemisen tai sähkövian. Pölyisissä ympäristöissä on pidettävä huoli että pöly ja muu hienorakeinen aines kuten hiekka ei pääse tukkimaan sähkölaitteiden mekaanisia tai sähköisiä osia. Yleisin pölyn aiheuttama ongelma lienee ilmajäähdytteisen sähkölaitteen jäähdytyselementin peittyminen pölyllä ja muilla epäpuhtauksilla alentaen jäähdytyselementin lämmönsiirtokykyä. Ilman epäpuhtaudet voivat vaikuttaa haitallisesti myös ilmaa jäähdytyselementin läpi puhaltavaan puhaltimeen, mikä voi pahimmassa tapauksessa estää puhaltimen toiminnan.\cite{Pallasmaa}
+%%miten estetään (putsaus ym. materiaalivalinnat IP9001 puhallin)
+\\\\
+Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen elektronisten osien kanssa. Yhdistettynä kosteuden kanssa elektroniikan päälle kertynyt pöly voi muuttua johtavaksi aiheuttaen pahimmassa tapauksessa vuotovirtoja tai läpilyönnin. \cite{Pallasmaa} Pölyn ja muiden hiukkasten aiheuttamien sähkö-, lämpö, ja korroosio-ongelmien takia on tärkeää huolehtia sähkölaitteiden asianmukaisesta huollosta. Sähkölaitteen kotelo tulisi säännöllisesti puhdistaa kertyneestä liasta ja tarkistaa ettei korroosiota ole päässyt syntymään. Kaivossuunnittelussa tulisi ottaa huomioon kaivoksen ilmanlaatu ja mitoittaa laitteiden suojausluokitus sitä vastaavaksi. Vaihtoehtoisesti voidaan käyttää muita tapoja kuten ulkoista sähköhuonetta tai aikaisemmin mainittua laippa-asennusta.
 
-MItä kaikkea kaivoksissa pölyää : \cite{Howard}
+Mitä kaikkea kaivoksissa pölyää : \cite{Hartman}
 
 
 %-kiviainesta
@@ -509,8 +510,7 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{Pallasmaa}Pallasmaa, A. \textit{Ulkokäyttöön Tarkoitetun Tehoelektroniikkalaitteen Konseptisuunnittelu}. Diplomityö. Teknillinen korkeakoulu. Espoo. 2009.
 
-\bibitem{Howard}Hartman, H. Mutmansky, J. Ramani, R. Wang, Y. \textit{Mine Venilation and Air Conditioning}. New York, Yhdysvallat. John Wiley & Sons Inc. 1997.
-
+\bibitem{Hartman}Hartman, H. Mutmansky, J. Ramani, R. Wang, Y. \textit{Mine Venilation and Air Conditioning}. New York, Yhdysvallat. John Wiley \& Sons Inc. 1997.
 
 
 
