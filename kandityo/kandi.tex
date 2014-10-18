@@ -103,6 +103,8 @@
 %%
 %\usepackage{url}
 
+
+\usepackage{float}
 %% Saat pdf-tiedoston viittaukset ja linkit kuntoon seuraavalla paketilla.
 %% Paketti toimii erityisen hyvin pdflatexin kanssa. 
 %%
@@ -251,11 +253,11 @@ IP		   & Ingress Protection marking
 Taajuusmuuttajia käytetään yhä enenemässä määrin vaihtovirtasähkömoottoreiden ohjaukseen kaikilla teollisuudenaloilla ja erityisesti kaivosteollisuudessa \cite[s. 262]{Hakapää}. %%s. 262: taajuusmuuttajat 
 Erilaiset käyttöympäristöt ja -sovellukset vaikuttavat taajuusmuuttajalta vaadittuun toiminallisuuteen ja fyysisiin ominaisuuksiin. Käyttökohteesta riippuvat ominaisuudet luovat taajuusmuuttajavalmistajille näin tarpeen kartoittaa eri teollisuudenalojen erityisvaatimuksia, jotta tuotteet pystytään kehittämään vastaamaan asiakkaiden tarpeita mahdollisimman hyvin. 
 \\\\
-Tämän työn tarkoituksena on tarkastella kaivosteollisuuden asettamia vaatimuksia ja tarpeita taajuusmuuttajan toiminnallisuudelle ja kestävyydelle sekä kartoittaa millaisia eri sovelluksia taajuusmuuttajille kaivostoiminnassa esiintyy. Tämän työn yhteydessä kaivosteollisuudella tarkoitetaan kaivosta ja sen välittömässä läheisyydessä tapahtuvaa malmin siirtoa ja käsittelyä ja tarkastelu keskittyy yksinomaan siihen. Mineraalien jatkokäsittely kaivosalueen ulkopuolella muistuttaa jo tavanomaista prosessiteollisuutta, eikä siksi ole tämän työn kannalta mielenkiintoista.
+Tämän työn tarkoituksena on tarkastella kaivosteollisuuden asettamia vaatimuksia taajuusmuuttajan toiminnallisuudelle ja kestävyydelle sekä kartoittaa millaisia eri sovelluksia taajuusmuuttajille kaivostoiminnassa esiintyy. Tämän työn yhteydessä kaivosteollisuudella tarkoitetaan kaivosta ja sen välittömässä läheisyydessä tapahtuvaa malmin siirtoa ja käsittelyä ja tarkastelu keskittyy yksinomaan siihen. Mineraalien jatkokäsittely kaivosalueen ulkopuolella muistuttaa jo tavanomaista prosessiteollisuutta, eikä siksi ole tämän työn kannalta mielenkiintoista.
 \\\\
 Yleisin taajuusmuuttajan sijoituspaikka on sisätiloissa esimerkiksi tuotantolaitoksen sähköhuoneessa. Tällöin ympäristöolosuhteet saadaan pysymään hyvin tasaisina ja taajuusmuuttajan toiminnalle edullisina. Lämpötila- tai kosteusvaihteluita ei ilmastointijärjestelmän ansiosta juuri ole ja huoneen ilma on suodatettu pienpartikkeleista jo ennen sen pääsyä kosketuksiin taajuusmuuttajan kanssa. Kaivosteollisuudessa vastaavan tasaisen käyttöympäristön järjestäminen voi olla epäkäytännöllistä tai taloudellisesti kannattamatonta, jolloin taajuusmuuttajalta itseltään edellytetään kestävyyttä ja toimintavarmuutta vaativissakin käyttöympäristöissä. Myös kaivoksen sähköverkko asettaa taajuusmuuttajalle omat vaatimuksensa.
 \\\\
-Työn alussa selvitetään kaivosympäristön erityisvaatimukset lähtien liikkeelle ympäristöolosuhteista. Osan tarkoituksena on luoda selvä kuva kaivoksen asettamista vaatimuksista siellä käytettävälle laitteistolle jotta voidaan ymmärtää mitä taajuusmuuttajilta vaaditaan. Tarkastelun alla ovat lisäksi standardit, jotka kaivoteollisuuden laitteita koskevat.
+Työn alussa esitellään kaivosympäristön erityisvaatimukset lähtien liikkeelle ympäristöolosuhteista. Osan tarkoituksena on luoda selvä kuva kaivoksen asettamista vaatimuksista siellä käytettävälle laitteistolle jotta voidaan ymmärtää mitä taajuusmuuttajilta vaaditaan. Tarkastelun alla ovat lisäksi standardit, jotka kaivoteollisuuden laitteita koskevat.
 \\\\
 Seuraavassa osassa esitetään millaista toiminnallisuutta taajuusmuuttajien sisäisillä logiikkapiireillä voidaan toteuttaa ja miten niitä voidaan hyödyntää kaivosteollisuuden sovelluksissa. Viimeisessä osassa esitetään taajuusmuuttajien käyttökohteita kaivoksissa lähtien liikkeelle taajuusmuuttajien tyypillisestä sijoittelusta sekä tyypillisistä teho- ja jänniteluokista. Sovellukset-osio käy läpi suurimmat teollisuudenalan sähkövoimaa käyttävät sovellukset ja kertoo millaisia taajuusmuuttajaratkaisuja niissä käytetään ja mitä hyötyjä taajuusmuuttajien käyttö niissä tuo verrattuna perinteisiin ohjausratkaisuihin.
 \\\\
@@ -275,9 +277,10 @@ Sähkölaitteille kaivoksissa rasitusta aiheuttavia tekijöitä ovat
 \end{itemize}
 Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, ilman  epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavatkin taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
 \\\\
-Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen [LIITE 1 TÄHÄN]. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
+Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen. %%[LIITE 1 TÄHÄN]
+Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
 \\\\
-Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa. LÄHDE?
+Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa jäähdytyksen ongelmallisuuden vuoksi.
 \\\\
 Seuraavissa kappaleissa eritellään eri ympäristötekijöiden merkitsevyys kaivosympäristössä. Tarkastelun alla ovat myös vaikutukset mitä näillä olosuhteilla on taajuusmuuttajien toiminnalle sekä miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia avolouhosten olosuhteiden ollessa tavallista ulkoilmakäyttöä vastaavat. %%such metatext
 
@@ -285,12 +288,10 @@ Seuraavissa kappaleissa eritellään eri ympäristötekijöiden merkitsevyys kai
 %%-Kaivosten lämpötilat
 %%-Laitteiden käyttölämpötilat, derating
 %%-Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
-Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset\cite[s.305]{Hakapää}.
+Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset\cite[s.305]{Hakapää}. 
 \\\\
 Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa syvemmälle mentäessä noin 25-30\textdegree C/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40\textdegree C riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
-Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli kolmeenkymmeneen asteeseen.
-\\\\
-Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille. Taajuusmuuttajien käyttöä osana kaivoksen ilmanvaihtojärjestelmää käsitellään tarkemmin luvussa \textit{4.2.5 Tuulettimet ja ilmanvaihto}.
+Esimerkkinä todettakoon Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli kolmeenkymmeneen asteeseen. Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille. Taajuusmuuttajien käyttöä osana kaivoksen ilmanvaihtojärjestelmää käsitellään tarkemmin luvussa \textit{4.2.5 Tuulettimet ja ilmanvaihto}. Kaivoksen lämpötilan noustessa esimerkiksi tuuletusjärjestelmän häiriön takia taajuusmuuttajien sisäinen lämpötilan tarkkailu osaa automaattisesti alentaa tuotettua sähkövirtaa ja näin komponenteissa syntyvää lämpömäärää. Tämä estää laitteen vioittumisen ylikuumenemisen takia.
 \\\\
 Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vastaanottamastaan energiasta moottorille\cite{ABBinmining}. Energiasta 2\% kuitenkin muuttuu taajuusmuuttajan sisäisenä häviönä lämpöenergiaksi. Tämä tarkoittaa esimerkiksi 500kW taajuusmuuttajan vaativan noin 10kW jäähdytystehon toimiakseen jatkuvasti. Tämä lämpöenergia poistetaan taajuusmuuttajasta ilma- tai nestejäähdytyksen avulla ympäristöön.
  
@@ -300,23 +301,29 @@ Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vast
 %%-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
 %%-Laitteiden kosteuskestävyys?
 %%-IP ja - NEMA-luokitukset?
-Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä vetenä. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin koreaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
+Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä vetenä. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin korkeaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
 \\\\
 Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle\cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä, jolloin ilmalla ei ole lainkaan pääsyä kosketuksiin elektroniikan kanssa. Kaivoksen tilapäisen luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
 \\\\
-Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
-\\
-\begin{figure}[h]
+Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään ilmalta eristettyyn osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
+\begin{figure}[H]
 	\begin{center}
-	\includegraphics{IP55}
+	\includegraphics[scale=0.9]{IP55}
 	\end{center}
 	\caption{ACS880-01 taajuusmuuttaja IP55-koteloinnilla
 		\cite[s.28]{880hwman}}
 	\label{fig:IP55}
 \end{figure}
-
-Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation) [Lähde]. Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä.
+Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä. Kuvassa 2 esitetään hahmotelma laippa-asennetusta taajuusmuuttajasta, jossa jäähdytyselementti on eristetty omaan tilaansa.
 \\\\
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics{flange}
+	\end{center}
+	\caption{Hahmotelma laippa-asennetusta taajuusmuuttajasta
+		\cite[s.6]{danfoss}}
+	\label{fig:flange}
+\end{figure}
 Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
 
 
@@ -355,31 +362,51 @@ Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen el
 %-elektroniikan yhteydessä läpilyöntejä
 
 \subsubsection{Mekaaniset rasitukset}
-Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua tärinälle ja iskuille. Tärinä ja iskut rasittavat laitteen komponentteja lyhentäen sen elinikää. Turvatakseen toimintansa ovat useat taajuusmuuttajavalmistajat määritelleet suurimmat tärinän ja iskujen arvot, joita taajuusmuuttaja luotettavasti kestää. IEC 60082-2 standardi määrittelee sähkölaitteiden tärinänkeston [LÄHDE!!]
-%% selvitä mistä pääsee käsiksi IEC:standardeihin (ACS880HWmanual s.174)
+Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua tärinälle ja iskuille. Tärinä ja iskut rasittavat laitteen komponentteja lyhentäen sen elinikää. Turvatakseen toimintansa ovat useat taajuusmuuttajavalmistajat määritelleet suurimmat tärinän ja iskujen arvot, joita taajuusmuuttaja luotettavasti kestää. IEC 60082-2 standardi määrittelee tavat sähkölaitteiden tärinän- ja iskunkeston mittaamiselle. Standardissa tärinä ilmaistaan sen amplitudin, taajuuden ja kiihtyvyyden summana ja iskut kiihtyvyytenä.\cite{IEC60082-2}
+%%IEC:standardit (ACS880HWmanual s.174)
 \\\\
-Kaivosympäristössä taajuusmuuttajaan kohdistuvat mekaaniset rasitukset riippuvat paljolti laitteen asennuspaikasta. Kaivoksen kiinteissä järjestelmissä kuten ilmanvaihdossa taajuusmuuttajat on tyypillisesti asennettu seinälle tai lattialle sähkötiloihin. Suuremmissa laitteissa kuten murskaimissa ja kaivinkoneissa taajuusmuuttajat ovat asennettuna osaksi koneen rakennetta ja liikkuvat koneen mukana altistuen täten vaihteleville olosuhteille.
+Kaivosympäristössä taajuusmuuttajaan kohdistuvat mekaaniset rasitukset riippuvat paljolti laitteen asennuspaikasta. Kaivoksen kiinteissä järjestelmissä kuten ilmanvaihdossa taajuusmuuttajat on tyypillisesti asennettu seinälle tai lattialle sähkötiloihin. Suuremmissa laitteissa kuten murskaimissa ja työkoneissa taajuusmuuttajat ovat asennettuna osaksi koneen rakennetta ja liikkuvat koneen mukana altistuen täten vaihteleville olosuhteille.
 \\\\
 Kaivoksen kiinteät taajuusmuuttajat on tyypillisesti asennettu eristettyyn sähkötilaan. Jos kaivoksessa louhitaan malmia käyttäen räjähteitä täytyy laitteiden sijoittelussa ottaa huomioon etäisyys räjäytyspaikkaan tärinän kulkeutuessa kallioperässä pitkiäkin matkoja. Jos laitteita ei pystytä sijoittamaan tarpeeksi kauas, voidaan käyttää tärinänvaimentimia, jotka asennetaan taajuusmuuttajan ja asennuskohteen väliin. Tärinänvaimentimet muuttavat tärinän liike-energian kitkan avulla lämmöksi. Kumi on tyypillinen tärinänvaimentimissa käytetty materiaali sen elastisten ominaisuuksien vuoksi.
 \\\\
 Hyvin tärinäsuojatun taajuusmuuttajan suurimmat mekaaniset rasitukset aiheutuvat kuljetuksesta ja asennuksesta. Vaikkakin mahdollista, on laitteen vaurioituminen kuljetuksen tai asennuksen aikana epätodennäköistä. Sijoitetun pääoman suuruudesta johtuen kaivosteollisuuden taajuusmuuttajat asennetaan pääosin ammattilaisten toimesta. Kestävällä pakkauksella voidaan varmistaa laitteen päätyminen ehjänä sovelluskohteeseen saakka.
 \\\\ 
-Liikkuviin työkoneisiin kuten murskaimiin asennetut taajuusmuuttajat altistuvat vaihtelevalle tärinälle laitteen sovelluskohteesta riippuen. Kiinteästä asennuksesta poiketen työkoneissa voi esiintyä jatkuvaa jaksollista tärinää mikä voi aiheuttaa resonointia\footnote{resonanssi on ebin} laitteen komponenteissa. Haitallisen resonanssin kannalta olennaisimpia ovat matalat värähtelytaajuudet, jotka aiheuttavat suurimmat siirtymät ja siten myös jännitykset sähkölaitteen komponenteissa.[Lähde]. Laitteen kuori ja komponentit tulisi suunnitella siten, että matalia resonanssitaajuuksia ei olisi käytettävän moottorin käyttöalueella.[Lähde?]
+Työkoneisiin kuten murskaimiin asennetut taajuusmuuttajat altistuvat vaihtelevalle tärinälle laitteen sovelluskohteesta riippuen. Kiinteästä asennuksesta poiketen työkoneissa voi esiintyä jatkuvaa jaksollista tärinää mikä voi aiheuttaa resonointia\footnote{resonanssi on ebin} laitteen komponenteissa. Haitallisen resonanssin kannalta olennaisimpia ovat matalat värähtelytaajuudet, jotka aiheuttavat suurimmat siirtymät ja siten myös jännitykset sähkölaitteen komponenteissa.[Lähde]. Laitteen kuori ja komponentit tulisi suunnitella siten, että matalia resonanssitaajuuksia ei olisi käytettävän moottorin käyttöalueella.[Lähde?]
 %% Viite: Vibration analysis for electronic equipment (pääkirjasto)
 %%Taajusmuuttajien käyttö tuulivoimaloissa <--- hyviä lähteitä tähän
 
 \subsection{Kaivoksen sähköverkko}
-Kaivoksen sähköverkko (EMC häiriöt)\\
--jännite,laajuus, häiriönsieto, EMC\\
--kuristimien/filttereiden tarpeellisuus
+Kaivokset ovat suuria sähkönkuluttajia. Kaivosalueella sähköä kuluttavat itse kaivanto, rikastamo, toimistotilat ja joskus myös asuinrakennukset. Jos sähkö tilataan ulkoiselta toimittajalta, toimitetaan se yleensä 110kV suurjännitelinjaa pitkin ja muunnetaan kaivosalueella jakelujännitteeksi. Suomessa suurin sallittu jakeluverkon jännite on 20kV. Suuren jakelujännitteen etuna ovat pienemmät häviöt pitkillä etäisyyksillä ja mahdollisuus käyttää poikkipinta-alaltaan pienempiä siirtokaapeleita. \cite[s. 251-253]{Hakapää}
+\\\\
+Jakelujännite muunnetaan edelleen käyttöjännitteeksi jakelumuuntajilla. Kaivosalueilla on yleisesti käytössä 400V:n kolmivaihejärjestelmä. 400V järjestelmän etuna, en että tavallista 230V vaihtovirtaa saadaan suoraan samasta järjestelmästä yhden vaihe- ja nollajohtimen väliltä. Toinen standardisoitu jännite on 690V käyttöjännite, jota käytettäessä päästään pitempiin kaapelietäisyyksiin tai pienempiin poikkipinta-aloihin. \cite[s. 251-253]{Hakapää}
+\\\\
+Joissakin tapauksissa voi myös olla kannattavaa tuottaa kaivosalueen tarvitsema sähköenergia paikanpäällä. Syrjäisillä alueilla vai olla mahdollista että tarpeeksi vahvaa verkkoa ei ole saatavilla tai että verkkoa ei ole ollenkaan. Tämä tulee harvoin kysymykseen Suomessa vahvan ja kattavan sähköverkon ansiosta. Myös sähköverkon luotettavuus pitää olla korkea. Jos katkokset sähkönjakelussa ovat alueella yleisiä voi voimantuotanto paikanpäällä olla kannattavampi vaihtoehto suuremmista kustannuksista huolimatta. Voimantuotanto paikanpäällä toteutetaan yleensä dieselvoimalaitoksella, jossa dieselmoottorit tuottavat sähköenergiaa generaattoreiden välityksellä. Kompromissi näiden kahden väliltä on varavoimalaitos, joka tuottaa vaaditun energian paikanpäällä sähkökatkoksen aikana. \cite[s. 251-253]{Hakapää}
+\\\\
+Ilman taajuusmuuttajaa ohjatut sähkömoottorit vaativat käynnistyksessä moninkertaisen virran normaaliajoon verrattuna. Tämä voi heikon kantaverkon alueella muodostua ongelmaksi suurten sähkömoottoreiden aiheuttaessa käynnistyksessä suuren heilahduksen sähköverkon virtaan. Taajuusmuuttajalla ohjattu moottori ottaa verkosta kohtuullisen tasaista virtaa, jolloin suuria verkon heilahteluita ei pääse muodostumaan. Tämä voi muodostua kynnyskysymykseksi alueilla, joissa siirtoverkko ei kestä suuria virtapiikkejä. \cite{MyyntiHaastattelu}
+
+%%Kaivoksen sähköverkko (EMC häiriöt)\\
+%%-jännite,laajuus, häiriönsieto, EMC\\
+%%-kuristimien/filttereiden tarpeellisuus
 
 \subsection{Käyttöikä ja luotettavuus}
+Luonteestaan johtuen kaivokset ovat tilapäisiä rakennelmia eliniän riippuessa monista seikoista kuten esiintymän suuruudesta, esiintymän syvyydestä ja louhittavan malmin markkinahinnan kehityksestä. Rajatusta käyttöajasta ja suuresta alkuinvestoinnista johtuen laitteiden halutaan ensiasennuksen jälkeen lähtökohtaisesti toimivan koko kaivoksen elinkaaren ajan. Toisin sanoen luotettavaksi osoittautuneita järjestelmiä harvoin lähdetään vaihtamaan kesken kaivoksen toiminnan vaikka uusia mahdollisesti parempia olisi saatavilla. Tässä korostuvat asiakkaan kokemukset taajuusmuuttajien luotettavuudesta. Teknisesti kehittyneempi ratkaisu voi hävitä tarjouskilpailun asiakkaan kokemusten perusteella luotettavammalle laitteelle.
+\\\\
+Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastuminen tietyn järjestelmän komponentin kuten taajuusmuuttajan rikkoutumisen seurauksena on merkittävä kaivoksen kannattavuuteen vaikuttava tekijä kiinteiden kulujen ollessa suuret tuotannon määrästä huolimatta. Lisäksi taajuusmuuttajia käytetään turvallisuuden kannalta kriittisissä toiminnoissa kuten ilmanvaihdossa. Tämän takia taajuusmuuttajilta edellytetään ensisijaisesti korkeaa luotettavuutta ja hyviä tukitoimintoja.
+
+%% Tähän voisi kirjoittaa suuret toimittajat: luotettavuus, robustisuus > hienot ominaisuudet (tekevät omat settinsä PLC:n avulla, eivät halua ulkoisten kikkailuja --> oma henkilöstö osaa käyttää ja korjata).
+%%servicen rooli? suuri toimittaja --> globaali ja nopea huolto (isot tekijät huoltavat itse?)
+
+%%Hinta tärkeinä tähän vai vasta yhteenvetoon?
+
+
 -kaivoksen ikä? Sama laite koko elinkaaren?\\
 -Esim tuuletusjärjestelmän luotettavuus ensisijaisen tärkeää?\\
 -Redundanttius?\\
 -Virran katkeaminen? varavoimalähteet?
 
 \subsection{Kaivosteollisuuden standardit}
+%%tämä pois kokonaan?
+
 -ex-luoitus: Räjähdysherkkä tila?\\
 -mitä muita?
 
@@ -520,6 +547,12 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 \bibitem{Hartman}Hartman, H. Mutmansky, J. Ramani, R. Wang, Y. \textit{Mine Venilation and Air Conditioning}. New York, Yhdysvallat. John Wiley \& Sons Inc. 1997.
 
 \bibitem{Sirkko}Louhintatyöstä syntyvän tärinän riskiarviointi. Saatavissa: http://www.theseus.fi/handle/10024/42462
+
+\bibitem{danfoss} Saatavissa: \url{http://www.danfoss.com/NR/rdonlyres/2270DF18-D4AD-4808-824E-4942B247F078/0/2011_AutomationDrive_176R0571_Web.pdf}
+
+\bibitem{IEC60082-2}IEC 60082-2. \textit{Environmental testing - Part 2-6: Tests - Test Fc: Vibration (sinusoidal)}. 7.painos. Geneve, Sveitsi. IEC. 2007. 86 s.
+
+\bibitem{MyyntiHaastattelu}Antti Hedman. Myyntipäällikkö. ABB Oy. Haastattelu. 17.10.2014. Pitäjänmäki, Helsinki.
 
 \end{thebibliography}
 
