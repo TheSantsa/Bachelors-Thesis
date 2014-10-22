@@ -12,7 +12,6 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Mekaaniset rasitukset}{7}{subsubsection.2.1.4}
 \contentsline {subsection}{\numberline {2.2}Kaivoksen s\IeC {\"a}hk\IeC {\"o}verkko}{8}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}K\IeC {\"a}ytt\IeC {\"o}ik\IeC {\"a} ja luotettavuus}{9}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Kaivosteollisuuden standardit}{9}{subsection.2.4}
 \contentsline {section}{\numberline {3}Taajuusmuuttajien toiminnallisuus}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Toimintasyklit}{10}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Turvallisuustoiminnot}{10}{subsection.3.2}
