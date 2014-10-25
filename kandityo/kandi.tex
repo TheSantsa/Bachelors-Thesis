@@ -226,6 +226,7 @@ IEC	       & International Electrotechnical commission \\
 NEMA       & National Electrical Manufacturers Association \\
 IP		   & Ingress Protection marking \\
 PLC		   & Programmable Logic Controller \\
+PID-Säädin & Proportional-integral-derivative-säädin
 \end{tabular}
 
 
@@ -263,8 +264,64 @@ Työn alussa esitellään kaivosympäristön erityisvaatimukset lähtien liikkee
 Seuraavassa osassa esitetään millaista toiminnallisuutta taajuusmuuttajien sisäisillä logiikkapiireillä voidaan toteuttaa ja miten niitä voidaan hyödyntää kaivosteollisuuden sovelluksissa. Viimeisessä osassa esitetään taajuusmuuttajien käyttökohteita kaivoksissa lähtien liikkeelle taajuusmuuttajien tyypillisestä sijoittelusta sekä tyypillisistä teho- ja jänniteluokista. Sovellukset-osio käy läpi suurimmat teollisuudenalan sähkövoimaa käyttävät sovellukset ja kertoo millaisia taajuusmuuttajaratkaisuja niissä käytetään ja mitä hyötyjä taajuusmuuttajien käyttö niissä tuo verrattuna perinteisiin ohjausratkaisuihin.
 \\\\
 Työssä on oleellista taajuusmuuttajien hyödyntäminen ja niistä saatava lisäarvo kaivosteollisuuden asiakkaan näkökulmasta. Se keskittyy sovelluksiin ja niiden vaatimuksiin eikä niinkään taajuusmuuttajan sisäisiin ratkaisuihin näiden hyötyjen aikaansaamiseksi. Työ esittää alan olemassa olevat taajuusmuuttajaratkaisut ja pohtii mitä lisäarvoa taajuusmuuttajilla voitaisiin vielä saavuttaa.
+%% blaablaa taajuusmuuttajien toiminta selitetään pääpiirteiseti koska paino sovelluksessa....
 
 \clearpage
+
+%%--------------------------TOIMINNALLISUUS-----------------------------------
+\section{Taajuusmuuttajien toiminnallisuus}
+%%Tamut yleisesti
+Taajuusmuuttajat ovat laitteita, jotka muuttavat siihen syötetyn vaihtovirran amplitudia eli jännitettä ja sen taajuutta syöttäen sen siihen kytketylle sähkömoottorille. Taajuusmuuttajia käytetään vaihtovirtasähkömoottoreiden tehokkaaseen ohjaamiseen kaikkialla niiden tuodessa merkittäviä kustannussäästöjä perinteisiin ohjausmenetelmiin verrattuna. Suoraan sähköverkkoon kytketyt sähkömoottorit pyörivät sähköverkon määräämällä vakiotaajuudella eli esimerkiksi suomessa käytössä olevalla 60Hz taajuudella, jolloin pyörimisnopeuden säätöön tarvitaan esimerkiksi moottoriin kytketty vaihteisto tai jarru. Näillä tavoilla ohjatun moottorin pyörittämiseen syötetystä energiasta suuri osa kuluu esimerkiksi jarrun lämpenemiseen. Taajuusmuuttajalla pystytään tehokkaan nopeussäädön lisäksi ohjaamaan myös moottorin tuottamaa momenttia, mikä on tietyissä sovelluksissa kuten vinsseissä olennainen tekijä.
+%%tarkista taajuusasia esim petriltä
+\\\\
+Tarkan nopeus ja momenttisäädön lisäksi taajuusmuuttajiin on viimeisten vuosikymmenten aikana kehittynyt paljon moottorin ohjaukseen liittyviä ominaisuuksia. Nykyaikaisissa taajuusmuuttajissa sisäänrakennettu mikroprosessori kykenee käsittelemään suuren määrän ohjaussignaaleja käyttäen perinteisiä digitaali- ja analogisignaaleja sekä kenttäväyliä. Sisäiset funktiot kykenevät monimutkaisiin moottorinohjaussykleihin, mitkä vähentävät tarvetta ulkoisille logiikkaohjaimille.
+\\\\
+Tässä osassa käsitellään taajuusmuuttajien sisäistä toiminnallisuutta ja toimintojen tuomia käytännön hyötyjä eri sovelluksissa. Tarkastelun alla ovat myös taajuusmuuttajien integrointi osaksi sovellusten automaatiojärjestelmää ja useita yhteen kytkettyjä taajuusmuuttajia käsittävien järjestelmien tuomat edut.
+
+%%Tästä vois heitäää jotain historiatietoa:
+%%Motor Drive Technology: History and Visions for the Future
+%http://ieeexplore.ieee.org.libproxy.aalto.fi/stamp/stamp.jsp?tp=&arnumber=1355703 
+
+\subsection{Toimintasyklit}
+Olennainen osa taajuusmuuttajan toiminnallisuutta ovat siihen ohjelmoidut toimintasyklit eli automaattinen moottorinohjaus tietyn ohjelmoidun sarjan mukaan. Toimintasykli voidaan käynnistää käyttäjän toimesta mitä tahansa sisääntuloa hyödyntäen. 
+\\\\
+Yleisin ja yksinkertaisin käytetty toimintasykli lienee ramppikäynnistys ja ramppipysäytys. Ramppikäynnistys kiihdyttää moottorin ramppimaisesti haluttuun pyörimisnopeuteen halutussa ajassa huolimatta moottoriin kytketystä kuormasta.
+Ramppikäynnistys on moottorin ja siihen kytketyn laitteiston rasituksen kannalta edullinen hitaan kiihdytyksen aiheuttaessa pienen rasituksen kytketylle laitteistolle ja moottorille. Kytkettäessä ohjaamaton moottori sähköverkkoon, alkaa se pyöriä lähes välittömästi ominaistaajuudellaan aiheuttaen suuren rasituksen moottorille. Myös sähköverkon kannalta taajuusmuuttaja on hyödyllinen laite ohjaamattoman moottorin vetäessä käynnistyessään hyvin suuren virran. Ramppipysäytys on hyödyllinen jos kytketty laite, esimerkiksi paperikone, ei saa pysähtyä liian nopeasti. 
+\\\\
+Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\footnote{Proportional-integral-derivative-säädin, lyhyemmin PID-säädin, on yksi säätötekniikan perussäätimistä.}, joilla voidaan pitää esimerkiksi vesisäiliön pinta halutulla tasolla taajuusmuuttajaohjattua pumppua käyttäen. Tällöin taajuusmuuttaja saa ohjaussignaalina esimerkiksi säiliöön kytketyn korkeusanturin dataa ja sen perusteella ohjaa pumpun pyörimisnopeutta. Joihinkin taajuusmuuttajiin voidaan ohjelmoida myös yksinkertaisia tilakoneita, esimerkiksi CodeSys-ohjelmoitikielellä [Lähde, esim joku codesysmanuaali tjsp]. Tilakoneella voidaan siirtää laskentaa automaatiojärjestelmältä taajuusmuuttajaan tai yksinkertaisissa tapauksissa korvata se kokonaan.
+
+
+%-Millaisia tamuista löytyy
+%% (rampit, pid, vektoriohjaus, ABB:n DTC momenttiojaus,)\\
+%-Vaihtoehtoiset ohjaustavat (softstartterit yms), Hyödyt? (verkon heilahdukset, energiansäästö, tarkemmat prosessit)\\
+
+
+--Nää ehkä sovellukset osioon?----\\
+-Murskaimet \cite{Hulthen}\\
+-Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
+-Multidrives? ACS800 OPM (open pit mine) control program?
+
+
+\subsection{Turvallisuustoiminnot}
+-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
+-STO, miten voisi hyödyntää?\\
+-Profisafe yms.
+
+\subsection{Mittaukset}
+-Kuljettimet, määrän mittaus kuormasta ja nopeudesta?
+-MItä muuta (malmivirtojen mallinnus)
+
+\subsection{Ohjaus ja -valvontajärjestelmät}
+-Keskitetty automaatiojärjestelmä?
+-Kenttäväylät?
+-
+\subsection{Verkkoon jarruttavat taajuusmuuttajat ja common DC}
+-miten käytännössä toimii\\
+-Missä voidaan hyödyntää? (hissit, alamäkeen jarrutus, dumppitrukkien sähköraidejärjestelmä, yms.)
+
+\clearpage
+
+%%-------------KAIVOSYMPÄRISTÖN VAATIMUKSET TAAJUUSMUUTTAJILLE----------------
 \section{Kaivosympäristön vaatimukset taajuusmuuttajalle}
 
 \subsection{Ympäristöolosuhteet}
@@ -408,40 +465,7 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 
 
 \clearpage
-%%--------------------------TOIMINNALLISUUS-----------------------------------
-\section{Taajuusmuuttajien toiminnallisuus}
-Milaisia toimintoja taajuusmuuttajista löytyy?\\
-Tamujen kehitys
 
-\subsection{Toimintasyklit}
--Millaisia tamuista löytyy (rampit, pid, vektoriohjaus, ABB:n DTC momenttiojaus,)\\
--Vaihtoehtoiset ohjaustavat (softstartterit yms), Hyödyt? (verkon heilahdukset, energiansäästö, tarkemmat prosessit)\\
-
-
---Nää ehkä sovellukset osioon?----\\
--Murskaimet \cite{Hulthen}\\
--Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
--Multidrives? ACS800 OPM (open pit mine) control program?
-
-
-\subsection{Turvallisuustoiminnot}
--turvallisuus tärkeää, kaivokset vaarallisia jne.\\
--STO, miten voisi hyödyntää?\\
--Profisafe yms.
-
-\subsection{Mittaukset}
--Kuljettimet, määrän mittaus kuormasta ja nopeudesta?
--MItä muuta (malmivirtojen mallinnus)
-
-\subsection{Ohjaus ja -valvontajärjestelmät}
--Keskitetty automaatiojärjestelmä?
--Kenttäväylät?
--
-\subsection{Verkkoon jarruttavat taajuusmuuttajat}
--miten käytännössä toimii\\
--Missä voidaan hyödyntää? (hissit, alamäkeen jarrutus, dumppitrukkien sähköraidejärjestelmä, yms.)
-
-\clearpage
 
 \section{Taajuusmuuttajien sovellukset kaivoksissa}
 
