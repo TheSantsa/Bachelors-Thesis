@@ -222,11 +222,13 @@ Otaniemi, 1.12.2014
 \begin{tabular}{ll}
 AC         & Vaihtovirta \\
 DC         & Tasavirta \\
-IEC	       & International Electrotechnical commission \\
+IEC	       & International Electrotechnical Commission \\
 NEMA       & National Electrical Manufacturers Association \\
 IP		   & Ingress Protection marking \\
 PLC		   & Programmable Logic Controller \\
-PID-Säädin & Proportional-integral-derivative-säädin
+PID-Säädin & Proportional-Integral-Derivative-säädin \\
+STO		   & Safe Torque Off \\
+SIL		   & Safety Integrity Level
 \end{tabular}
 
 
@@ -283,33 +285,48 @@ Tässä osassa käsitellään taajuusmuuttajien sisäistä toiminnallisuutta ja 
 %http://ieeexplore.ieee.org.libproxy.aalto.fi/stamp/stamp.jsp?tp=&arnumber=1355703 
 
 \subsection{Toimintasyklit}
-Olennainen osa taajuusmuuttajan toiminnallisuutta ovat siihen ohjelmoidut toimintasyklit eli automaattinen moottorinohjaus tietyn ohjelmoidun sarjan mukaan. Toimintasykli voidaan käynnistää käyttäjän toimesta mitä tahansa sisääntuloa hyödyntäen. 
+Olennainen osa taajuusmuuttajan toiminnallisuutta ovat siihen ohjelmoidut toimintasyklit eli automaattinen moottorinohjaus tietyn ohjelmoidun sarjan mukaan. Toimintasykli voidaan käynnistää käyttäjän toimesta mitä tahansa sisääntuloa esimerkiksi kenttäväylää hyödyntäen. 
 \\\\
 Yleisin ja yksinkertaisin käytetty toimintasykli lienee ramppikäynnistys ja ramppipysäytys. Ramppikäynnistys kiihdyttää moottorin ramppimaisesti haluttuun pyörimisnopeuteen halutussa ajassa huolimatta moottoriin kytketystä kuormasta.
-Ramppikäynnistys on moottorin ja siihen kytketyn laitteiston rasituksen kannalta edullinen hitaan kiihdytyksen aiheuttaessa pienen rasituksen kytketylle laitteistolle ja moottorille. Kytkettäessä ohjaamaton moottori sähköverkkoon, alkaa se pyöriä lähes välittömästi ominaistaajuudellaan aiheuttaen suuren rasituksen moottorille. Myös sähköverkon kannalta taajuusmuuttaja on hyödyllinen laite ohjaamattoman moottorin vetäessä käynnistyessään hyvin suuren virran. Ramppipysäytys on hyödyllinen jos kytketty laite, esimerkiksi paperikone, ei saa pysähtyä liian nopeasti. 
+Ramppikäynnistys on moottorin ja siihen kytketyn laitteiston rasituksen kannalta edullinen hitaan kiihdytyksen aiheuttaessa pienen rasituksen kytketylle laitteistolle ja moottorille. Kytkettäessä ohjaamaton moottori sähköverkkoon, alkaa se pyöriä lähes välittömästi ominaistaajuudellaan aiheuttaen suuren rasituksen moottorille. Myös sähköverkon ja energiankulutuksen kannalta taajuusmuuttaja on hyödyllinen laite ohjaamattoman moottorin vetäessä käynnistyessään hyvin suuren virran. Taajuusmuuttajalla on mahdollista jännitettä ja taajuutta säätelemällä saavuttaa käynnistyksessä 150\% moottorin ominaismomentista käyttäen vain 50\% ominaistehosta \cite{ABBtechnicalguide}.
 \\\\
-Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\footnote{Proportional-integral-derivative-säädin, lyhyemmin PID-säädin, on yksi säätötekniikan perussäätimistä.}, joilla voidaan pitää esimerkiksi vesisäiliön pinta halutulla tasolla taajuusmuuttajaohjattua pumppua käyttäen. Tällöin taajuusmuuttaja saa ohjaussignaalina esimerkiksi säiliöön kytketyn korkeusanturin dataa ja sen perusteella ohjaa pumpun pyörimisnopeutta. Joihinkin taajuusmuuttajiin voidaan ohjelmoida myös yksinkertaisia tilakoneita, esimerkiksi CodeSys-ohjelmoitikielellä [Lähde, esim joku codesysmanuaali tjsp]. Tilakoneella voidaan siirtää laskentaa automaatiojärjestelmältä taajuusmuuttajaan tai yksinkertaisissa tapauksissa korvata se kokonaan.
+Ramppipysäytys on hyödyllinen jos kytketty laite, esimerkiksi paperikone, ei saa pysähtyä liian nopeasti. Taajuusmuuttajilla on myös mahdollista pysäyttää kytketty laite nopeammin, kuin mitä siltä itsestään vastusvoimien johdosta kestäisi pysähtyä. Tällöin voidaan käyttää taajuusmuuttajaan kytkettyä erillistä jarruvastusta, joka muuttaa moottorin jarruttamisesta syntyneen sähköenergian suoraan lämmöksi\cite{ABBtechnicalguide}.
+\\\\
+Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\footnote{Proportional-integral-derivative-säädin, lyhyemmin PID-säädin, on yksi säätötekniikan perussäätimistä.}, joilla voidaan pitää esimerkiksi vesisäiliön pinta halutulla tasolla taajuusmuuttajaohjattua pumppua käyttäen. Tällöin taajuusmuuttaja saa ohjaussignaalina esimerkiksi säiliöön kytketyn korkeusanturin dataa ja sen perusteella ohjaa pumpun pyörimisnopeutta. Joihinkin taajuusmuuttajiin voidaan ohjelmoida myös toiminnallisuutta toimilohko-ohjelmoinnilla, esimerkiksi CodeSys-ohjelmointikielellä [Lähde, esim joku codesysmanuaali tjsp]. Toimilohkoilla voidaan taajuusmuuttajaan toteuttaa yksinkertainen tilakone ja näin siirtää laskentaa automaatiojärjestelmältä taajuusmuuttajaan tai yksinkertaisissa tapauksissa korvata se kokonaan. Automaatiojärjestelmän siirtyminen yhä enemmän taajuusmuuttajiin laskee kustannuksia tehokkaiden logiikkaohjainten tarpeen vähentyessä.
 
-
+	
 %-Millaisia tamuista löytyy
 %% (rampit, pid, vektoriohjaus, ABB:n DTC momenttiojaus,)\\
 %-Vaihtoehtoiset ohjaustavat (softstartterit yms), Hyödyt? (verkon heilahdukset, energiansäästö, tarkemmat prosessit)\\
 
 
---Nää ehkä sovellukset osioon?----\\
--Murskaimet \cite{Hulthen}\\
--Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
--Multidrives? ACS800 OPM (open pit mine) control program?
+%%--Nää ehkä sovellukset osioon?----\\
+%%-Murskaimet \cite{Hulthen}\\
+%%-Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
+%%-Multidrives? ACS800 OPM (open pit mine) control program?
 
 
 \subsection{Turvallisuustoiminnot}
--turvallisuus tärkeää, kaivokset vaarallisia jne.\\
--STO, miten voisi hyödyntää?\\
--Profisafe yms.
+Yhä tiukentuvat turvallisuusmääräykset eri teollisuusaloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC EN 61508 standardin mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.[Lähde IEC EN 61508]
+%%etsi standardi töissä!
+\\\\
+Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO toiminto on IEC-, ISO- ja EN-standardien määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
+\\\\
+STO Toiminnon lisäksi standardit määrittelevät sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1) Pysäyttää moottorin akselin pyörimisen ja pitää sen paikallaan. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa on yleensä turvatoimintojen lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan esimerkiksi kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa.
+\\\\
+STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Tähän ongelmaan on kehitetty ratkaisuksi PROFIsafe kommunikointitekniikka, jolla turvasignaalit pystytään luotettavasti siirtämään PROFIBUS tai PROFINET kenttäväyläjohdinta pitkin saavuttaen SIL3 luotettavuustason. Kenttäväylän käyttäminen turvasignaalien kuljettamiseen yksinkertaistaa automaatiojärjestelmää, kun kaikki signaalit pystytään kuljettamaan kenttäväyläjohdinta pitkin.
+\\\\
 
-\subsection{Mittaukset}
--Kuljettimet, määrän mittaus kuormasta ja nopeudesta?
--MItä muuta (malmivirtojen mallinnus)
+
+
+%%-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
+%%-STO, miten voisi hyödyntää?\\
+%%-Profisafe yms.
+
+\subsection{Sovelluskohtaiset ohjelmistot}
+
+%% asasaasd
+%%asdasdasdasdasdasdasd 
 
 \subsection{Ohjaus ja -valvontajärjestelmät}
 -Keskitetty automaatiojärjestelmä?
