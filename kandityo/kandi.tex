@@ -87,6 +87,8 @@
 
 %%
 \usepackage{graphicx}
+\usepackage{tabu}
+
 
 %% Celsiusmerkille
 \usepackage{textcomp}
@@ -310,15 +312,29 @@ Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\foot
 Yhä tiukentuvat turvallisuusmääräykset eri teollisuusaloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC EN 61508 standardin mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.[Lähde IEC EN 61508]
 %%etsi standardi töissä!
 \\\\
-Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO toiminto on IEC-, ISO- ja EN-standardien määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
-\\\\
-STO Toiminnon lisäksi standardit määrittelevät sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1) Pysäyttää moottorin akselin pyörimisen ja pitää sen paikallaan. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa on yleensä turvatoimintojen lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan esimerkiksi kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa.
-\\\\
-STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Tähän ongelmaan on kehitetty ratkaisuksi PROFIsafe kommunikointitekniikka, jolla turvasignaalit pystytään luotettavasti siirtämään PROFIBUS tai PROFINET kenttäväyläjohdinta pitkin saavuttaen SIL3 luotettavuustason. Kenttäväylän käyttäminen turvasignaalien kuljettamiseen yksinkertaistaa automaatiojärjestelmää, kun kaikki signaalit pystytään kuljettamaan kenttäväyläjohdinta pitkin.
-\\\\
+Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on EN 60204-1 -standardin määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.5]{STO}
+	\end{center}
+	\caption{Moottorin pyörimisnopeus V esitettynä ajan t suhteen STO toiminnon kytkeytyessä.
+		\cite{STOkuva}}
+	\label{fig:STO}
+\end{figure}
 
+STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1), joka on kuvattu kuvassa ~\ref{fig:STO}, hidastaa moottorin ramppimaisesti pysähdyksiin ja aktivoi tämän jälkeen STO:n. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa voi olla turvatoiminnot laukaisevien tuloporttien lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan laitteiston muita turvalaitteita kuten kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa\cite{FSO}.
 
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.5]{SS1}
+	\end{center}
+	\caption{Moottorin pyörimisnopeus V esitettynä ajan t suhteen SS1 toiminnon kytkeytyessä.
+		\cite{SS1kuva}}
+	\label{fig:SS1}
+\end{figure}
 
+STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Nykyään turvasignaalit onkin mahdollista kuljettaa myös osana kenttäväylän prosessidataa esimerkiksi PROFIsafe kommunikointiteknologiaa käyttäen. PROFIsafea pystytään käyttämään PROFIBUS tai PROFINET kenttäväylän kanssa samassa kenttäväyläkaapelissa. Turvasignaalien yhdistäminen samaan kenttäväylään prosessidatan kanssa vähentää asennus- ja kaapelointikuluja ja yksinkertaistaa automaatiojärjestelmää\cite{MyyntiHaastattelu}. Kenttäväylien yleistyessä prosessiautomaatiossa, myös turvatoiminnot toteutetaan yhä enenemässä määrin kenttäväyliä hyödyntäen\cite{Profisafe}.
+\\\\
 %%-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
 %%-STO, miten voisi hyödyntää?\\
 %%-Profisafe yms.
@@ -352,8 +368,7 @@ Sähkölaitteille kaivoksissa rasitusta aiheuttavia tekijöitä ovat
 \end{itemize}
 Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, ilman  epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavatkin taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
 \\\\
-Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen. %%[LIITE 1 TÄHÄN]
-Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
+Euroopassa yleisesti käytössä oleva luokitus sähkölaiteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen. Liite~\ref{Liite 1} kuvaa eri tasoisten IP-luokitusten mukaiset suojaustasot. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
 \\\\
 Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan sisälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa jäähdytyksen ongelmallisuuden vuoksi.
 \\\\
@@ -589,6 +604,14 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{MyyntiHaastattelu}Antti Hedman. Myyntipäällikkö. ABB Oy. Haastattelu. 17.10.2014. Pitäjänmäki, Helsinki.
 
+\bibitem{STOkuva}Siemens AG. \textit{Safe Torque Off (STO)}. Saatavissa: \url{http://www.industry.siemens.com/topics/global/en/safety-integrated/machine-safety/product-portfolio/drive-technology/safety-functions/pages/safe-torque-off.aspx}. Päivitetty 10.3.2014. Viitattu 27.10.2014.
+
+\bibitem{SS1kuva}Siemens AG. \textit{Safe Stop 1 (SS1)}. Saatavissa: \url{http://www.industry.siemens.com/topics/global/en/safety-integrated/machine-safety/product-portfolio/drive-technology/safety-functions/Pages/safe-stop1.aspx}. Päivitetty 10.3.2014. Viitattu 27.10.2014.
+
+\bibitem{Profisafe} PROFIBUS \& PROFINET International (PI). \textit{PROFIsafe}. \url{http://www.profibus.com/technology/profisafe/}Päivitetty 10.3.2014. Viitattu 27.10.2014.
+
+\bibitem{FSO} ABB Oy. \textit{User's manual: FSO-12 Safety functions module}. \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/80fd1fe025d402d7c1257d0000408aa6/$file/EN_FSO_12_UM_A_A5.pdf}. Päivitetty 26.3.2014. Viitattu 27.10.2014.
+
 \end{thebibliography}
 
 
@@ -597,7 +620,41 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 \clearpage
 
 \thesisappendix
-\section{Liite 1\label{LiiteA}}
-IP-luokat taulukossa
+\section{Liite 1: Kotelointiluokitus standardin SFS-EN 60529 mukaan\label{Liite 1}}
+EN 60529 -standardin mukaisen IP-koodin ensimmäisen tunnusnumeron merkitys
+\\\\
+\tabulinesep=5pt
+\begin{tabu} to \textwidth {|X[2,c]|X[3c]|X[3c]|} 
+   \hline
+   \rowfont[c]\bfseries %will apply the \bfseries command to all elements of the next row
+	Ensimmäinen tunnusnumero & Suojaus vaarallisten osien kosketukselta	 & Suojaus vierailta esineiltä ja pölyltä \\ \hline
+    0                        & Suojaamaton                               & Suojaamaton                            \\ \hline
+    1                        & Kosketussuojattu nyrkiltä                 & Halkaisijaltaan yli 50 mm esineiltä    \\ \hline
+    2                        & Sormelta                                  & Halkaisijaltaan yli 12,5 mm esineiltä  \\ \hline
+    3                        & Työkalulta                                & Halkaisijaltaan yli 2,5 mm esineiltä   \\ \hline
+    4                        & Langalta                                  & Halkaisijaltaan yli 1 mm esineiltä     \\ \hline
+    5                        & Langalta                                  & Pölysuojattu                           \\ \hline
+    6                        & Langalta                                  & Pölytiivis                             \\ \hline
 
+\end{tabu}
+\\\\
+\\\\
+\\\\
+EN 60529 -standardin mukaisen IP-koodin toisen tunnusnumeron merkitys
+\\\\
+\tabulinesep=5pt
+\begin{tabu} to \textwidth {|X[2,c]|X[6,c]|} 
+   \hline
+   \rowfont[c]\bfseries %will apply the \bfseries command to all elements of the next row
+	Toinen tunnusnumero      & Vesisuojaus															\\ \hline
+    0                        & Suojaamaton                           								\\ \hline    
+    1                        & Suojattu pystysuoraan tippuvalta vedeltä                				\\ \hline
+    2                        & Suojattu korkeintaan 15 asteen kulmassa tippuvalta vedeltä 			\\ \hline
+    3                        & Suojattu korkeintaan 60 asteen kulmassa satavalta vedeltä            \\ \hline              
+    4                        & Suojattu kaikista suunnista roiskuvalta vedeltä              		\\ \hline              
+    5                        & Suojattu kaikista suunnista tulevalta vesisuihkulta                  \\ \hline               
+    6                        & Suojattu kaikista suunnista tulevalta voimakkaalta vesisuihkulta		\\ \hline
+	7                        & Suojattu lyhytaikaisen veteen upottamisen haittavaikutuksilta		\\ \hline
+	8                        & Suojattu jatkuvan veteen upottamisen haittavaikutuksilta 			\\ \hline
+\end{tabu}
 \end{document}
