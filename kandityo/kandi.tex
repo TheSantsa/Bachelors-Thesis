@@ -382,7 +382,7 @@ STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä j
 
 
 \subsection{Verkkoon jarruttavat taajuusmuuttajat ja jaettu välipiiri}
-Taajuusmuuttajatekniikan kehittyessä ovat yhä monimutkaisemmat järjestelmät tulleet madollisiksi. Esimerkkeinä näistä tekniikoista ovat nykyään jo yleisesti käytössä olevat verkkoon jarruttavat taajuusmuuttajat ja välipiirin välityksellä toisiinsa kytketyt taajuusmuuttajat. Jotta nämä tekniikat voidaan ymmärtää täytyy tietää perusteet taajuusmuuttajan sisäisestä rakenteesta.
+Taajuusmuuttajatekniikan kehittyessä ovat yhä monimutkaisemmat taajuusmuuttajajärjestelmät tulleet madollisiksi. Esimerkkeinä näistä tekniikoista ovat nykyään jo yleisesti käytössä olevat verkkoon jarruttavat taajuusmuuttajat ja välipiirin välityksellä toisiinsa kytketyt taajuusmuuttajat. Jotta nämä tekniikat voidaan ymmärtää täytyy tietää perusteet taajuusmuuttajan sisäisestä rakenteesta.
 \\\\
 Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirillinen taajuusmuuttaja (Voltage-Source Inverter, VSI). Kuvassa~\ref{fig:VSI} nähdään VSI-taajuusmuuttajan kolme pääkomponenttia tasasuuntaaja, välipiiri ja vaihtosuuntaaja. Syöttöverkon vaihtojännite muutetaan ensin tasasuuntaajalla välipiirin tasajännitteeksi ja sitten taas moottorille syötettäväksi vaihtojännitteeksi vaihtosuuntaajalla. Ohjausyksikkö tarkkailee ja säätää kaikkia kolmea komponenttia siten, että ulos tulevan sähkön ominaisuudet ovat halutunlaiset.
 
@@ -396,7 +396,10 @@ Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirilline
 \end{figure}
 
 \noindent
-Välipiiriin varastoitu tasajännite toimii energiavarastona vaihtosuuntaajalle, jonka vaatima virta voi vaihdella suuresti. Useissa sovelluksissa, kuten liukuhihnoissa, tarvitaan useita moottoreita ohjaamaan samaa laitetta. Tällöin on jopa mahdollista, että osa samaan laitteeseen kytketyistä moottoreista on jarruttavassa tilassa ja osa kiihdyttävässä.
+Välipiiriin varastoitu tasajännite toimii energiavarastona vaihtosuuntaajalle, jonka vaatima virta voi vaihdella suuresti kuorman muuttuessa. Useissa sovelluksissa, kuten liukuhihnoissa, tarvitaan useita moottoreita ohjaamaan samaa laitetta. Tällöin on mahdollista, että osa samaan laitteeseen kytketyistä moottoreista on jarruttavassa tilassa ja osa kiihdyttävässä. Kuten aikaisemmin todettiin, jarruttavat taajuusmuuttajat joutuvat purkamaan ylimääräisen energian välipiiristä esimerkiksi jarruvastukseen, jolloin energia menee hukkaan. Yhdistämällä useita taajuusmuuttajia välipiirin välityksellä toisiinsa voidaan vähentää hukkaenergian määrää. Tällöin jarruttavan taajuusmuuttajan luoma ylimääräinen tasavirta pystytään käyttämään toisessa samaan välipiiriin kytketyssä taajuusmuuttajassa moottorin kiihdyttämiseen.
+\\\\
+Taajuusmuuttajista on myös saatavilla malleja, joita on mahdollista käyttää generaattoreina, eli laitteina, jotka muuttavat kuorman mekaanista energiaa verkon sähköenergiaksi. Tällöin puhutaan niin sanotuista verkkoon jarruttavaista taajuusmuuttajista. Välipiiriin kertyvä ylimääräinen jännite on siis mahdollista purkaa jarruvastuksen sijasta takaisin sähköverkkoon. Ne ovat rakenteeltaan samankaltaisia VSI-tyyppisiin taajuusmuuttajiin verrattuna, mutta tasasuuntaaja on korvattu toisella vaihtosuuntaajalla. Tällöin taajuusmuuttaja kykenee siis ottamaan välipiiristä energiaa kumpaa tahansa vaihtosuuntaajaa käyttäen ja syöttämään sitä moottorille tai sähköverkkoon. Ominaisuus on hyödyllinen esimerkiksi tuotantolaitoksen sisäisessä sähköverkossa, missä laitteet ovat ajoittain kiihdyttävässä ja jarruttavassa liikkeessä. Tällöin hidastuksista aiheutuvaa energiaa ei tarvitse purkaa hukkalämmöksi, vaan se voidaan syöttää takaisin laitoksen sähköverkkoon ja näin käyttää missä tahansa laitoksen prosessissa.
+
 
 
 %-miten käytännössä toimii\\
