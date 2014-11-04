@@ -230,7 +230,8 @@ IP		   & Ingress Protection marking \\
 PLC		   & Programmable Logic Controller \\
 PID-Säädin & Proportional-Integral-Derivative-säädin \\
 STO		   & Safe Torque Off \\
-SIL		   & Safety Integrity Level
+SIL		   & Safety Integrity Level \\
+VSI		   & Voltage-Source Inverter
 \end{tabular}
 
 
@@ -307,9 +308,31 @@ Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\foot
 %%-Kuljettimet (ramppikäynnistys? kuorman mukaan säätyminen?)\\
 %%-Multidrives? ACS800 OPM (open pit mine) control program?
 
+\subsection{Ohjaus ja -valvontajärjestelmät}
+Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia, I/O:ta ja kenttäväylää, käyttäen. Näistä tyypillisesti vain yhtä pystytään käyttämään kerrallaan. Paneeli on taajuusmuuttajaan kiinteästi asennettu tai johdolla yhdistetty yksikkö, jolla taajuusmuuttajan toimintoja pystytään ohjaamaan käsin. Nykyaikaisissa taajuusmuuttajissa paneeli sisältää yleensä painikkeiden lisäksi pienen LCD-näytön, joka helpottaa taajuusmuuttajan asetusten säätämistä ja toimii myös samalla myös valvontatyökaluna. Kuvassa~\ref{fig:acs880panel} on esimerkkinä ACS880 taajuusmuuttajan ohjauspaneeli. 
 
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.08]{acs880panel}
+	\end{center}
+	\caption{ABB:n valmistaman ACS880 taajuusmuuttajan ohjauspaneeli.
+		\cite{acs880panel}}
+	\label{fig:acs880panel}
+\end{figure}
+
+\noindent
+Toinen tapa taajuusmuuttajan ohjaukseen on I/O. I/O koostuu joukosta analogi- ja digitaalituloja, joilla taajuusmuuttajaa voidaan ohjata esimerkiksi PLC:n avulla. Taajuusmuuttajan I/O:ssa on lisäksi analogi- ja digitaalilähtöjä, jotka pystytään taajuusmuuttajan sisäistä logiikkaa käyttäen ohjelmoida ohjaamaan järjestelmän muita komponentteja. Nykyään suuremmissa automaatiojärjestelmissä ovat kenttäväylät alkaneet korvaamaan perinteisiä analogi- ja digitaaliliitäntöjä mahdollistaen näin kattavamman ohjauksen ja kustannustehokkaamman järjestelmän.
+\\\\
+Kenttäväylillä tarkoitetaan joukkoa verkkoprotokollia, jotka on määritelty IEC 61158 -standardissa. Kenttäväylät ovat yleistyneet automaatiossa niiden tuomien kustannussäästöjen ja yksinkertaisuuden vuoksi. Aikaisemmin yleisesti käytössä olleet 4-20mA signaalit mahdollistivat ainoastaan kahden laitteen välisen kommunikoinnin yhtä johdinta käyttäen. Kenttäväyläprotokollat sallivat useiden laitteiden kytkemisen samaan verkkoon. Näin useita signaaleita voi kulkea eri laitteiden välillä samaa johdinta pitkin, jolloin kaapeloinnin tarve vähenee huomattavasti. Nykyään lähes kaikki taajuusmuuttajat sisältävätkin mahdollisuuden kenttäväylän liittämiseen. Yleisesti taajuusmuuttajissa käytettyjä kenttäväyliä ovat esimerkiksi PROFIbus ja ProfiNET. Muita kenttäväyliä voidaan yhdistää käyttäjän tarpeen mukaan erillisten lisäkorttien avulla.
+\\\\
+Kenttäväylät ovat mahdollistaneet yhä kattavampien automaatiojärjestelmien luomisen. Kenttäväyliä pitkin siirrettävän datan määrä on moninkertainen perinteisiin digitaalisignaaleihin verrattuna. Kenttäväylää hyödyntäviin taajuusmuuttajiin on esimerkiksi mahdollista ohjata etäältä tietokoneelle asennetun ohjelmiston kautta. Tällöin esimerkiksi virheitä voidaan ratkoa ilman, että taajuusmuuttajan luokse täytyy fyysisesti mennä. Tämä voi esimerkiksi kaivoksissa, missä etäisyydet voivat olla kilometriluokkaa, olla merkittävä etu.
+\\\\
+Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan toisiinsa ilman hintavaa kenttäväyläratkaisua. Tämä tulee kyseeseen esimerkiksi 
+
+
+%----------TURVALLISUUS------------
 \subsection{Turvallisuustoiminnot}
-Yhä tiukentuvat turvallisuusmääräykset eri teollisuusaloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC EN 61508 standardin mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.[Lähde IEC EN 61508]
+Yhä tiukentuvat turvallisuusmääräykset eri teollisuuden aloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC EN 61508 standardin mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.[Lähde IEC EN 61508]
 %%etsi standardi töissä!
 \\\\
 Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on EN 60204-1 -standardin määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
@@ -322,7 +345,8 @@ Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Of
 	\label{fig:STO}
 \end{figure}
 
-STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1), joka on kuvattu kuvassa ~\ref{fig:STO}, hidastaa moottorin ramppimaisesti pysähdyksiin ja aktivoi tämän jälkeen STO:n. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa voi olla turvatoiminnot laukaisevien tuloporttien lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan laitteiston muita turvalaitteita kuten kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa\cite{FSO}.
+\noindent
+STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1), joka on kuvattu kuvassa ~\ref{fig:SS1}, hidastaa moottorin ramppimaisesti pysähdyksiin ja aktivoi tämän jälkeen STO:n. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa voi olla turvatoiminnot laukaisevien tuloporttien lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan laitteiston muita turvalaitteita kuten kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa\cite{FSO}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -333,24 +357,50 @@ STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvalli
 	\label{fig:SS1}
 \end{figure}
 
+\noindent
 STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Nykyään turvasignaalit onkin mahdollista kuljettaa myös osana kenttäväylän prosessidataa esimerkiksi PROFIsafe kommunikointiteknologiaa käyttäen. PROFIsafea pystytään käyttämään PROFIBUS tai PROFINET kenttäväylän kanssa samassa kenttäväyläkaapelissa. Turvasignaalien yhdistäminen samaan kenttäväylään prosessidatan kanssa vähentää asennus- ja kaapelointikuluja ja yksinkertaistaa automaatiojärjestelmää\cite{MyyntiHaastattelu}. Kenttäväylien yleistyessä prosessiautomaatiossa, myös turvatoiminnot toteutetaan yhä enenemässä määrin kenttäväyliä hyödyntäen\cite{Profisafe}.
 \\\\
 %%-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
 %%-STO, miten voisi hyödyntää?\\
 %%-Profisafe yms.
 
-\subsection{Sovelluskohtaiset ohjelmistot}
+%\subsection{Sovelluskohtaiset ohjelmistot}
+%kannattaako tästä tehdä oma kappale?
 
-%% asasaasd
-%%asdasdasdasdasdasdasd 
 
-\subsection{Ohjaus ja -valvontajärjestelmät}
--Keskitetty automaatiojärjestelmä?
--Kenttäväylät?
--
-\subsection{Verkkoon jarruttavat taajuusmuuttajat ja common DC}
--miten käytännössä toimii\\
--Missä voidaan hyödyntää? (hissit, alamäkeen jarrutus, dumppitrukkien sähköraidejärjestelmä, yms.)
+%väännä rautalangasta mikä on kenttäväylä ja miksi se on hyvä asia. selvennä eroa I/On (miksi tätä voi kutsua prkl!?) ja kenttäväylän välillä.
+
+%mitä etuja tamujen integraatio automaatiojärjestelmään tuo.
+%historiaa?
+%-Keskitetty automaatiojärjestelmä? 
+%-Kenttäväylät?
+%Soveluskohtaiset ohjelmistot
+% ABBn plc-integraatio edut?  KITTILÄ esimerkki
+%Tamujen välinen kommunikointi (yksinkertaiset järjstelmät (pari tamua juttelee keskenään --> ei tarvita kentäväylää ja jäätävää plc:tä))
+
+%oispakaljaa
+
+
+\subsection{Verkkoon jarruttavat taajuusmuuttajat ja jaettu välipiiri}
+Taajuusmuuttajatekniikan kehittyessä ovat yhä monimutkaisemmat järjestelmät tulleet madollisiksi. Esimerkkeinä näistä tekniikoista ovat nykyään jo yleisesti käytössä olevat verkkoon jarruttavat taajuusmuuttajat ja välipiirin välityksellä toisiinsa kytketyt taajuusmuuttajat. Jotta nämä tekniikat voidaan ymmärtää täytyy tietää perusteet taajuusmuuttajan sisäisestä rakenteesta.
+\\\\
+Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirillinen taajuusmuuttaja (Voltage-Source Inverter, VSI). Kuvassa~\ref{fig:VSI} nähdään VSI-taajuusmuuttajan kolme pääkomponenttia tasasuuntaaja, välipiiri ja vaihtosuuntaaja. Syöttöverkon vaihtojännite muutetaan ensin tasasuuntaajalla välipiirin tasajännitteeksi ja sitten taas moottorille syötettäväksi vaihtojännitteeksi vaihtosuuntaajalla. Ohjausyksikkö tarkkailee ja säätää kaikkia kolmea komponenttia siten, että ulos tulevan sähkön ominaisuudet ovat halutunlaiset.
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.65]{VSI}
+	\end{center}
+	\caption{Välipiirillisen (VSI) taajuusmuuttajan rakenne.
+		\cite[s. 2]{VSI}}
+	\label{fig:VSI}
+\end{figure}
+
+\noindent
+Välipiiriin varastoitu tasajännite toimii energiavarastona vaihtosuuntaajalle, jonka vaatima virta voi vaihdella suuresti. Useissa sovelluksissa, kuten liukuhihnoissa, tarvitaan useita moottoreita ohjaamaan samaa laitetta. Tällöin on jopa mahdollista, että osa samaan laitteeseen kytketyistä moottoreista on jarruttavassa tilassa ja osa kiihdyttävässä.
+
+
+%-miten käytännössä toimii\\
+%-Missä voidaan hyödyntää? (hissit, alamäkeen jarrutus, dumppitrukkien sähköraidejärjestelmä, yms.)
 
 \clearpage
 
@@ -396,6 +446,7 @@ Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä
 Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle\cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä, jolloin ilmalla ei ole lainkaan pääsyä kosketuksiin elektroniikan kanssa. Kaivoksen tilapäisen luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
 \\\\
 Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään ilmalta eristettyyn osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
+
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.9]{IP55}
@@ -404,8 +455,10 @@ Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa
 		\cite[s.28]{880hwman}}
 	\label{fig:IP55}
 \end{figure}
+
+\noindent
 Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä. Kuvassa 2 esitetään hahmotelma laippa-asennetusta taajuusmuuttajasta, jossa jäähdytyselementti on eristetty omaan tilaansa.
-\\\\
+
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics{flange}
@@ -414,6 +467,8 @@ Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jol
 		\cite[s.6]{danfoss}}
 	\label{fig:flange}
 \end{figure}
+
+\noindent
 Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Taajuusmuuttajien sijoittelu näihin pysyviin rakennelmiin voi kuitenkin olla kannattamatonta moottorikaapelien pituuksien kasvaessa kohtuuttoman pitkiksi.
 
 
@@ -611,6 +666,10 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 \bibitem{Profisafe} PROFIBUS \& PROFINET International (PI). \textit{PROFIsafe}. \url{http://www.profibus.com/technology/profisafe/}Päivitetty 10.3.2014. Viitattu 27.10.2014.
 
 \bibitem{FSO} ABB Oy. \textit{User's manual: FSO-12 Safety functions module}. \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/80fd1fe025d402d7c1257d0000408aa6/$file/EN_FSO_12_UM_A_A5.pdf}. Päivitetty 26.3.2014. Viitattu 27.10.2014.
+
+\bibitem{acs880panel}ABB Oy. \textit{ACS880 Control Panel}. Kuva. Saatavissa: \url{http://www04.abb.com/global/seitp/seitp202.nsf/0/2996a31f6d99e961c1257864004ae0c1/$file/HM2011-02b.jpg}. Viitattu 28.10.2014
+
+\bibitem{VSI}Joensuu, T. Eronen, T \textit{Taajuusmuuttajan ohjauksen suunnittelu}. Insinöörityö. Metropolia Ammattikorkeakoulu. 2013. Saatavissa: \url{http://www.theseus.fi/bitstream/handle/10024/67121/Taajuusmuuttajan_ohjauksen_suunnittelu.pdf?sequence=1}. 
 
 \end{thebibliography}
 
