@@ -309,7 +309,7 @@ Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\foot
 %%-Multidrives? ACS800 OPM (open pit mine) control program?
 
 \subsection{Ohjaus ja -valvontajärjestelmät}
-Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia, I/O:ta ja kenttäväylää, käyttäen. Näistä tyypillisesti vain yhtä pystytään käyttämään kerrallaan. Paneeli on taajuusmuuttajaan kiinteästi asennettu tai johdolla yhdistetty yksikkö, jolla taajuusmuuttajan toimintoja pystytään ohjaamaan käsin. Nykyaikaisissa taajuusmuuttajissa paneeli sisältää yleensä painikkeiden lisäksi pienen LCD-näytön, joka helpottaa taajuusmuuttajan asetusten säätämistä ja toimii myös samalla myös valvontatyökaluna. Kuvassa~\ref{fig:acs880panel} on esimerkkinä ACS880 taajuusmuuttajan ohjauspaneeli. 
+Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia, I/O:ta ja kenttäväylää, käyttäen. Näistä tyypillisesti vain yhtä pystytään käyttämään kerrallaan. Paneeli on taajuusmuuttajaan kiinteästi asennettu tai johdolla yhdistetty yksikkö, jolla taajuusmuuttajan toimintoja pystytään ohjaamaan käsin. Nykyaikaisissa taajuusmuuttajissa paneeli sisältää yleensä painikkeiden lisäksi pienen LCD-näytön, joka helpottaa taajuusmuuttajan asetusten säätämistä ja toimii samalla myös valvontatyökaluna. Kuvassa~\ref{fig:acs880panel} on esimerkkinä ACS880 taajuusmuuttajan ohjauspaneeli. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -321,13 +321,13 @@ Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia,
 \end{figure}
 
 \noindent
-Toinen tapa taajuusmuuttajan ohjaukseen on I/O. I/O koostuu joukosta analogi- ja digitaalituloja, joilla taajuusmuuttajaa voidaan ohjata esimerkiksi PLC:n avulla. Taajuusmuuttajan I/O:ssa on lisäksi analogi- ja digitaalilähtöjä, jotka pystytään taajuusmuuttajan sisäistä logiikkaa käyttäen ohjelmoida ohjaamaan järjestelmän muita komponentteja. Nykyään suuremmissa automaatiojärjestelmissä ovat kenttäväylät alkaneet korvaamaan perinteisiä analogi- ja digitaaliliitäntöjä mahdollistaen näin kattavamman ohjauksen ja kustannustehokkaamman järjestelmän.
+Toinen tapa taajuusmuuttajan ohjaukseen on I/O. I/O koostuu joukosta analogi- ja digitaalituloja, joilla taajuusmuuttajaa voidaan ohjata esimerkiksi PLC:n avulla. Analogiliitännät käyttävät yleensä standardoitua 4-20mA virtasilmukkaa tai 0-10V jännitesilmukkaa. Digitaalituloissa on käytössä 24V jännitesilmukka, joissa alle 5V jännitetaso tarkoittaa tilaa 0 ja yli 15V tarkoittaa tilaa 1. Taajuusmuuttajan I/O:ssa on lisäksi analogi- ja digitaalilähtöjä, jotka pystytään taajuusmuuttajan sisäistä logiikkaa käyttäen ohjelmoida ohjaamaan järjestelmän muita komponentteja. Nykyään suuremmissa automaatiojärjestelmissä ovat kenttäväylät alkaneet korvaamaan perinteisiä analogi- ja digitaaliliitäntöjä mahdollistaen näin kattavamman ohjauksen ja kustannustehokkaamman järjestelmän.
 \\\\
-Kenttäväylillä tarkoitetaan joukkoa verkkoprotokollia, jotka on määritelty IEC 61158 -standardissa. Kenttäväylät ovat yleistyneet automaatiossa niiden tuomien kustannussäästöjen ja yksinkertaisuuden vuoksi. Aikaisemmin yleisesti käytössä olleet 4-20mA signaalit mahdollistivat ainoastaan kahden laitteen välisen kommunikoinnin yhtä johdinta käyttäen. Kenttäväyläprotokollat sallivat useiden laitteiden kytkemisen samaan verkkoon. Näin useita signaaleita voi kulkea eri laitteiden välillä samaa johdinta pitkin, jolloin kaapeloinnin tarve vähenee huomattavasti. Nykyään lähes kaikki taajuusmuuttajat sisältävätkin mahdollisuuden kenttäväylän liittämiseen. Yleisesti taajuusmuuttajissa käytettyjä kenttäväyliä ovat esimerkiksi PROFIbus ja ProfiNET. Muita kenttäväyliä voidaan yhdistää käyttäjän tarpeen mukaan erillisten lisäkorttien avulla.
+Kenttäväylillä tarkoitetaan joukkoa verkkoprotokollia, jotka on määritelty IEC 61158 -standardissa. Kenttäväylät ovat yleistyneet automaatiossa niiden tuomien kustannussäästöjen ja yksinkertaisuuden vuoksi. Aikaisemmin yleisesti käytössä olleet 4-20mA ja 0-10V analogi- 0-24V digitaalisignaalit mahdollistivat ainoastaan kahden laitteen välisen kommunikoinnin yhtä johdinta käyttäen. Kenttäväyläprotokollat sallivat useiden laitteiden kytkemisen samaan verkkoon. Näin useita signaaleita voi kulkea eri laitteiden välillä samaa johdinta pitkin, jolloin kaapeloinnin tarve vähenee huomattavasti. Nykyään lähes kaikki taajuusmuuttajat sisältävätkin mahdollisuuden kenttäväylän liittämiseen. Yleisesti taajuusmuuttajissa käytettyjä kenttäväyliä ovat esimerkiksi PROFIbus ja ProfiNET. Muita kenttäväyliä voidaan yhdistää käyttäjän tarpeen mukaan erillisten lisäkorttien avulla.
 \\\\
 Kenttäväylät ovat mahdollistaneet yhä kattavampien automaatiojärjestelmien luomisen. Kenttäväyliä pitkin siirrettävän datan määrä on moninkertainen perinteisiin digitaalisignaaleihin verrattuna. Kenttäväylää hyödyntäviin taajuusmuuttajiin on esimerkiksi mahdollista ohjata etäältä tietokoneelle asennetun ohjelmiston kautta. Tällöin esimerkiksi virheitä voidaan ratkoa ilman, että taajuusmuuttajan luokse täytyy fyysisesti mennä. Tämä voi esimerkiksi kaivoksissa, missä etäisyydet voivat olla kilometriluokkaa, olla merkittävä etu.
 \\\\
-Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan toisiinsa ilman hintavaa kenttäväyläratkaisua. Tämä tulee kyseeseen esimerkiksi 
+Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan toisiinsa ilman hintavaa kenttäväyläratkaisua. Tämä tulee kyseeseen esimerkiksi useamman pumpun muodostamissa pumppusysteemeissä, joissa yhden isäntälaitteen ohjaus halutaan saada aikaan kaikissa systeemin taajuusmuuttajissa. Tällöin voidaan käyttää niin sanottua master/slave topologiaa, jossa taajuusmuuttajat ovat kytketty ikään kuin yhdeksi yksiköksi. Tällöin master yksikön ohjaus välittyy suoraan samanlaisena yden tai useamman slave-yksikön ohjaukseksi. Lähes kaikki taajuusmuuttajavalmistajat sallivat master/slave, ratkaisun jotakin omaa kommunikointiväyläänsä hyödyntäen.
 
 
 %----------TURVALLISUUS------------
@@ -558,6 +558,7 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 
 
 \section{Taajuusmuuttajien sovellukset kaivoksissa}
+Mitä kaikkea tapahtuu (louhinta,murskaus, rikastus, siirto, ym). Sähkönkäyttö. Teollisuuden laajuus, kehittyminen, automaation taso
 
 \subsection{Kokoluokat ja sijoittelu}
 -Teho- ja jänniteluokat (kuvia!)\\
@@ -566,9 +567,11 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 -fyysinen koko?\\
 -Hyvät/huonot puolet\\
 -kaapelien pituus, EMC
+-Kommunikointi (kenttäväylät, analogisignaalit)
 
 \subsection{Sovellukset}
-\subsubsection{Kaivinkoneet}
+
+\subsubsection{Kaivoskoneet}
 -mitä erilaisia? (jäätävän isot osana sähköverkkoa vs pienet)\\
 -Multidrive ohjaamaan kaikkea?
 
@@ -578,7 +581,7 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 -Nykyratkaisut?\\
 -Miten tamuja hyödynnetään? edut perinteiseen verrattuna?
 
-\subsubsection{Murskaimet}
+\subsubsection{Murskaimet ja sekoittimet}
 -Millaisia? kuinka isoja?\\
 -Toimintasyklit? \cite{Hulthen}\\
 -Automaation taso?
@@ -586,7 +589,7 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 \subsubsection{Hissit}
 -Henkilöhissit, junat, kärryt. Millä ihmiset liikkuu?
 
-\subsubsection{Tuulettimet ja ilmanvaihto}
+\subsubsection{ilmanvaihto}
 -Kaivoksen tuulettaminen!\\
 -Miten tehty?\\
 -Ohjaus, valvonta?\\
@@ -597,7 +600,7 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 -puhdistus\\
 -mittaukset
 
-\subsubsection{Paineilman tuottaminen?}
+\subsubsection{Paineilma}
 Paljon sähköä kuluttava?\\
 Mihin käytetään kaivoksissa?\\
 Miten tamuja voidaan hyödyntää?
