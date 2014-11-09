@@ -558,9 +558,18 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 
 
 \section{Taajuusmuuttajien sovellukset kaivoksissa}
-Mitä kaikkea tapahtuu (louhinta,murskaus, rikastus, siirto, ym). Sähkönkäyttö. Teollisuuden laajuus, kehittyminen, automaation taso
+Kaivosteollisuus käsittää laajan joukon aliprosesseja, joissa kussakin käytetään siihen suunniteltuja koneita. Näitä kaivosalueella tapahtuvia malmin rikastamisen välivaiheita ovat louhiminen räjäyttämällä tai poraamalla, louheen siirto, murskaus ja rikastus. Polttoaineen hinnan kasvaessa kaivoksissa on siirrytty pääosin sähköä voimanaan käyttäviin koneisiin, mikä on luonut tarpeen sähkömoottorien tehokkaalle ohjaukselle taajuusmuuttajilla. Nykyään dieselkoneita käytetään lähinnä vain liikkuvassa kalustossa, mihin sähkönsiirto johdinta pitkin tai akuston avulla voi olla hankalaa tai epäkannattavaa.
+\\\\
+Tässä kappaleessa luodaan kuva kaivoksessa tapahtuvista sähkövoimaa vaativista prosesseista ja siitä miten taajuusmuuttajia hyödynnetään niissä. Kappale kuvaa sekä avolouhosten että maanalaisten kaivosten toimintaa, koska niihin sisältyy pitkälti samat malminkäsittelyn prosessit. Jotkut järjestelmät kuten kaivoksen tuuletus ovat luonnollisesti olennaisia vain maanalaisissa ympäristöissä.
+\\\\ 
+%Mitä kaikkea tapahtuu (louhinta,murskaus, rikastus, siirto, ym). Sähkönkäyttö. Teollisuuden laajuus, kehittyminen, automaation taso
+\subsection{Kaivoksen prosessit}
+Kaivosprosessi koostuu useasta välivaiheesta, joissa maaperän malmi saadaan hyödynnettävään muotoon. Tähän ketjuun kuuluu kolme pääosaa, malmin louhiminen, hienonnus ja rikastus. Eri prosessien välillä malmi täytyy siirtää eri menetelmiä käyttäen ja malminsiirto onkin yksi merkittävä energiaa kuluttava prosessi itsessään.
+\\\\
+Malmi saadaan irti maaperästä räjäyttämällä tai louhimalla. Louhinnassa voidaan käyttää useita eri menetelmiä, mitkä riippuvat paljolti maaperän laadusta ja louhittavasta mineraalista metallista. L
+%tähän nopea brief malmin matkasta kaivoksen sisältä tänne. 
 
-\subsection{Kokoluokat ja sijoittelu}
+\subsection{Taajuusmuuttajien kokoluokat ja sijoittelu}
 -Teho- ja jänniteluokat (kuvia!)\\
 -Seinä,lattia,floorstanding\\
 -Asennuspaikat\\
@@ -576,10 +585,45 @@ Mitä kaikkea tapahtuu (louhinta,murskaus, rikastus, siirto, ym). Sähkönkäytt
 -Multidrive ohjaamaan kaikkea?
 
 
-\subsubsection{Liukuhihnat ja kuljettimet}
--Millaisia erilaisia? (liukuhihnat,ruuvit,nostimet,yms.)\\
--Nykyratkaisut?\\
--Miten tamuja hyödynnetään? edut perinteiseen verrattuna?
+\subsubsection{Kuljettimet}
+Kuljettimet ovat yleinen ratkaisu kaivoksissa murskatun malmin kuljettamiseen paikasta toiseen. Yleisin käytetty kuljetintyyppi on hihnakuljetin, jossa kannatusrullaston päällä kulkee tekstiili- tai vaijerivahvisteinen hihna. Hihnaa liikuttaa hihnaston toisessa päässä oleva vetorumpu, jonka akselille on kytketty sitä pyörittävä sähkömoottori. Toisessa päässä sijaitsee kääntörulla, jonka on yleensä vapaasti pyörivä. Kuva~\ref{fig:hihnakuljetin_rakenne} esittää perinteisen hihnakuljettimen suurpiirteisen rakenteen. Hihnan kireyttä säädetään ruuvikirityslaitteella, jolla rumpujen etäisyyttä pystytään säätämään. Pidemmissä, jopa kilometrien mittaisissa kuljettimissa vetorullia voi olla useampia kuljettimen varrella.\cite{Hakapää}
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.75]{hihnakuljetin_rakenne}
+	\end{center}
+	\caption{Hihnakuljettimen perusrakenne.
+		\cite{Ruokolainen}}
+	\label{fig:hihnakuljetin_rakenne}
+\end{figure}
+
+\noindent
+Hihnakuljettimien alkuinvestointi on melko suuri, mutta käyttökustannukset ovat pienet ja toimintavarmuus hyvä \cite{Hakapää}.Hihnakuljetuksen etuja ovat myös tasainen malmivirta jatkokäsittelyyn ja täysi sähkökäyttöisyys, mikä vähentää tuuletuksen tarvetta maanalaisissa kaivoksissa verrattuna dieselkäyttöiseen malminsiirtoon. Hihnakuljetinta pyörittäviltä sähkömoottoreilta vaaditaan tasaista momentin ja pyörimisnopeuden säilyttämistä, jotta hihna ja muut järjestelmän komponentit kuluvat mahdollisimman vähän. Tuotannon vaihtelusta johtuen moottorille aiheutuva kokonaiskuorma voi vaihdella ajoittain, mutta äkillisiä kuormanvaihteluita ei pääse juuri syntymään hihnan hyvin rajallisen syöttökapasiteetin vuoksi. Kuvassa ~\ref{fig:conveyor} nähdään kalkkikivikaivoksella malmin siirtoon käytetty hihnakuljetin.
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.6]{conveyor}
+	\end{center}
+	\caption{Hihnakuljetin.
+		\cite{conveyor}}
+	\label{fig:conveyor}
+\end{figure}
+
+\noindent
+Hihnakuljettimet on perinteisesti varustettu sähkömoottorilla, joka on vaihteiston välityksellä kytketty vetorumpuun. Tällöin kuljetin pystytään ainoastaan kytkemään päälle ja pois, ja sen päällä ollessa ajamaan vain vakionopeudella. Ohjaamattoman sähkömoottorin kytkeminen suureen kuormaan kuten valmiiksi täyteen kuljettimeen aiheuttaa suuret niin mekaaniset kuin sähköiset rasitukset kuljettimen rakenteelle. Kuljettimen vaatima momentti liikkeelle lähtiessä on lisäksi lepokitkan vaikutuksen takia huomattavan suuri, mikä aiheuttaa moottorissa hyvin suuren virrantarpeen. Tämä voi kaivoksesta riippuen aiheuttaa häiriöitä koko sähköverkon toiminnassa.
+\\\\
+Tätä käynnistysprosessia voidaan tehdä tehokkaammaksi ja laitteiston kannalta ystävällisemmäksi käyttämällä taajuusmuuttajaa. Kuten aikaisemmin kappaleessa 2.1 todettiin, taajuusmuuttajalla pystytään tuottamaan huomattavasti moottorin ominaismomenttia suurempi vääntö hitailla nopeuksilla. Tämän lisäksi taajuusmuuttajalla on mahdollista käyttää hyvinkin pitkää ramppikäynnistysaikaa, mikä kiihdyttää kuljettimen hitaasti haluttuun nopeuteen. Myös turvallisuusjärjestelmä on edullisempi toteuttaa kun hintavien kontaktoreiden sijaan voidaan käyttää STO-toimintoa. 
+\\\\
+Hihnakuljettimiin yhdistetyillä taajuusmuuttajilla voidaan lisäksi saavuttaa säästöjä ja tuottaa sähköä, jos käytetään verkkoon jarruttavia taajuusmuuttajia. Jos malmin siirto on alamäkeen, joudutaan hihnan pyörimistä hidastamaan. Tämä on perinteisesti tehty mekaanisen jarrun avulla, missä malmin liike-energia on mennyt hukkaan. Verkkoon jarruttavalla taajuusmuuttajalla voidaan kaivoksen sähköverkkoon tuottaa energiaa malmin potentiaalienergiasta. Espanjassa on toteutettu liukuhihnan jarrutusenergian talteen ottava järjestelmä, joka nyt tuottaa kaivoksen sähköverkkoon 15 megawatin tehon \cite{Rodriguez}.
+\\\\
+Taajuusmuuttajien käyttö kuljettimien ohjaukseen on yksinkertaista toteuttaa ja  niiden käyttö tuo useita hyötyjä. Tapauksesta riippuen niiden vaatimat investoinnit voivat kuitenkin rajoittaa käyttöönottoa. Yksikertaisissa sovelluksissa, missä kuljettimen pituus on pieni, voi taajuusmuuttajan lisäämisestä saatava hyöty olla liian pieni tarvittavaan investointiin verrattuna. 
+
+
+
+
+%-Millaisia erilaisia? (liukuhihnat,ruuvit,nostimet,yms.)\\
+%-Nykyratkaisut?\\
+%-Miten tamuja hyödynnetään? edut perinteiseen verrattuna?
 
 \subsubsection{Murskaimet ja sekoittimet}
 -Millaisia? kuinka isoja?\\
@@ -676,6 +720,12 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 \bibitem{acs880panel}ABB Oy. \textit{ACS880 Control Panel}. Kuva. Saatavissa: \url{http://www04.abb.com/global/seitp/seitp202.nsf/0/2996a31f6d99e961c1257864004ae0c1/$file/HM2011-02b.jpg}. Viitattu 28.10.2014
 
 \bibitem{VSI}Joensuu, T. Eronen, T \textit{Taajuusmuuttajan ohjauksen suunnittelu}. Insinöörityö. Metropolia Ammattikorkeakoulu. 2013. Saatavissa: \url{http://www.theseus.fi/bitstream/handle/10024/67121/Taajuusmuuttajan_ohjauksen_suunnittelu.pdf?sequence=1}. 
+
+\bibitem{Ruokolainen}Ruokolainen P. \textit{Louheensiirtomenetelmät suurella louhoksella.} Kandidaatintyö. Aalto-yliopisto. Kemian tekniikan korkeakoulu. Espoo. 2011.
+
+\bibitem{conveyor}Carmeuse Lime \& Rock. Kuva. Saatavissa: \url{http://www.carmeuseky.com/wp-content/uploads/2012/07/conveyor.png}. Viitattu 9.11.2014
+
+\bibitem{Rodriguez}Rodriguez, J. Pontt, J. Becker, N. Weinstein, A. \textit{Regenerative drives in the megawatt range for high-performance downhill belt conveyors}. Industry Applications. IEEE Transactions painos.38, numero 1. s. 203-210. 2002.
 
 \end{thebibliography}
 
