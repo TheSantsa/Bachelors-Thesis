@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  9 NOV 2014 17:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  12 NOV 2014 18:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1559,7 +1559,7 @@ Package babel Info: Redefining finnish shorthand "|
 ]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 311.
- <acs880panel.jpg, id=221, 1460.45625pt x 3628.55624pt>
+ <acs880panel.jpg, id=216, 1460.45625pt x 3628.55624pt>
 File: acs880panel.jpg Graphic file (type jpg)
 
 <use acs880panel.jpg>
@@ -1591,7 +1591,7 @@ Package babel Info: Redefining finnish shorthand "|
 [5 <./acs880panel.jpg>]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 334.
- <STO.jpg, id=239, 771.88374pt x 399.4925pt>
+ <STO.jpg, id=234, 771.88374pt x 399.4925pt>
 File: STO.jpg Graphic file (type jpg)
 
 <use STO.jpg>
@@ -1606,7 +1606,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 346.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 346.
-[6] <SS1.jpg, id=249, 773.89125pt x 401.5pt>
+[6] <SS1.jpg, id=244, 773.89125pt x 401.5pt>
 File: SS1.jpg Graphic file (type jpg)
  <use SS1.jpg>
 Package pdftex.def Info: SS1.jpg used on input line 353.
@@ -1636,7 +1636,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 388.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 388.
-[8 <./SS1.jpg>] <VSI.png, id=272, 570.13pt x 221.82875pt>
+[8 <./SS1.jpg>] <VSI.png, id=267, 570.13pt x 221.82875pt>
 File: VSI.png Graphic file (type png)
  <use VSI.png>
 Package pdftex.def Info: VSI.png used on input line 391.
@@ -1705,7 +1705,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 452.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 452.
-[11] <IP55.png, id=304, 468.24937pt x 420.82219pt>
+[11] <IP55.png, id=299, 468.24937pt x 420.82219pt>
 File: IP55.png Graphic file (type png)
  <use IP55.png>
 Package pdftex.def Info: IP55.png used on input line 455.
@@ -1714,7 +1714,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 464.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 464.
- [12 <./IP55.png>] <flange.jpg, id=315, 194.97844pt x 190.46156pt>
+ [12 <./IP55.png>] <flange.jpg, id=309, 194.97844pt x 190.46156pt>
 File: flange.jpg Graphic file (type jpg)
  <use flange.jpg>
 Package pdftex.def Info: flange.jpg used on input line 467.
@@ -1810,108 +1810,118 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 560.
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--566
+Underfull \hbox (badness 10000) in paragraph at lines 561--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--566
+Underfull \hbox (badness 10000) in paragraph at lines 561--564
+
+ []
+
+<Kaivosprosessi.png, id=346, 375.65344pt x 376.40625pt>
+File: Kaivosprosessi.png Graphic file (type png)
+
+<use Kaivosprosessi.png>
+Package pdftex.def Info: Kaivosprosessi.png used on input line 567.
+(pdftex.def)             Requested size: 375.65251pt x 376.40532pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--566
+Underfull \hbox (badness 10000) in paragraph at lines 574--580
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 566.
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--571
-
- []
-
+(babel)             in language  on input line 580.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 572.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 581.
+(babel)             in language  on input line 580.
+[17
+
+ <./Kaivosprosessi.png>]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 583.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 588.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 590.
+(babel)             in language  on input line 595.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 590.
-[17
-
-] <hihnakuljetin_rakenne.jpg, id=356, 572.1375pt x 174.6525pt>
+(babel)             in language  on input line 603.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 605.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 605.
+ [18]
+<hihnakuljetin_rakenne.jpg, id=362, 572.1375pt x 174.6525pt>
 File: hihnakuljetin_rakenne.jpg Graphic file (type jpg)
 
 <use hihnakuljetin_rakenne.jpg>
-Package pdftex.def Info: hihnakuljetin_rakenne.jpg used on input line 593.
+Package pdftex.def Info: hihnakuljetin_rakenne.jpg used on input line 608.
 (pdftex.def)             Requested size: 429.10207pt x 130.98904pt.
 
-Overfull \hbox (2.31073pt too wide) in paragraph at lines 593--594
+Overfull \hbox (2.31073pt too wide) in paragraph at lines 608--609
  [] 
  []
 
-<conveyor.png, id=360, 578.6418pt x 400.8576pt>
+<conveyor.png, id=366, 578.6418pt x 400.8576pt>
 File: conveyor.png Graphic file (type png)
  <use conveyor.png>
-Package pdftex.def Info: conveyor.png used on input line 605.
+Package pdftex.def Info: conveyor.png used on input line 620.
 (pdftex.def)             Requested size: 347.18776pt x 240.5164pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 611.
+(babel)             in language  on input line 626.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 611.
- [18 <./hihnakuljetin_rakenne.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 612--620
+(babel)             in language  on input line 626.
+ [19 <./hihnakuljetin_rakenne.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 627--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--620
+Underfull \hbox (badness 10000) in paragraph at lines 627--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--620
+Underfull \hbox (badness 10000) in paragraph at lines 627--635
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 620.
+(babel)             in language  on input line 635.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 620.
-[19 <./conveyor.png>]
+(babel)             in language  on input line 635.
+[20 <./conveyor.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 641.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 633.
+(babel)             in language  on input line 645.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 636.
+(babel)             in language  on input line 652.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 642.
+(babel)             in language  on input line 658.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 647.
+(babel)             in language  on input line 663.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 653.
+(babel)             in language  on input line 669.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 653.
- [20]
+(babel)             in language  on input line 669.
+ [21]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 655.
+(babel)             in language  on input line 671.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 665.
+(babel)             in language  on input line 681.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 665.
- [21
+(babel)             in language  on input line 681.
+ [22
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 668.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 671.
+(babel)             in language  on input line 684.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 687.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1922,217 +1932,228 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 3407) in paragraph at lines 694--695
+Underfull \hbox (badness 3407) in paragraph at lines 710--711
 \T1/cmr/m/n/12 (+20) vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com 
 / global / scot / scot216 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 \T1/cmtt/m/n/12 2205e72865c2c747c1257a620026d001 / $file / Mining % 20brochure 
 _ EN _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 \T1/cmr/m/n/12 (+20) sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com / gl
 obal / scot / scot201 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 \T1/cmtt/m/n/12 71ce8071e2a7ae2bc1257bd70046ade1 / $file / FI _ ACS880-[]01 _ 0
  _ 55to250kW _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 \T1/cmtt/m/n/12 HW _ E _ plus _ update _ notice _ screen . pdf$[][]\T1/cmr/m/n/
 12 (+20) . Päi-vi-tet-ty 29.6.2012. Vii-tat-tu
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 699.
+(babel)             in language  on input line 715.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 699.
-[22
+(babel)             in language  on input line 715.
+[23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 []\T1/cmr/m/n/12 (+20) Louhintatyöstä syn-ty-vän tä-ri-nän ris-kiar-vioin-ti. S
 aa-ta-vis-sa:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 []\T1/cmr/m/n/12 (+20) Saatavissa: [][]$\T1/cmtt/m/n/12 http : / / www . danfos
 s . com / NR / rdonlyres /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 \T1/cmtt/m/n/12 2270DF18-[]D4AD-[]4808-[]824E-[]4942B247F078 / 0 / 2011 _ Autom
 ationDrive _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
 \T1/cmtt/m/n/12 siemens . com / topics / global / en / safety-[]integrated / ma
 chine-[]safety /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
 \T1/cmtt/m/n/12 product-[]portfolio / drive-[]technology / safety-[]functions /
  pages /
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 714--715
+Underfull \hbox (badness 4328) in paragraph at lines 730--731
 []\T1/cmr/m/n/12 (+20) Siemens AG. \T1/cmr/m/it/12 (+20) Sa-fe Stop 1 (SS1)\T1/
 cmr/m/n/12 (+20) . Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www . industr
 y .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
 \T1/cmtt/m/n/12 siemens . com / topics / global / en / safety-[]integrated / ma
 chine-[]safety /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
 \T1/cmtt/m/n/12 product-[]portfolio / drive-[]technology / safety-[]functions /
  Pages /
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 716--717
+Underfull \hbox (badness 5519) in paragraph at lines 732--733
 []\T1/cmr/m/n/12 (+20) PROFIBUS & PRO-FI-NET In-ter-na-tio-nal (PI). \T1/cmr/m/
 it/12 (+20) PRO-FI-sa-fe\T1/cmr/m/n/12 (+20) . [][]$\T1/cmtt/m/n/12 http : / /
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 716--717
+Underfull \hbox (badness 3861) in paragraph at lines 732--733
 \T1/cmtt/m/n/12 www . profibus . com / technology / profisafe/$[][]\T1/cmr/m/n/
 12 (+20) Päivitetty 10.3.2014. Vii-tat-tu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 []\T1/cmr/m/n/12 (+20) ABB Oy. \T1/cmr/m/it/12 (+20) User's ma-nual: FSO-12 Sa-
 fe-ty func-tions mo-du-le\T1/cmr/m/n/12 (+20) .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com / global / scot / scot201 . n
 sf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
 \T1/cmtt/m/n/12 80fd1fe025d402d7c1257d0000408aa6 / $file / EN _ FSO _ 12 _ UM _
  A _ A5 . pdf$[][]\T1/cmr/m/n/12 (+20) .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--721
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 \T1/cmtt/m/n/12 com / global / seitp / seitp202 . nsf / 0 / 2996a31f6d99e961c12
 57864004ae0c1 /
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 722--723
+Underfull \hbox (badness 5374) in paragraph at lines 738--739
 []\T1/cmr/m/n/12 (+20) Joensuu, T. Ero-nen, T \T1/cmr/m/it/12 (+20) Taa-juus-mu
 ut-ta-jan oh-jauk-sen suun-nit-te-lu\T1/cmr/m/n/12 (+20) . In-
  []
 
 
-Underfull \hbox (badness 5817) in paragraph at lines 722--723
+Underfull \hbox (badness 5817) in paragraph at lines 738--739
 \T1/cmr/m/n/12 (+20) si-nöö-ri-työ. Met-ro-po-lia Am-mat-ti-kor-kea-kou-lu. 201
 3. Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--723
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 \T1/cmtt/m/n/12 / / www . theseus . fi / bitstream / handle / 10024 / 67121 / T
 aajuusmuuttajan _
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 739.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 723.
-[23]
+(babel)             in language  on input line 739.
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+[]\T1/cmr/m/n/12 (+20) opasnet.org. Ku-va. Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 
+http : / / fi . opasnet . org / fi / Tiedosto :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+\T1/cmtt/m/n/12 Kaivostoiminnanyleisprosessi . png$[][]\T1/cmr/m/n/12 (+20) . P
+äi-vi-tet-ty 11.2.2012. Vii-tat-tu
+ []
+
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 735.
+(babel)             in language  on input line 754.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 735.
- [24]
-Overfull \hbox (23.23688pt too wide) in paragraph at lines 738--738
+(babel)             in language  on input line 754.
+[25]
+Overfull \hbox (23.23688pt too wide) in paragraph at lines 757--757
 []\T1/cmr/bx/n/17.28 Liite 1: Ko-te-loin-ti-luo-ki-tus stan-dar-din SFS-EN 6052
 9
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 738.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
+(babel)             in language  on input line 757.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 794.
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--775
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--794
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 775.
+(babel)             in language  on input line 794.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 775.
-[25
+(babel)             in language  on input line 794.
+[26
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 794.
  (./kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 775.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 794.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 794.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
-(rerunfilecheck)             Checksum: 8CC741772C302FE4DEA8FD40FFF8B85A;2250.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
+(rerunfilecheck)             Checksum: 261A78F4CBF0A76A92A2D1D7DFA749CD;2181.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 794.
  ) 
 Here is how much of TeX's memory you used:
- 19419 strings out of 493315
- 341206 string characters out of 6137904
- 872379 words of memory out of 5000000
- 22194 multiletter control sequences out of 15000+600000
+ 19427 strings out of 493315
+ 341355 string characters out of 6137904
+ 872486 words of memory out of 5000000
+ 22199 multiletter control sequences out of 15000+600000
  53119 words of font info for 135 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,13n,59p,1084b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2155,10 +2176,10 @@ fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8a.pfb>
-Output written on kandi.pdf (30 pages, 4644256 bytes).
+Output written on kandi.pdf (31 pages, 4670839 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 27445 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 27442 words of extra memory for PDF output out of 29859 (max. 10000000)
 
