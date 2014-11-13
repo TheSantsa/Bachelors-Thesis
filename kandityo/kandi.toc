@@ -21,12 +21,12 @@
 \contentsline {subsection}{\numberline {4.1}Taajuusmuuttajien kokoluokat ja sijoittelu}{18}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Sovellukset}{18}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Kaivoskoneet}{18}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Kuljettimet}{18}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Hissit}{21}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Murskaimet ja sekoittimet}{21}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}ilmanvaihto}{21}{subsubsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.6}Pumput}{21}{subsubsection.4.2.6}
-\contentsline {subsubsection}{\numberline {4.2.7}Paineilma}{21}{subsubsection.4.2.7}
-\contentsline {section}{\numberline {5}Yhteenveto}{22}{section.5}
-\contentsline {section}{Viitteet}{23}{section*.9}
-\contentsline {section}{\numberline {A}Liite 1: Kotelointiluokitus standardin SFS-EN 60529 mukaan}{26}{appendix.A}
+\contentsline {subsubsection}{\numberline {4.2.2}Kuljettimet}{20}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Hissit}{22}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Murskaimet ja sy\IeC {\"o}ttimet}{22}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}ilmanvaihto}{23}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Pumput}{23}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Paineilma}{23}{subsubsection.4.2.7}
+\contentsline {section}{\numberline {5}Yhteenveto}{24}{section.5}
+\contentsline {section}{Viitteet}{25}{section*.9}
+\contentsline {section}{\numberline {A}Liite 1: Kotelointiluokitus standardin SFS-EN 60529 mukaan}{28}{appendix.A}

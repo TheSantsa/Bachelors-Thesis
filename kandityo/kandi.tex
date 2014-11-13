@@ -231,7 +231,8 @@ PLC		   & Programmable Logic Controller \\
 PID-Säädin & Proportional-Integral-Derivative-säädin \\
 STO		   & Safe Torque Off \\
 SIL		   & Safety Integrity Level \\
-VSI		   & Voltage-Source Inverter
+VSI		   & Voltage-Source Inverter \\
+LHD		   & Load Haul Dump
 \end{tabular}
 
 
@@ -593,7 +594,22 @@ Tämä kappale käsittelee mainittujen prosessivaiheiden suorittamiseen tarvitta
 \subsection{Sovellukset}
 
 \subsubsection{Kaivoskoneet}
-Kaivoksessa on useita erilaisia liikkuvia kaivoskoneita, joita käytetään pääasiassa malmin liikuttamiseen ja käsittelyyn. Näitä ovat Kaivinkoneet, louhosautot, kauhakuormaajat, porausvaunut ja LHD:t (Load Haul Dump).
+Kaivoksessa on useita erilaisia liikkuvia kaivoskoneita, joita käytetään pääasiassa malmin liikuttamiseen ja käsittelyyn. Näitä ovat Kaivinkoneet, louhosautot, kauhakuormaajat, porausvaunut ja LHD:t (Load Haul Dump)\footnote{"LHD:t ovat tehokkaita ja suurikauhaisia lastauskoneita, jotka on suunniteltu työskentelemään maanalaisissa kaivoksissa ja ahtaissa tiloissa." \cite[s. 192]{Hakapää}}. Sähkökäyttöisten ajoneuvojen käyttö on yleistynyt kaivoksissa polttoainekustannusten noustessa ja sähkövoimatekniikan kehittyessä. Myös dieseliä ja sähköä vuorotellen käyttäviä hybridiajoneuvoja esiintyy \cite{Brown}.
+\\\\
+Liikkuvissa ajoneuvoissa taajuusmuuttajien käyttökohde on yleisimmin laitteen liikkumiseen käytettyihin pyöriin liitetyn sähkömoottorin ohjaaminen. Liikkuvissa koneissa hyötysuhde ja liitettävyys sähköverkkoon ovat taajuusmuuttajien suurimmat edut verrattuna perinteiseen polttoainemoottoriin \cite{Brown}. Taajuusmuuttajilla vaihtovirtasähkömoottoria pystytään ajamaan jatkuvasti sen optimialueella toisin kuin polttomoottoreissa, joissa paras hyötysuhde saavutetaan vain tietyllä kierrosalueella \cite{Brown}. Myös esimerkiksi moottorista erillinen jäähdytysjärjestelmä säästää energiaa kun jäähdytyspuhaltimia ei tarvitse tarpeettomasti pyörittää moottorin tahdissa kuten polttomoottorikoneissa \cite{Brown}. 
+\\\\
+Sähköverkkoon liitettävyydellä tarkoitetaan kaivoskoneen kytkemistä osaksi kaivoksen sähköverkkoa niin että kone saa käyttövoimansa suoraan verkosta. Tällöin liikkuvassa koneessa on  esimerkiksi kaapelikela, joka koneen liikkuessa syöttää sähköjohdinta koneen taakse ja vastaavasti kerää sen takaisin koneen peruuttaessa. Tämä luonnollisesti rajoittaa koneen liikealuetta, mutta on käyttökelpoinen esimerkiksi LHD-koneiden (kuvassa~\ref{fig:LHD}) kanssa niiden valmiiksi rajoittuneesta työympäristöstä johtuen. Toinen yleisesti dumpperien eli suurten louhosautojen kanssa käytettävä liitäntäratkaisu on kannatinjohto. Kannatinjohto on ripustettuna dumpperien ajoväylän yläpuolelle ja dumpperit kytkeytyvät siihen junien tapaan koskettimella. Sähköverkkoon kytketyt kaivoskoneet tuovat energiansäästön isäksi muita etuja etenkin maanalaisissa kaivoksissa. Maanalaisissa kaivoksissa dieselkoneiden käyttö luo pakokaasupäästöjä ja huomattavat määrät lämpöä, joka täytyy tuulettaa ulos. Sähkökäyttöisissä koneissa hiukkapäästöjä ei ole ja korkean hyötysuhteen ansiosta hukkalämmön määrä on mitätön.
+\\\\
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.35]{LHD}
+	\end{center}
+	\caption{Sähkökäyttöinen LHD.
+		\cite{LHD}}
+	\label{fig:LHD}
+\end{figure}
+\noindent
+Suunniteltaessa taajuusmuuttajia kaivoskoneisiin, täytyy ottaa huomioon useita seikkoja. Taajuusmuuttajat joutuvat koneen osana erittäin rankoille ympäristöoloille ja tärinälle, joten vankka ja tiivis kotelointi on tärkeä. Samalla tarvittavasta jäähdytyksestä on huolehdittava esimerkiksi erottamalla jäähdytysrivasto elektroniikasta. Kaivoskoneet on yleensä rakennettu myös hyvin kompakteiksi maksimoiden kuormattavan massan. Tämä asettaa vaatimukset taajuusmuuttajien fyysiselle koolle ja tehotiheydelle.
 %-mitä erilaisia? (jäätävän isot osana sähköverkkoa vs pienet)\\
 %-Multidrive ohjaamaan kaikkea?
 %-Sähködumpperit maanalaisissa kaivoksissa (koneenrakentajat haluu tamui!)
@@ -642,10 +658,19 @@ Taajuusmuuttajien käyttö kuljettimien ohjaukseen on yksinkertaista toteuttaa j
 asdasdasdasdasd
 -Henkilöhissit, junat, kärryt. Millä ihmiset liikkuu?
 
-\subsubsection{Murskaimet ja sekoittimet}
--Millaisia? kuinka isoja?\\
--Toimintasyklit? \cite{Hulthen}\\
--Automaation taso?
+\subsubsection{Murskaimet ja syöttimet} %ja sekoittimet?
+Murskaimet ovat laitteita, joilla louheen raekokoa pienennetään rikastusta varten. Louheen murskaus tapahtuu yleensä useassa osassa, raekoon pienentyessä noin kuudennekseen murskausvaiheiden välillä. Murskaamo koostuu itse murskaimesta ja siihen louhetta syöttävästä syöttimestä. Murskaimet ovat suuria, paljon energiaa käyttäviä laitteita, jotka saavat voimansa suurista sähkömoottoreista. Syöttimen tehtävä on annostella murskaimeen sopiva määrä louhetta kerrallaan, jotta murskain ei tukkeudu.
+\\\\
+Murskaus voi perustua iskuun tai puristukseen. Molemmille tyypeille on ominaista, että sähkömoottoreista saatavalla pyörivällä liikkeellä kiviainesta joko puristetaan murskaimen osien välissä tai kiviin kohdistetaan voimakas isku pyörivän terän avulla. Leuka-, kierto-, heiluri-, ja karamurskaimet ovat esimerkkejä puristavasta murskaimesta ja iskupalkkimurskaimet iskuperiaatteella toimivasta.
+\\\\
+Taajuusmuuttajalla murskaimen pyörimisnopeutta voidaan reaaliaikaisesti säätää, mikä vaikuttaa suoraan syntyvän kiviaineksen ominaisuuksiin \cite{Hulthen}. Aikaisemmin jos pyörimisnopeutta on haluttu muuttaa, on täytynyt murksain pysäyttää ja välitystä moottorin ja murskainosan välillä vaihtaa. Myös murskainosien kulumisesta aiheutuu muutoksia murskatun kiviaineksen laatuun, mitä täytyy kompensoida pyörimisnopeutta tai murskaimen halkaisijaa muuttamalla. Taajuusmuuttajalla tämä kompensointi voidaan tehdä reaaliaikaisesti. Hulthenin tutkimuksessa \cite{Hulthen} taajuusmuuttajalla ohjatun kartiomurskaimen pyörimisnopeutta säädettiin automaattisesti perustuen massavirta-antureilta saatuun dataan. Tällä menetelmällä saavutettiin 15\% kasvu murskaimen kapasiteetissa.
+\\\\
+Itse murskaimen lisäksi murskaamoon kuuluu joukko murskaimelle louhetta syöttäviä laitteita. Näihin kuuluvat kuljettimet ja syöttimet. Moderneissa murskaimissa kaikkia toimintoja ohjataan keskitetysti ohjaamosta. Käynnistyssykli on yleensä automaattinen logiikan hoitaessa koneen komponenttien oikean käynnistysjärjestyksen. Taajuusmuuttajilla moottoreiden ohjaaminen helpottuu ja esimerkiksi ramppikäynnistyksiä voidaan käyttää vähentämään mekaanista rasitusta.
+
+
+%-Millaisia? kuinka isoja?\\
+%-Toimintasyklit? \cite{Hulthen}\\
+%-Automaation taso?
 
 
 
@@ -745,6 +770,9 @@ Insinööritieteiden korkeakoulu. Espoo. 2012.
 
 \bibitem{Kaivosprosessi}opasnet.org. Kuva. Saatavissa: \url{http://fi.opasnet.org/fi/Tiedosto:Kaivostoiminnanyleisprosessi.png}. Päivitetty 11.2.2012. Viitattu 12.11.2014.
 
+\bibitem{Brown}Brown, G.M. Elbacher, B.J. Koellner, W.G. \textit{Increased productivity with AC drives for mining excavators and haul trucks}. Industry Applications Conference, 2000. Conference Record of the 2000 IEEE painos.1. s.28,37. 2000.
+
+\bibitem{LHD}Sandvik Oy. \textit{Ground-breaking Electricity}. Saatavissa \url{minestories.com/ground-breaking-electricity}. Päivitetty 2014. Viitattu 12.11.2014
 
 \end{thebibliography}
 
