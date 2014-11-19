@@ -579,26 +579,26 @@ Murskauksessa louhe murskataan pienempään muotoon puristamalla tai iskemällä
 \\\\
 Tämä kappale käsittelee mainittujen prosessivaiheiden suorittamiseen tarvittavien laitteiden toimintaa. Tarkastelun alla ovat koneet, joissa erityisesti käytetään taajuusmuuttajia tai niille olisi potentiaalisia käyttömahdollisuuksia. Tarkastelussa on myös taajuusmuuttajien yleinen teholuokka kyseisissä sovelluksissa ja niiden sijoittelu kaivosympäristöön.
 
-%tähän nopea brief malmin matkasta kaivoksen sisältä tänne. 
 
 \subsection{Taajuusmuuttajien kokoluokat ja sijoittelu}
+-5.12 Excu Metsolle Tampereelle. Sieltä tietoa tähän
 
 -Teho- ja jänniteluokat (kuvia!)\\
 -Seinä,lattia,floorstanding\\
 -Asennuspaikat\\
 -fyysinen koko?\\
 -Hyvät/huonot puolet\\
--kaapelien pituus, EMC
--Kommunikointi (kenttäväylät, analogisignaalit)
+-kaapelien pituus, EMC\\
+-Kommunikointi (kenttäväylät, analogisignaalit)\\
 
 \subsection{Sovellukset}
 
 \subsubsection{Kaivoskoneet}
-Kaivoksessa on useita erilaisia liikkuvia kaivoskoneita, joita käytetään pääasiassa malmin liikuttamiseen ja käsittelyyn. Näitä ovat Kaivinkoneet, louhosautot, kauhakuormaajat, porausvaunut ja LHD:t (Load Haul Dump)\footnote{"LHD:t ovat tehokkaita ja suurikauhaisia lastauskoneita, jotka on suunniteltu työskentelemään maanalaisissa kaivoksissa ja ahtaissa tiloissa." \cite[s. 192]{Hakapää}}. Sähkökäyttöisten ajoneuvojen käyttö on yleistynyt kaivoksissa polttoainekustannusten noustessa ja sähkövoimatekniikan kehittyessä. Myös dieseliä ja sähköä vuorotellen käyttäviä hybridiajoneuvoja esiintyy \cite{Brown}.
+Kaivoksissa käytetään joukkoa erilaisia liikkuvia työkoneita. Niitä käytetään pääasiassa räjähteiden asentamiseen ja poraamiseen sekä malmin liikuttamiseen ja käsittelyyn. Näitä ovat esimerkiksi kaivinkoneet, louhosautot, kauhakuormaajat, porausvaunut ja LHD:t (Load Haul Dump)\footnote{"LHD:t ovat tehokkaita ja suurikauhaisia lastauskoneita, jotka on suunniteltu työskentelemään maanalaisissa kaivoksissa ja ahtaissa tiloissa." \cite[s. 192]{Hakapää}}. Sähkökäyttöisten ajoneuvojen käyttö on yleistynyt kaivoksissa polttoainekustannusten noustessa ja sähkövoimatekniikan kehittyessä. Myös dieseliä ja sähköä vuorotellen käyttäviä hybridiajoneuvoja esiintyy \cite{Brown}.
 \\\\
 Liikkuvissa ajoneuvoissa taajuusmuuttajien käyttökohde on yleisimmin laitteen liikkumiseen käytettyihin pyöriin liitetyn sähkömoottorin ohjaaminen. Liikkuvissa koneissa hyötysuhde ja liitettävyys sähköverkkoon ovat taajuusmuuttajien suurimmat edut verrattuna perinteiseen polttoainemoottoriin \cite{Brown}. Taajuusmuuttajilla vaihtovirtasähkömoottoria pystytään ajamaan jatkuvasti sen optimialueella toisin kuin polttomoottoreissa, joissa paras hyötysuhde saavutetaan vain tietyllä kierrosalueella \cite{Brown}. Myös esimerkiksi moottorista erillinen jäähdytysjärjestelmä säästää energiaa kun jäähdytyspuhaltimia ei tarvitse tarpeettomasti pyörittää moottorin tahdissa kuten polttomoottorikoneissa \cite{Brown}. 
 \\\\
-Sähköverkkoon liitettävyydellä tarkoitetaan kaivoskoneen kytkemistä osaksi kaivoksen sähköverkkoa niin että kone saa käyttövoimansa suoraan verkosta. Tällöin liikkuvassa koneessa on  esimerkiksi kaapelikela, joka koneen liikkuessa syöttää sähköjohdinta koneen taakse ja vastaavasti kerää sen takaisin koneen peruuttaessa. Tämä luonnollisesti rajoittaa koneen liikealuetta, mutta on käyttökelpoinen esimerkiksi LHD-koneiden (kuvassa~\ref{fig:LHD}) kanssa niiden valmiiksi rajoittuneesta työympäristöstä johtuen. Toinen yleisesti dumpperien eli suurten louhosautojen kanssa käytettävä liitäntäratkaisu on kannatinjohto. Kannatinjohto on ripustettuna dumpperien ajoväylän yläpuolelle ja dumpperit kytkeytyvät siihen junien tapaan koskettimella. Sähköverkkoon kytketyt kaivoskoneet tuovat energiansäästön isäksi muita etuja etenkin maanalaisissa kaivoksissa. Maanalaisissa kaivoksissa dieselkoneiden käyttö luo pakokaasupäästöjä ja huomattavat määrät lämpöä, joka täytyy tuulettaa ulos. Sähkökäyttöisissä koneissa hiukkapäästöjä ei ole ja korkean hyötysuhteen ansiosta hukkalämmön määrä on mitätön.
+Sähköverkkoon liitettävyydellä tarkoitetaan kaivoskoneen kytkemistä osaksi kaivoksen sähköverkkoa niin että kone saa käyttövoimansa suoraan verkosta. Tällöin liikkuvassa koneessa on  esimerkiksi kaapelikela, joka koneen liikkuessa syöttää sähköjohdinta koneen taakse ja vastaavasti kerää sen takaisin koneen peruuttaessa. Tämä luonnollisesti rajoittaa koneen liikealuetta, mutta on käyttökelpoinen esimerkiksi LHD-koneiden (kuvassa~\ref{fig:LHD}) kanssa niiden valmiiksi rajoittuneesta työympäristöstä johtuen. Toinen yleisesti dumpperien eli suurten louhosautojen kanssa käytettävä liitäntäratkaisu on kannatinjohto \cite{Brown}. Kannatinjohto on ripustettuna dumpperien ajoväylän yläpuolelle ja dumpperit kytkeytyvät siihen junien tapaan koskettimella. Sähköverkkoon kytketyt kaivoskoneet tuovat energiansäästön isäksi muita etuja etenkin maanalaisissa kaivoksissa. Maanalaisissa kaivoksissa dieselkoneiden käyttö luo pakokaasupäästöjä ja huomattavat määrät lämpöä, joka täytyy tuulettaa ulos. Sähkökäyttöisissä koneissa hiukkapäästöjä ei ole ja korkean hyötysuhteen ansiosta hukkalämmön määrä on mitätön.
 \\\\
 \begin{figure}[H]
 	\begin{center}
@@ -629,7 +629,7 @@ Kuljettimet ovat yleinen ratkaisu kaivoksissa murskatun malmin kuljettamiseen pa
 \end{figure}
 
 \noindent
-Hihnakuljettimien alkuinvestointi on melko suuri, mutta käyttökustannukset ovat pienet ja toimintavarmuus hyvä \cite{Hakapää}.Hihnakuljetuksen etuja ovat myös tasainen malmivirta jatkokäsittelyyn ja täysi sähkökäyttöisyys, mikä vähentää tuuletuksen tarvetta maanalaisissa kaivoksissa verrattuna dieselkäyttöiseen malminsiirtoon. Hihnakuljetinta pyörittäviltä sähkömoottoreilta vaaditaan tasaista momentin ja pyörimisnopeuden säilyttämistä, jotta hihna ja muut järjestelmän komponentit kuluvat mahdollisimman vähän. Tuotannon vaihtelusta johtuen moottorille aiheutuva kokonaiskuorma voi vaihdella ajoittain, mutta äkillisiä kuormanvaihteluita ei pääse juuri syntymään hihnan hyvin rajallisen syöttökapasiteetin vuoksi. Kuvassa ~\ref{fig:conveyor} nähdään kalkkikivikaivoksella malmin siirtoon käytetty hihnakuljetin.
+Hihnakuljettimien alkuinvestointi on melko suuri, mutta käyttökustannukset ovat pienet ja toimintavarmuus hyvä \cite{Hakapää}.Hihnakuljetuksen etuja ovat myös tasainen malmivirta jatkokäsittelyyn ja täysi sähkökäyttöisyys, mikä vähentää tuuletuksen tarvetta maanalaisissa kaivoksissa verrattuna dieselkäyttöiseen malminsiirtoon. Hihnakuljetinta pyörittäviltä sähkömoottoreilta vaaditaan tasaista momentin ja pyörimisnopeuden säilyttämistä, jotta hihna ja muut järjestelmän komponentit kuluvat mahdollisimman vähän \cite{MyyntiHaastattelu}. Tuotannon vaihtelusta johtuen moottorille aiheutuva kokonaiskuorma voi vaihdella ajoittain, mutta äkillisiä kuormanvaihteluita ei pääse juuri syntymään hihnan rajallisen syöttökapasiteetin vuoksi. Kuvassa ~\ref{fig:conveyor} nähdään kalkkikivikaivoksella malmin siirtoon käytetty hihnakuljetin.
 
 \begin{figure}[H]
 	\begin{center}
@@ -654,9 +654,7 @@ Taajuusmuuttajien käyttö kuljettimien ohjaukseen on yksinkertaista toteuttaa j
 %-Nykyratkaisut?\\
 %-Miten tamuja hyödynnetään? edut perinteiseen verrattuna?
 
-\subsubsection{Hissit}
-asdasdasdasdasd
--Henkilöhissit, junat, kärryt. Millä ihmiset liikkuu?
+
 
 \subsubsection{Murskaimet ja syöttimet} %ja sekoittimet?
 Murskaimet ovat laitteita, joilla louheen raekokoa pienennetään rikastusta varten. Louheen murskaus tapahtuu yleensä useassa osassa, raekoon pienentyessä noin kuudennekseen murskausvaiheiden välillä. Murskaamo koostuu itse murskaimesta ja siihen louhetta syöttävästä syöttimestä. Murskaimet ovat suuria, paljon energiaa käyttäviä laitteita, jotka saavat voimansa suurista sähkömoottoreista. Syöttimen tehtävä on annostella murskaimeen sopiva määrä louhetta kerrallaan, jotta murskain ei tukkeudu.
@@ -667,39 +665,62 @@ Taajuusmuuttajalla murskaimen pyörimisnopeutta voidaan reaaliaikaisesti säät�
 \\\\
 Itse murskaimen lisäksi murskaamoon kuuluu joukko murskaimelle louhetta syöttäviä laitteita. Näihin kuuluvat kuljettimet ja syöttimet. Moderneissa murskaimissa kaikkia toimintoja ohjataan keskitetysti ohjaamosta. Käynnistyssykli on yleensä automaattinen logiikan hoitaessa koneen komponenttien oikean käynnistysjärjestyksen. Taajuusmuuttajilla moottoreiden ohjaaminen helpottuu ja esimerkiksi ramppikäynnistyksiä voidaan käyttää vähentämään mekaanista rasitusta.
 
+%\subsubsection{Hissit}
+%-Tarvitseeko tälle oman kappaleen?
+%-Henkilöhissit, junat, kärryt. Millä ihmiset liikkuu?
 
-%-Millaisia? kuinka isoja?\\
-%-Toimintasyklit? \cite{Hulthen}\\
-%-Automaation taso?
+\subsubsection{Ilmanvaihto}
+Maanalaisissa kaivoksissa koneellinen tuuletus on välttämätöntä. Tuuletuksen tarpeen luovat koneiden pakokaasut, räjähdyskaasut, pöly, kallioperästä tulevat kaasut kuten radon ja eri työvaiheet kuten poraus \cite[s. 290]{Hakapää}. Näistä merkittävin ilmanlaatua huonontava tekijä ovat dieselkoneiden aiheuttamat pakokaasut ja pienpartikkelit \cite[s. 290]{Hakapää}. Jotta työntekijöiden hyvinvointi ja turvallisuus voidaan taata, on laissa määritelty kaivoksen tuuletussuunnittelua ja ilmanlaatumittauksia koskevia asioita \cite[s. 285]{Hakapää}.
+\\\\
+Kaivoksen tuuletusjärjestelmä perustuu joko alipaineiseen, ylipaineiseen tai molempia käyttävään ratkaisuun. Ali- tai ylipaine luodaan kaivokseen suurilla maanpäällisiällä pääpuhaltimilla, jotka siis joko imevät ilmaa kaivoksesta tai puhaltavat ilmaa sisään. Imevässä tapauksessa korvausilma tulee kaivokseen erikseen louhittua tai muuten avointa reittiä pitkin. Pääpuhaltimien lisäksi paikallistuuletuksella ilmaa ohjataan esimerkiksi louhittaviin periin, missä ilman läpiveto ei ole mahdollista. Lisäksi pääpuhaltimilta tuleva ilma täytyy ohjata tehokkaasti kaivoksen sisällä estäen esimerkiksi likaisen ja puhtaan ilman sekoittuminen matkan varrella. Tämä saadaan aikaan puhaltimilla, seinillä, säleiköillä tai kylmäilmaverhoilla.
+\\\\
+Puhaltimien liikuttamaa ilmamäärää on perinteisesti ohjattu rajoittamalla ilman kulkua tai mekaanisesti puhallinlapojen kulmaa säätämällä. Lisäksi kaivoksessa olevat ilmanohjaimet kuten seinät ja säleiköt ovat mekaanisesti säädettäviä, jotta kaivoksen tuuletusta pystytään säätämään olosuhteiden muuttuessa. Automaation yleistyessä, on alettu ottaa käyttöön automaatiojärjestelmiä tuulettimien ohjauksessa. Näin on mahdollista luoda reaaliajassa säätyvä tuuletusjärjestelmä, joka mittaa kaivoksen ilmanlaatua ja säätää tuuletuksen tehoa sen mukaan. Kaivosilmasta voidaan mitata esimerkiksi kosteutta, lämpötilaa ja pölypitoisuutta.
+\\\\
+Kuten luvun 2 alussa mainittiin moottorinohjaus kuristamalla on energiankulutuksen kannalta hyvin epätehokasta. Taajuusmuuttajalla ohjattua puhallinta pystytään reaaliajassa säätämään, niin että haluttu ilmamäärä saavutetaan. Taajuusmuuttaja on oivallinen työkalu paikalliseen tuuletuksen automatisointiin, jossa taajuusmuuttaja ohjaa yhtä tuuletinta esimerkiksi lämpöanturilta saatavan datan mukaan. Taajuusmuuttaja on hyödyllinen myös osana laajempaa automaatiojärjestelmää, jossa PLC lähettää puhaltimen ohjaussignaalin taajuusmuuttajalle esimerkiksi kenttäväylää hyödyntäen. Kenttäväyliä hyödyntämällä kaapeloinnin määrä vähenee huomattavasti ja etenkin kaivoksissa, missä vetomatkat voivat olla kilometrejä, tuovat huomattavia säästöjä. Myös turvallisuuslogiikan integrointi kenttäväylään esimerkiksi PROFIsafella vähentää tarvittavan kaapeloinnin määrää.
+\\\\
+Kittilän kultakaivoksella puhallinautomaatio on rakennettu käyttäen ABB:n ACS880 taajuusmuuttajia yhdistettynä ABB:n valmistamaan logiikkaohjaimeen. Sen tuomat hyödyt liittyvät saatuihin kustannusetuihin, jotka on saatu käyttämällä vain yhtä kenttäväyläkaapelia ohjaus- ja monitorointitiedon siirtämiseen. Kenttäväylää hyödyntämällä on mahdollista päästä etäältä käsiksi yksittäisten taajuusmuuttajien parametreihin. Tämä vähentää myös henkilöstökuluja, koska yksi operaattori voi säätää koko järjestelmää ilman tarvetta mennä itse toimilaitteen luokse.
+%Tähän vielä kittiläkalvoista jotain. Pyydä petriltä
 
-
-
-\subsubsection{ilmanvaihto}
--Kaivoksen tuulettaminen!\\
--Miten tehty?\\
--Ohjaus, valvonta?\\
--Varajärjestelmät?
+%-Varajärjestelmät?
 
 \subsubsection{Pumput}
--mutapumput, vesipumput.\\
--puhdistus\\
--mittaukset
+Kaivoksiin kertyy vettä ympäristön asettamista syistä kuten pohjavesien valumista ja paikallisista sääolosuhteista johtuen. Lisäksi kaivosprosessin eri vaiheet kuten pölyn sidonta ja poraaminen vaativat vettä, joka tuodaan kaivokseen putkistoa pitkin vesijohtoverkosta tai esimerkiksi läheisestä järvestä. Tätä kaivokseen kertyvää vesimassaa täytyy jatkuvasti pumpata ylös kaivoksesta, jotta kaivos ei tulvi. Kaivoksessa erityisen haasteen pumppaamiselle aiheuttaa veden seassa oleva kiinteä aines. Kiinteä aines täytyy saostaa pois vedestä kaivoksen sisällä ennen pumppaamista, jotta nestemäiselle aineelle tarkoitetut pumput eivät tukkiudu tai vaurioidu. Pumppaus on myös mahdollista tehdä siihen suunnitelluilla lietepumpuilla, jolloin saostusta ei tarvita. Saostus tapahtuu sille rakennetuissa saostusaltaissa, joista pumput pumppaavat puhdistunutta vettä pois.
+\\\\
+Pumppuilla ohjataan pääsääntöisesti painetta, virtausnopeutta tai säiliön pinnankorkeutta. Pumppujen ohjaus on perinteisesti toteutettu anturilla, joka kytkee pumpun päälle kun tietty raja-arvo ylitetään ja pois kun se taas alitetaan. \cite{Hakapää}. Ratkaisu on hyvin yksinkertainen, mutta energiankulutus on suurta, sillä pumppua käytetään yleensä kaukana optimaaliselta toiminta-alueelta. Kaksiarvoinen pumpun ohjaus aiheuttaa myös äkillisiä paineenvaihteluita putkistoon, mikä aiheuttaa rasituksia itse pumpulle ja putkistolle.
+\\\\
+Taajuusmuuttajilla pumppuja pystytään muiden sovellusten tapaan ohjaamaan portaattomasti. Painetta, virtausnopeutta tai pinnankorkeutta voidaan ohjata takaisinkytkennällä käyttäen PID-säätöä, jolloin prosessiarvon, esimerkiksi paineen, heilahtelut pienenevät huomattavasti. Sovelluskohtaisella ohjelmistolla varustetut ABB:n ACQ810 taajuumuuttajat pystyvät arvioimaan virtausta myös ilman virtaus- tai painesensoreita, mikä vähentää käyttöönottokuluja tilanteissa, joissa suurta tarkkuutta ei tarvita [ACQ810 esitelähde]. Ohjelmistossa on myös automaattisia toimintoja kuten pumpun puhdistus, joka puhdistaa pumpun nopeilla suunnanvaihdoksilla käyttäjän toimesta tai määräajoin. [ACQ810 esitelähde] Kuten luvussa 1 mainittiin, taajuusmuuttaja mahdollistaa helpon prosessiarvon etäohjauksen ja -valvonnan, sekä turvallisuustoiminnot esimerkiksi kenttäväylää hyödyntäen.
+\\\\
+Taajuusmuuttajien tuoma uusi pumppusovellus on rinnankytkettyjen puppujen ohjaaminen energiatehokkaalla ja pumppuja vähiten rasittavalla tavalla. Useampi taajuusmuuttaja kommunikoin tällöin keskenään säätäen jokaisen pumpun toiminnan mahdollisimman lähelle optimaalista toimintapistettä, pitäen samalla ohjatun prosessiarvon halutulla tasolla. Pumppuvian ilmetessä taajuusmuuttajat automaattisesti kytkevät kyseisen pumpun pois päältä ja jatkavat toimintaa jäljellä olevilla pumpuilla. 
+\\\\
+Kaivoksissa pumpun toiminta perustuu useimmiten pinnankorkeuden säätelyyn, pumppujen tarkoituksen ollessa vain veden poistaminen kaivoksen sisältä esimerkiksi saostusaltaasta. Tällöin pumpulta vaaditaan kestävyyttä pumpattavan nesteen ollessa usein kiintoainepitoista ja mahdollisesti hapanta. Tällöin taajuusmuuttajalla ohjattu pumppu on hyödyksi seurattaessa pumpun tilaa etenkin lietepumppauksessa, missä pumpun joutuvat hyvin kovalle rasitukselle. Taajuusmuuttajalla kyetään pumppua valvomaan etäältä ja tarvittaessa tehdä esimerkiksi puhdistustoiminto, jos pumpun kapasiteetin huomataan laskeneen. Pumpattaessa puhdasta vettä esimerkiksi porausyksiköille on ohjattavana suureena porausyksikön vedenpaine, minkä halutaan pysyvän vakiona. Tällöin vaaditaan jatkuvaa takaisinkytkettyä ohjausta, mihin vaaditaan nopeasti paineen vaihteluun reagoiva pumppu. Taajuusmuuttajalla tämä pystytään toteuttamaan yksinkertaisesti taajuusmuuttajan PID-säätimellä.
 
-\subsubsection{Paineilma}
-Paljon sähköä kuluttava?\\
-Mihin käytetään kaivoksissa?\\
-Miten tamuja voidaan hyödyntää?
-%%fi.opasnet.org./fi/Metallimalmikaivostoiminnan_elinkaari
-
+\subsubsection{Kompressorit}
+Moderneissa kallioporakoneissa hydrauliset järjestelmät ovat pääosin korvanneet paineilmaa voimanlähteenään käyttäneet koneet\cite[s. 143]{Hakapää}. Paineilmalla on kuitenkin edelleen rooli joissakin porasovelluksissa, ruiskubetonoinnissa ja räjähdysaineen panostuksessa. Paineilmaa verten kaivoksiin on yleensä rakennettu ruostumattomasta teräksestä valmistettu paineilmaverkosto, johon syöttävät ilmaa omaan tilaansa asennetut kompressorit\cite[s. 269]{Hakapää}.
+\\\\
+Pumppujen tapaan paineilmaa voidaan tuottaa kompressorilla, joka siirtyy kevennetylle käynnille kun saavutetaan tietty painetaso. Toinen vaihtoehto on käyttää muuttuvanopeuksista kompressoria, joka säätää pyörimisnopeuttansa jatkuvasti vastaten sen hetkiseen painetarpeeseen putkistossa. \cite[s. 269]{Hakapää}. Sovelluksesta riippuen muuttuvanopeuksinen kompressori voi säästää paljon energiaa, mutta esimerkiksi tapauksissa joissa paineen tarve on lähes vakio, on tavallinen kompressori hyötysuhteeltaan yleensä parempi.
+\\\\
+Kuten pumppusovelluksissa, useita kompressoreita käsittävä järjestelmä on myös mahdollinen. Tällöin ulkoinen teollisuus-PC tai keskenään kommunikoivat taajuusmuuttajat ohjaavat samaan putkistoon kytkettyjä kompressoreita. Tämä mahdollistaa myös erilaisten kompressorien käytön samassa systeemissä. Paineilmasovelluksissa onkin yleistä, että yhden suuritehoisen kompressorin sijaan käytetään muutamaa suurta peruskuormituskonetta ja muutamaa pienempää huippukuormituskonetta, jotka aktivoidaan vain painetarpeen vaatiessa.
 \clearpage
 
 \section{Yhteenveto}
--Energiansäästö\\
--Kustannukset\\
--Tarkemmat prosessit\\
--Tulevaisuus?
+%Toiminnallisuus
+Tutkimuksen aiheina olivat taajuusmuuttajien sisäisen toiminnallisuuden nykytilanne, niiden rakenne ja kestävyys kaivosolosuhteissa sekä taajuusmuuttajista saatava hyöty kaivosten prosesseissa. Toiminnallisuuden tarkastelussa huomattiin, että taajuusmuuttajat ovat viime vuosina kehittyneet yhä enemmän itsenäisiksi prosessilaitteikseen, joissa kyetään suorittamaan laskentaa ja ohjaamaan moottorin lisäksi myös muita laitteita I/O:ta tai kenttäväylää käyttäen. Kenttäväylien tuomat edut verrattuna perinteisiin analogi- tai digitaalisignaaleihin on saanut myös kaivosteollisuuden toimijat toteuttamaan kenttäväyliä käyttäviä automaatiojärjestelmiä kaivosympäristöön. Työntekijöiden turvallisuus ja yhä tiukkenevat turvallisuusmääräykset ovat saaneet taajuusmuuttajavalmistajat toteuttamaan turvallisuustoimintoja taajuusmuuttajiin, tämä laskee turvallisuuslaitteiston kuluja ja on näin houkutteleva ominaisuus teollisuuden toimijoille.
+\\\\
+%Kaivosympäristö
+Kaivos on haastava ympäristö kaikille koneille, mutta erityisesti elektroniikkalaitteille, koska ne ovat herkkiä niin kosteudelle kuin pölylle. Kaivosympäristössä kosteus, tärinä, pöly ja muut korroosiota aiheuttavat tekijät aiheuttavat taajuusmuuttajat jäähdytysjärjestelmän tehon heikkenemistä ja pahimmassa tapauksessa myös sähköisiä vikoja ja jopa läpilyönnin piirilevyllä. Haastavia ympäristöoloja vastaan taajuusmuuttajavalmistajat ovat tuoneet markkinoille erilaisilla kotelointiratkaisuilla varustettuja taajuusmuuttajia. Niiden kestävyys vaihtelee sisäkäyttöön suunnitelluista avoimista laitteista lähes vesitiiviisiin. Kaivoksen ominaisuuksista riippuen erilaisia kotelointeja käytetään, mutta tutkimuksessa selvisi, että edes suurimmalla kotelointiluokalla varustetut taajuusmuuttajat eivät välttämättä selviydy tietyn tyyppisten kaivosten syövyttävistä ja kosteista ympäristöoloista. Näissä tapauksessa herkkä tehoelektroniikka on asennettuna omaan eristettyyn sähkötilaansa, joiden ilman ominaisuudet ovat sisätiloja vastaavat. Koska sähkötilat ovat keskitettyjä, voivat moottorikaapelien pituudet olla kaivoksissa huomattavan pitkiä. Tämä tulee ottaa huomioon taajuusmuuttajan ominaisuuksia suunniteltaessa. 
+\\\\
+%Sovellukset
+Taajuusmuuttajien potentiaaliset sovellukset ulottuvat kaivosteollisuudessa kaikkialle, missä sähkömoottoreita käytetään. Tällöin taajuusmuuttajien käyttö perustellaan joko energiansäästöllä tai parantuneella kyvyllä ohjata kyseessä olevaa prosessia. Energiansäästö perustuu taajuusmuuttajan kykyyn ohjata suoraan sähkömoottorin tehoa pyörimisnopeuden ja momentin avulla. Tämä on sovelluksesta riippuen huomattavasti energiatehokkaampaa kuin esimerkiksi nopeuden säätäminen jarrun avulla. Etenkin prosesseissa, missä nopeutta joudutaan jatkuvasti muuttamaan tuovat taajuusmuuttajat suuria energiasäästöjä perinteiseen ratkaisuun verrattuna. Energiasäästöjen lisäksi taajuusmuuttajat voivat investointikustannuksestaan huolimatta tuoda säästöjä myös asennuksessa, kun vaihteistojen, kontaktoreiden ja turvalogiikoiden tarve vähenee. Taajuusmuuttajilla saavutetut parannukset prosessin ohjauksessa voivat myös olla ratkaiseva syy niiden käyttöönotossa. Esimerkiksi pumppujärjestelmien älykäs ohjaus ja kuljettimien ramppikäynnistys ovat sovelluksia, joissa älykkäällä toiminnallisuudella saavutetaan epäsuoria säästöjä esimerkiksi vähentyneenä laitteiston kulumana ja parantuneena prosessin tehokkuutena.
+\\\\
+%Lopetus
+Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmeistä, että taajuusmuuttajilla on lukuisia käyttömahdollisuuksia kaivosteollisuuden alalla. Tekniikan kehitys ja tietoisuus energiankulutuksesta ja ympäristöasioista kiihdyttävät perinteisten ohjausmenetelmien korvaamista  taajuusmuuttajilla. Kaivoteollisuus on pitkään ollut automaatioasteeltaan jäljessä muita suuria teollisuudenaloja, mutta älykkäiden hajautettujen automaatiojärjestelmien kehittyessä on automaation taso, ja samalla taajuusmuuttajien käyttö, kaivoksissa kasvanut. Tulevaisuudessa sähkömoottoreiden yhä enemmissä määrin korvatessa polttomoottorit, on taajuusmuuttajille yhä suurempi tarve, kun tarvitaan tehokasta ja tarkkaa moottorisäätöä.
 
--->profit
+
+%-Energiansäästö\\
+%-Kustannukset\\
+%-Tarkemmat prosessit\\
+%-Tulevaisuus?
+%-->profit
 
 %\section{Summary} 
 
