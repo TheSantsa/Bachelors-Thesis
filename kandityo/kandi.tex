@@ -177,11 +177,15 @@
 %% niin kuin se on yllä määritelty.
 %% Tiivistelmän avainsanat
 %%
-\keywords{Avainsanoiksi valitaan kirjoituksen sisältöä keskeisesti kuvaavia
-käsitteitä}
+\keywords{Taajuusmuuttaja, kaivosteollisuus, käyttöympäristö, kaivosautomaatio}
 %% Tiivistelmän tekstiosa
 \begin{abstractpage}[finnish]
- Tiivistelmä suomeksi.
+Tämä työ käsittelee kaivosteollisuuden asettamia vaatimuksia taajuusmuuttajien rakenteelle ja se selvittää millaisissa olosuhteissa taajuusmuuttajat joutuvat toiminaan ja mitä nämä olosuhteet vaativat niiden rakenteelta. Työssä selvitetään myös miten taajuusmuuttajien toiminnallisuutta on hyödynnetty tai voitaisiin hyödyntää kaivosteollisuuden prosesseissa.
+\\\\
+Työ esittää taajuusmuuttajan toimintaperiaatteen ja tärkeimmät taajuusmuuttajan sisäisellä logiikalla toteutetut ominaisuudet. Lisäksi tutkitaan kaivosympäristön asettamia haasteita taajuusmuuttajien luotettavalle toiminnalle. Näistä selvityksistä kertyneen tiedon pohjalta käydään läpi kaivosteollisuuden prosesseja ja pohditaan, miten taajuusmuuttajia voitaisiin hyödyntää. Ympäristötekijöiden vaikutus kaivosympäristössä ja nykyaikaisten taajuusmuuttajien ominaisuudet selvitetään kattavalla kirjallisuuskatsauksella ja asiantuntijahaastatteluilla. Näitä tietoja ja haastatteluja hyödyntämällä selvitetään miten taajuusmuuttajia hyödynnetään kaivosteollisuudessa ja mitä rakenteellisia ja toiminnallisia ominaisuuksia niiltä vaaditaan.
+\\\\
+Kaivosympäristö osoittautui erittäin vaativaksi toimintaympäristöksi taajuusmuuttajille. Suurimmat ympäristön aiheuttamat rasitteet aiheutuvat pölystä, kosteudesta ja korroosiota aiheuttavista aineista. Taajuusmuuttajia pystytään kuitenkin järkevällä sijoittelulla hyödyntämään myös maanalaisten kaivosten prosesseissa. Taajuusmuuttajista huomattiin löytyvän suuri määrä sovellusten tehokkuutta ja turvallisuutta lisäävää toiminnallisuutta, joka on vuosien aikana lisännyt niiden suosiota myös kaivoksissa.
+
 \end{abstractpage}
 
 %% Pakotetaan uusi sivu varmuuden vuoksi, jotta 
@@ -333,10 +337,9 @@ Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan to
 
 %----------TURVALLISUUS------------
 \subsection{Turvallisuustoiminnot}
-Yhä tiukentuvat turvallisuusmääräykset eri teollisuuden aloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC EN 61508 standardin mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä. \cite{IEC61508}
-%%etsi standardi töissä!
+Yhä tiukentuvat turvallisuusmääräykset eri teollisuuden aloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC 61508 -standardin \cite{IEC61508} mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.
 \\\\
-Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on EN 60204-1 -standardin määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran [LÄHDE. EN 60204-1]. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
+Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on IEC 60204 -standardin \cite{IEC60204-1} määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.5]{STO}
@@ -505,7 +508,7 @@ Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen el
 %-elektroniikan yhteydessä läpilyöntejä
 
 \subsubsection{Mekaaniset rasitukset}
-Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua tärinälle ja iskuille. Tärinä ja iskut rasittavat laitteen komponentteja lyhentäen sen elinikää. Turvatakseen laitteiden toiminnan ovat useat taajuusmuuttajavalmistajat määritelleet suurimmat tärinän ja iskujen arvot, joita taajuusmuuttaja luotettavasti kestää. IEC 60082-2 standardi määrittelee tavat sähkölaitteiden tärinän- ja iskunkeston mittaamiselle. Standardissa tärinä ilmaistaan sen amplitudin, taajuuden ja kiihtyvyyden summana ja iskut kiihtyvyytenä. \cite{IEC60082-2}
+Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua tärinälle ja iskuille. Tärinä ja iskut rasittavat laitteen komponentteja lyhentäen sen elinikää. Turvatakseen laitteiden toiminnan ovat useat taajuusmuuttajavalmistajat määritelleet suurimmat tärinän ja iskujen arvot, joita taajuusmuuttaja luotettavasti kestää. IEC 60068-2-6 \cite{IEC60068} standardi määrittelee tavat sähkölaitteiden tärinän- ja iskunkeston mittaamiselle. Standardissa tärinä ilmaistaan sen amplitudin, taajuuden ja kiihtyvyyden summana ja iskut kiihtyvyytenä.
 %%IEC:standardit (ACS880HWmanual s.174)
 \\\\
 Kaivosympäristössä taajuusmuuttajaan kohdistuvat mekaaniset rasitukset riippuvat paljolti laitteen asennuspaikasta. Kaivoksen kiinteissä järjestelmissä kuten ilmanvaihdossa taajuusmuuttajat on tyypillisesti asennettu seinälle tai lattialle sähkötiloihin. Suuremmissa laitteissa kuten murskaimissa ja työkoneissa taajuusmuuttajat ovat asennettuna osaksi koneen rakennetta ja liikkuvat koneen mukana altistuen täten vaihteleville olosuhteille.
@@ -734,9 +737,9 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{880hwman}ABB Oy. \textit{Laiteopas, ACS880-01-taajuusmuuttajat, versio E}. Saatavissa: \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/71ce8071e2a7ae2bc1257bd70046ade1/$file/FI_ACS880-01_0_55to250kW_HW_E_plus_update_notice_screen.pdf}. Päivitetty 29.6.2012. Viitattu 9.10.2014.
 
-\bibitem{IEC61508}IEC EN 61508. \textit{Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems}. 7.painos. Geneve, Sveitsi: International Electrotechnical Commission, 2007. 86 s.
+\bibitem{IEC61508}IEC EN 61508-5. \textit{Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 5: Examples of methods for the determination of safety integrity levels}. Versio 2. Geneve, Sveitsi: International Electrotechnical Commission, 2010. 97 s.
 
-\bibitem{EN60204-1}EN 60204-1, International Electrotechnical Commission.
+\bibitem{IEC60204-1}IEC 60204-1. \textit{Safety of machinery - Electrical equipment of machines - Part 1: General requirements}. Versio 5.1. Geneve, Sveitsi: International Electrotechnical Commission, 2009. 248 s.
 
 \bibitem{STOkuva}Siemens AG. \textit{Safe Torque Off (STO)}. Saatavissa: \url{http://www.industry.siemens.com/topics/global/en/safety-integrated/machine-safety/product-portfolio/drive-technology/safety-functions/pages/safe-torque-off.aspx}. Päivitetty 10.3.2014. Viitattu 27.10.2014.
 
@@ -762,7 +765,7 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{danfoss}Danfoss Drives. \textit{VLT AutomationDrive Series}. Saatavissa: \url{http://www.danfoss.com/NR/rdonlyres/2270DF18-D4AD-4808-824E-4942B247F078/0/2011_AutomationDrive_176R0571_Web.pdf}. Päivitetty: 8/2011. Viitattu: 26.11.2014.
 
-\bibitem{IEC60082-2}IEC 60082-2. \textit{Environmental testing - Part 2-6: Tests - Test Fc: Vibration (sinusoidal)}. 7.painos. Geneve, Sveitsi: International Electrotechnical Commission, 2007. 86 s.
+\bibitem{IEC60068}IEC 60068-2-6. \textit{Environmental testing - Part 2-6: Tests - Test Fc: Vibration (sinusoidal)}. Versio 7. Geneve, Sveitsi: International Electrotechnical Commission, 2007. 86 s.
 
 \bibitem{Sirkko}Sirkko, T. \textit{Louhintatyöstä syntyvän tärinän riskiarviointi}. Opinnäytetyö. Savonia-Ammattikorkeakoulu. 2012.
 
@@ -786,7 +789,7 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{ACQ810}ABB Oy. \textit{ABB drives for water and wastewater}. Saatavissa: \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/a572a4ae2cc86f8ac1257c6e005094de/$file/EN_ACQ810forwaterandwastewaterREVF_13.5.2014.pdf}. Päivitetty 13.5.2014. Viitattu 26.11.2014.
 
-\bibitem{IP}IEC 60529. \textit{Degrees of protection provided by enclosures (IP Code).} Versio 2.1. Geneve, Sveitsi: International Electrotechnical Commission, 2001.
+\bibitem{IP}IEC 60529. \textit{Degrees of protection provided by enclosures (IP Code).} Versio 2.2. Geneve, Sveitsi: International Electrotechnical Commission, 2013. 214 s.
 %%tekstistä puuttuvat lähteet
 
 
@@ -841,16 +844,16 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 \clearpage
 
 \thesisappendix
-\section{Liite 1: Kotelointiluokitus standardin SFS-EN 60529 mukaan \label{Liite 1}}
+\section{Liite 1: Kotelointiluokitus standardin IEC 60529 mukaan \label{Liite 1}}
 EN 60529 -standardin mukaisen IP-koodin ensimmäisen tunnusnumeron merkitys \cite{IP}.
 \\\\
 \tabulinesep=5pt
 \begin{tabu} to \textwidth {|X[2,c]|X[3c]|X[3c]|} 
    \hline
    \rowfont[c]\bfseries %will apply the \bfseries command to all elements of the next row
-	Ensimmäinen tunnusnumero & Suojaus vaarallisten osien kosketukselta	 & Suojaus vierailta esineiltä ja pölyltä \\ \hline
+	Ensimmäinen tunnusnumero & Suojaus vaarallisiin osiin pääsyltä	 & Suojaus vierailta esineiltä \\ \hline
     0                        & Suojaamaton                               & Suojaamaton                            \\ \hline
-    1                        & Kosketussuojattu nyrkiltä                 & Halkaisijaltaan yli 50 mm esineiltä    \\ \hline
+    1                        & Kosketussuojattu kämmeneltä                & Halkaisijaltaan yli 50 mm esineiltä    \\ \hline
     2                        & Sormelta                                  & Halkaisijaltaan yli 12,5 mm esineiltä  \\ \hline
     3                        & Työkalulta                                & Halkaisijaltaan yli 2,5 mm esineiltä   \\ \hline
     4                        & Langalta                                  & Halkaisijaltaan yli 1 mm esineiltä     \\ \hline
@@ -867,11 +870,11 @@ EN 60529 -standardin mukaisen IP-koodin toisen tunnusnumeron merkitys \cite{IP}.
 \begin{tabu} to \textwidth {|X[2,c]|X[6,c]|} 
    \hline
    \rowfont[c]\bfseries %will apply the \bfseries command to all elements of the next row
-	Toinen tunnusnumero      & Vesisuojaus															\\ \hline
+	Toinen tunnusnumero      & Suojaus veden haitalliselta pääsyltä.															\\ \hline
     0                        & Suojaamaton                           								\\ \hline    
     1                        & Suojattu pystysuoraan tippuvalta vedeltä                				\\ \hline
     2                        & Suojattu korkeintaan 15 asteen kulmassa tippuvalta vedeltä 			\\ \hline
-    3                        & Suojattu korkeintaan 60 asteen kulmassa satavalta vedeltä            \\ \hline              
+    3                        & Suojattu korkeintaan 60 asteen kulmassa roiskuvalta vedeltä            \\ \hline              
     4                        & Suojattu kaikista suunnista roiskuvalta vedeltä              		\\ \hline              
     5                        & Suojattu kaikista suunnista tulevalta vesisuihkulta                  \\ \hline               
     6                        & Suojattu kaikista suunnista tulevalta voimakkaalta vesisuihkulta		\\ \hline

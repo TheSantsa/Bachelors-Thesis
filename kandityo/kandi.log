@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  26 NOV 2014 17:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.10)  28 NOV 2014 16:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,643 +1426,671 @@ Package babel Info: Redefining finnish shorthand "|
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 182.
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 183--183
+Overfull \hbox (2.0pt too wide) in paragraph at lines 182--182
 [] 
  []
 
 
-Overfull \hbox (2.8pt too wide) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
+
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 183--188
+\T1/cmr/m/n/12 (+20) Työ esit-tää taa-juus-muut-ta-jan toi-min-ta-pe-ri-aat-tee
+n ja tär-keim-mät taa-juus-
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 183--188
+\T1/cmr/m/n/12 (+20) muut-ta-jan si-säi-sel-lä lo-gii-kal-la to-teu-te-tut omi-
+nai-suu-det. Li-säk-si tut-ki-taan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
+
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 183--188
+\T1/cmr/m/n/12 (+20) Kaivosympäristö osoit-tau-tui erit-täin vaa-ti-vak-si toi-
+min-taym-pä-ris-tök-si taa-
+ []
+
+
+Overfull \hbox (2.8pt too wide) in paragraph at lines 182--189
 [] 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 189.
 [2
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 197.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 209.
 [3
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 213.
  (./kandi.toc)
 \tf@toc=\write5
 \openout5 = `kandi.toc'.
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 217.
  [4]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 213.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
  [5]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 256.
+(babel)             in language  on input line 260.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--274
+Underfull \hbox (badness 10000) in paragraph at lines 265--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--274
+Underfull \hbox (badness 10000) in paragraph at lines 265--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--274
+Underfull \hbox (badness 10000) in paragraph at lines 265--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--274
+Underfull \hbox (badness 10000) in paragraph at lines 265--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--278
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 278.
 [1
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 279.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 279.
  [2]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 278.
+(babel)             in language  on input line 282.
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--286
-
- []
-
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 291.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 299.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 299.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 299.
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--300
+Underfull \hbox (badness 10000) in paragraph at lines 284--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--300
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--300
+Underfull \hbox (badness 10000) in paragraph at lines 284--290
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 295.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 303.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 303.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 303.
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--304
+
+ []
+
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 304.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 304.
 [3
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 312.
+(babel)             in language  on input line 316.
  <acs880panel.jpg, id=212, 1460.45625pt x 3628.55624pt>
 File: acs880panel.jpg Graphic file (type jpg)
 
 <use acs880panel.jpg>
-Package pdftex.def Info: acs880panel.jpg used on input line 317.
+Package pdftex.def Info: acs880panel.jpg used on input line 321.
 (pdftex.def)             Requested size: 116.83888pt x 290.29044pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 327.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 324--332
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--332
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--332
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 336.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 336.
 [5 <./acs880panel.jpg>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 335.
- <STO.jpg, id=235, 771.88374pt x 399.4925pt>
+(babel)             in language  on input line 339.
+ <STO.jpg, id=236, 771.88374pt x 399.4925pt>
 File: STO.jpg Graphic file (type jpg)
 
 <use STO.jpg>
-Package pdftex.def Info: STO.jpg used on input line 342.
+Package pdftex.def Info: STO.jpg used on input line 345.
 (pdftex.def)             Requested size: 385.94092pt x 199.74576pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--347
+Underfull \hbox (badness 10000) in paragraph at lines 340--350
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 347.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 347.
-[6] <SS1.jpg, id=248, 773.89125pt x 401.5pt>
+(babel)             in language  on input line 350.
+[6] <SS1.jpg, id=250, 773.89125pt x 401.5pt>
 File: SS1.jpg Graphic file (type jpg)
  <use SS1.jpg>
-Package pdftex.def Info: SS1.jpg used on input line 354.
+Package pdftex.def Info: SS1.jpg used on input line 357.
 (pdftex.def)             Requested size: 386.94467pt x 200.7495pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 363.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 363.
  [7 <./STO.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 361--367
+Underfull \hbox (badness 10000) in paragraph at lines 364--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--367
+Underfull \hbox (badness 10000) in paragraph at lines 364--370
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 388.
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--389
+Underfull \hbox (badness 10000) in paragraph at lines 389--392
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 389.
-[8 <./SS1.jpg>] <VSI.png, id=270, 570.13pt x 221.82875pt>
+(babel)             in language  on input line 392.
+[8 <./SS1.jpg>] <VSI.png, id=272, 570.13pt x 221.82875pt>
 File: VSI.png Graphic file (type png)
  <use VSI.png>
-Package pdftex.def Info: VSI.png used on input line 392.
+Package pdftex.def Info: VSI.png used on input line 395.
 (pdftex.def)             Requested size: 370.58011pt x 144.18697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--403
+Underfull \hbox (badness 10000) in paragraph at lines 402--406
 
  []
 
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 409.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 409.
-[9 <./VSI.png>]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 412.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 412.
+[9 <./VSI.png>]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 415.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 417.
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--424
+Underfull \hbox (badness 10000) in paragraph at lines 418--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--424
+Underfull \hbox (badness 10000) in paragraph at lines 418--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--427
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 425.
+(babel)             in language  on input line 428.
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--435
+Underfull \hbox (badness 10000) in paragraph at lines 432--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--435
+Underfull \hbox (badness 10000) in paragraph at lines 432--438
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 435.
+(babel)             in language  on input line 438.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 435.
+(babel)             in language  on input line 438.
 [10
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 438.
+(babel)             in language  on input line 441.
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--447
+Underfull \hbox (badness 10000) in paragraph at lines 445--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--447
+Underfull \hbox (badness 10000) in paragraph at lines 445--450
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 447.
+(babel)             in language  on input line 450.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 447.
-[11] <IP55.png, id=303, 468.24937pt x 420.82219pt>
+(babel)             in language  on input line 450.
+[11] <IP55.png, id=305, 468.24937pt x 420.82219pt>
 File: IP55.png Graphic file (type png)
  <use IP55.png>
-Package pdftex.def Info: IP55.png used on input line 450.
+Package pdftex.def Info: IP55.png used on input line 453.
 (pdftex.def)             Requested size: 421.42053pt x 378.73647pt.
 
-<flange.jpg, id=306, 194.97844pt x 190.46156pt>
+<flange.jpg, id=308, 194.97844pt x 190.46156pt>
 File: flange.jpg Graphic file (type jpg)
  <use flange.jpg>
-Package pdftex.def Info: flange.jpg used on input line 462.
+Package pdftex.def Info: flange.jpg used on input line 465.
 (pdftex.def)             Requested size: 194.97795pt x 190.46107pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 471.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 471.
  [12 <./IP55.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 489.
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--499
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--499
+Underfull \hbox (badness 10000) in paragraph at lines 494--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--499
+Underfull \hbox (badness 10000) in paragraph at lines 494--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--502
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 502.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 499.
+(babel)             in language  on input line 502.
 [13 <./flange.jpg>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 507.
+(babel)             in language  on input line 510.
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--520
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--520
+Underfull \hbox (badness 10000) in paragraph at lines 511--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--520
+Underfull \hbox (badness 10000) in paragraph at lines 511--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--520
+Underfull \hbox (badness 10000) in paragraph at lines 511--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--523
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 523.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 523.
 [14]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 521.
+(babel)             in language  on input line 524.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--529
+Underfull \hbox (badness 10000) in paragraph at lines 525--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--529
+Underfull \hbox (badness 10000) in paragraph at lines 525--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--532
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 532.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 532.
 [15]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 537.
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--541
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 535--541
+Underfull \hbox (badness 10000) in paragraph at lines 538--544
 
  []
 
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 552.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 552.
-[16]
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--544
+
+ []
+
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 555.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 555.
+[16]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 558.
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--559
+Underfull \hbox (badness 10000) in paragraph at lines 559--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--559
+Underfull \hbox (badness 10000) in paragraph at lines 559--562
 
  []
 
-<Kaivosprosessi.png, id=355, 375.65344pt x 376.40625pt>
+<Kaivosprosessi.png, id=357, 375.65344pt x 376.40625pt>
 File: Kaivosprosessi.png Graphic file (type png)
 
 <use Kaivosprosessi.png>
-Package pdftex.def Info: Kaivosprosessi.png used on input line 562.
+Package pdftex.def Info: Kaivosprosessi.png used on input line 565.
 (pdftex.def)             Requested size: 375.65251pt x 376.40532pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--575
+Underfull \hbox (badness 10000) in paragraph at lines 572--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--575
+Underfull \hbox (badness 10000) in paragraph at lines 572--578
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 578.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 578.
 [17
 
  <./Kaivosprosessi.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 577.
+(babel)             in language  on input line 580.
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--587
+Underfull \hbox (badness 10000) in paragraph at lines 583--590
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 588.
+(babel)             in language  on input line 591.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 590.
-<LHD.jpg, id=374, 1027.84pt x 578.16pt>
+(babel)             in language  on input line 593.
+<LHD.jpg, id=376, 1027.84pt x 578.16pt>
 File: LHD.jpg Graphic file (type jpg)
  <use LHD.jpg>
-Package pdftex.def Info: LHD.jpg used on input line 599.
+Package pdftex.def Info: LHD.jpg used on input line 602.
 (pdftex.def)             Requested size: 359.74939pt x 202.35902pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--604
+Underfull \hbox (badness 10000) in paragraph at lines 594--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--604
+Underfull \hbox (badness 10000) in paragraph at lines 594--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--604
+Underfull \hbox (badness 10000) in paragraph at lines 594--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--604
+Underfull \hbox (badness 10000) in paragraph at lines 594--607
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 604.
+(babel)             in language  on input line 607.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 604.
+(babel)             in language  on input line 607.
 [18]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 612.
+(babel)             in language  on input line 615.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 612.
+(babel)             in language  on input line 615.
  [19 <./LHD.jpg>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 613.
+(babel)             in language  on input line 616.
 
-<hihnakuljetin_rakenne.jpg, id=390, 572.1375pt x 174.6525pt>
+<hihnakuljetin_rakenne.jpg, id=392, 572.1375pt x 174.6525pt>
 File: hihnakuljetin_rakenne.jpg Graphic file (type jpg)
 
 <use hihnakuljetin_rakenne.jpg>
-Package pdftex.def Info: hihnakuljetin_rakenne.jpg used on input line 618.
+Package pdftex.def Info: hihnakuljetin_rakenne.jpg used on input line 621.
 (pdftex.def)             Requested size: 429.10207pt x 130.98904pt.
 
-Overfull \hbox (2.31073pt too wide) in paragraph at lines 618--619
+Overfull \hbox (2.31073pt too wide) in paragraph at lines 621--622
  [] 
  []
 
-<conveyor.png, id=395, 578.6418pt x 400.8576pt>
+<conveyor.png, id=397, 578.6418pt x 400.8576pt>
 File: conveyor.png Graphic file (type png)
  <use conveyor.png>
-Package pdftex.def Info: conveyor.png used on input line 630.
+Package pdftex.def Info: conveyor.png used on input line 633.
 (pdftex.def)             Requested size: 347.18776pt x 240.5164pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 636.
+(babel)             in language  on input line 639.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 636.
+(babel)             in language  on input line 639.
  [20 <./hihnakuljetin_rakenne.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 637--645
+Underfull \hbox (badness 10000) in paragraph at lines 640--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--645
+Underfull \hbox (badness 10000) in paragraph at lines 640--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--645
+Underfull \hbox (badness 10000) in paragraph at lines 640--648
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 645.
+(babel)             in language  on input line 648.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 645.
+(babel)             in language  on input line 648.
 [21 <./conveyor.png>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 653.
+(babel)             in language  on input line 656.
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--661
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--661
+Underfull \hbox (badness 10000) in paragraph at lines 657--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--661
-
- []
-
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 666.
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--677
+Underfull \hbox (badness 10000) in paragraph at lines 657--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--677
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--677
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--677
+Underfull \hbox (badness 10000) in paragraph at lines 657--664
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 677.
+(babel)             in language  on input line 669.
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--680
+
+ []
+
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 677.
-[22]
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 677.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 677.
- [23]
+(babel)             in language  on input line 680.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 680.
+[22]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 680.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 680.
+ [23]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 683.
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--690
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 681--690
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 681--690
+Underfull \hbox (badness 10000) in paragraph at lines 684--693
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--690
+Underfull \hbox (badness 10000) in paragraph at lines 684--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--693
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--693
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 693.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 693.
 [24]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 691.
+(babel)             in language  on input line 694.
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--697
+Underfull \hbox (badness 10000) in paragraph at lines 695--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--697
+Underfull \hbox (badness 10000) in paragraph at lines 695--700
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 697.
+(babel)             in language  on input line 700.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 697.
+(babel)             in language  on input line 700.
 [25]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 699.
+(babel)             in language  on input line 702.
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--711
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 701--711
+Underfull \hbox (badness 10000) in paragraph at lines 704--714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--711
+Underfull \hbox (badness 10000) in paragraph at lines 704--714
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--714
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 711.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 711.
+(babel)             in language  on input line 714.
 [26
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 721.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 721.
- [27]
+(babel)             in language  on input line 724.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 724.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 733.
+ [27]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 727.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 736.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -2072,243 +2100,238 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 \T1/cmtt/m/n/12 com / global / seitp / seitp202 . nsf / 0 / 2996a31f6d99e961c12
 57864004ae0c1 /
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 735--736
+Underfull \hbox (badness 5607) in paragraph at lines 738--739
 []\T1/cmr/m/n/12 (+20) ABB Oy. \T1/cmr/m/it/12 (+20) Lai-teo-pas, ACS880-01-taa
 juusmuuttajat, ver-sio E\T1/cmr/m/n/12 (+20) . Saa-ta-vis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 \T1/cmr/m/n/12 (+20) sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com / gl
 obal / scot / scot201 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 \T1/cmtt/m/n/12 71ce8071e2a7ae2bc1257bd70046ade1 / $file / FI _ ACS880-[]01 _ 0
  _ 55to250kW _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 \T1/cmtt/m/n/12 HW _ E _ plus _ update _ notice _ screen . pdf$[][]\T1/cmr/m/n/
 12 (+20) . Päi-vi-tet-ty 29.6.2012. Vii-tat-tu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 \T1/cmtt/m/n/12 siemens . com / topics / global / en / safety-[]integrated / ma
 chine-[]safety /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 \T1/cmtt/m/n/12 product-[]portfolio / drive-[]technology / safety-[]functions /
  pages /
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 743--744
+Underfull \hbox (badness 5302) in paragraph at lines 746--747
 []\T1/cmr/m/n/12 (+20) ABB Oy. \T1/cmr/m/it/12 (+20) User's ma-nual: FSO-12 Sa-
 fe-ty func-tions mo-du-le\T1/cmr/m/n/12 (+20) . Saa-ta-
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 743--744
+Underfull \hbox (badness 3407) in paragraph at lines 746--747
 \T1/cmr/m/n/12 (+20) vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . com 
 / global / scot / scot201 . nsf / veritydisplay /
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 743--744
+Underfull \hbox (badness 1331) in paragraph at lines 746--747
 \T1/cmtt/m/n/12 80fd1fe025d402d7c1257d0000408aa6 / $file / EN _ FSO _ 12 _ UM _
  A _ A5 . pdf$[][]\T1/cmr/m/n/12 (+20) . Päi-
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 745--746
+Underfull \hbox (badness 4328) in paragraph at lines 748--749
 []\T1/cmr/m/n/12 (+20) Siemens AG. \T1/cmr/m/it/12 (+20) Sa-fe Stop 1 (SS1)\T1/
 cmr/m/n/12 (+20) . Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www . industr
 y .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 \T1/cmtt/m/n/12 siemens . com / topics / global / en / safety-[]integrated / ma
 chine-[]safety /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
 \T1/cmtt/m/n/12 product-[]portfolio / drive-[]technology / safety-[]functions /
  Pages /
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 752.
+(babel)             in language  on input line 755.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 752.
+(babel)             in language  on input line 755.
 [28
 
 ]
-Underfull \hbox (badness 7540) in paragraph at lines 753--754
+Underfull \hbox (badness 7540) in paragraph at lines 756--757
 \T1/cmtt/m/n/12 option = com _ content&view = article&id = 3&Itemid = 41&lang =
  fi$[][]\T1/cmr/m/n/12 (+20) . Päi-vi-tet-ty
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--756
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
 \T1/cmtt/m/n/12 scot / scot216 . nsf / veritydisplay / 2205e72865c2c747c1257a62
 0026d001 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--756
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
 \T1/cmtt/m/n/12 $file / Mining % 20brochure _ EN _ lowres . pdf$[][]\T1/cmr/m/n
 /12 (+20) . Päi-vi-tet-ty 2012. Vii-tat-tu
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 763--764
+Underfull \hbox (badness 1436) in paragraph at lines 766--767
 []\T1/cmr/m/n/12 (+20) Danfoss Dri-ves. \T1/cmr/m/it/12 (+20) VLT Au-to-ma-tion
 Dri-ve Se-ries\T1/cmr/m/n/12 (+20) . Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 http :
  / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
 \T1/cmtt/m/n/12 danfoss . com / NR / rdonlyres / 2270DF18-[]D4AD-[]4808-[]824E-
 []4942B247F078 / 0 /
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 763--764
+Underfull \hbox (badness 2253) in paragraph at lines 766--767
 \T1/cmtt/m/n/12 2011 _ AutomationDrive _ 176R0571 _ Web . pdf$[][]\T1/cmr/m/n/1
 2 (+20) . Päi-vi-tet-ty: 8/2011. Vii-tat-tu:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
 []\T1/cmr/m/n/12 (+20) opasnet.org. Ku-va. Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 
 http : / / fi . opasnet . org / fi / Tiedosto :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
 \T1/cmtt/m/n/12 Kaivostoiminnanyleisprosessi . png$[][]\T1/cmr/m/n/12 (+20) . P
 äi-vi-tet-ty 11.2.2012. Vii-tat-tu
  []
 
-
-Underfull \hbox (badness 1394) in paragraph at lines 777--778
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 780.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 780.
+[29]
+Underfull \hbox (badness 1394) in paragraph at lines 780--781
 []\T1/cmr/m/n/12 (+20) Sandvik Oy. \T1/cmr/m/it/12 (+20) Ground-breaking Elect-
 rici-ty\T1/cmr/m/n/12 (+20) . Saa-ta-vis-sa: [][]$\T1/cmtt/m/n/12 minestories .
  com /
  []
 
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 779.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 779.
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 787--788
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--791
 []\T1/cmr/m/n/12 (+20) ABB Oy. \T1/cmr/m/it/12 (+20) ABB dri-ves for wa-ter and
  was-tewa-ter\T1/cmr/m/n/12 (+20) . Saa-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--788
+Underfull \hbox (badness 10000) in paragraph at lines 790--791
 \T1/cmr/m/n/12 (+20) ta-vis-sa: [][]$\T1/cmtt/m/n/12 http : / / www05 . abb . c
 om / global / scot / scot201 . nsf /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--788
+Underfull \hbox (badness 10000) in paragraph at lines 790--791
 \T1/cmtt/m/n/12 veritydisplay / a572a4ae2cc86f8ac1257c6e005094de / $file / EN _
 
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 787--788
+Underfull \hbox (badness 2452) in paragraph at lines 790--791
 \T1/cmtt/m/n/12 ACQ810forwaterandwastewaterREVF _ 13 . 5 . 2014 . pdf$[][]\T1/c
 mr/m/n/12 (+20) . Päi-vi-tet-ty 13.5.2014.
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 841.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 841.
-[30]
-Overfull \hbox (23.23688pt too wide) in paragraph at lines 844--844
-[]\T1/cmr/bx/n/17.28 Liite 1: Ko-te-loin-ti-luo-ki-tus stan-dar-din SFS-EN 6052
-9
- []
-
+(babel)             in language  on input line 844.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 844.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 881.
+[30]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 847.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 884.
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--881
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--884
 
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 881.
+(babel)             in language  on input line 884.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 881.
+(babel)             in language  on input line 884.
 [31
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 881.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 884.
  (./kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 881.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 881.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 884.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 884.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
-(rerunfilecheck)             Checksum: FCD91F373714CDCA4039883D10BA06A2;2120.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 881.
+(rerunfilecheck)             Checksum: 9F0A11D5604B84C0E3849127725F1C6A;2117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 884.
  ) 
 Here is how much of TeX's memory you used:
- 19447 strings out of 493315
- 341543 string characters out of 6137904
- 875567 words of memory out of 5000000
+ 19449 strings out of 493315
+ 341563 string characters out of 6137904
+ 875563 words of memory out of 5000000
  22211 multiletter control sequences out of 15000+600000
- 53060 words of font info for 135 fonts, out of 8000000 for 9000
+ 53177 words of font info for 136 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,13n,59p,1298b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.Pyh\344salmi} has been referenced but does n
@@ -2333,10 +2356,10 @@ fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2013/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8a.pfb>
-Output written on kandi.pdf (36 pages, 4865435 bytes).
+Output written on kandi.pdf (36 pages, 4866528 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
+ 605 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
  118 named destinations out of 1000 (max. 500000)
  27439 words of extra memory for PDF output out of 29859 (max. 10000000)
 
