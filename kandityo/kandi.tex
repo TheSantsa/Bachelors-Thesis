@@ -194,36 +194,12 @@ Kaivosympäristö osoittautui erittäin vaativaksi toimintaympäristöksi taajuu
 %%
 \newpage
 
-\mysection{Esipuhe}
-
-Kiitos ABB ja sillee jee.\\
-
-\vspace{5cm}
-Otaniemi, 1.12.2014
-
-\vspace{5mm}
-{\hfill Eero H.\ Santamala \hspace{1cm}}
-
-%% Pakotetaan varmuuden vuoksi esipuheen jälkeinen osa
-%% alkamaan uudelta sivulta
-\newpage
-
-
 %% Sisällysluettelo
 \thesistableofcontents
 
 
 %% Symbolit ja lyhenteet
-\mysection{Symbolit ja lyhenteet}
-
-\subsection*{Symbolit}
-
-
-\subsection*{Operaattorit}
-
-
-
-\subsection*{Lyhenteet}
+\mysection{Lyhenteet}
 
 \begin{tabular}{ll}
 AC         & Vaihtovirta \\
@@ -232,7 +208,7 @@ IEC	       & International Electrotechnical Commission \\
 NEMA       & National Electrical Manufacturers Association \\
 IP		   & Ingress Protection marking \\
 PLC		   & Programmable Logic Controller \\
-PID-Säädin & Proportional-Integral-Derivative-säädin \\
+PID-Säädin & Proportional-Integral-Derivative-Säädin \\
 STO		   & Safe Torque Off \\
 SIL		   & Safety Integrity Level \\
 VSI		   & Voltage-Source Inverter \\
@@ -262,29 +238,27 @@ LHD		   & Load Haul Dump
 %% Ensimmäinen sivu tyhjäksi
 %% 
 \thispagestyle{empty}
-Taajuusmuuttajia käytetään yhä enenevässä määrin vaihtovirtasähkömoottoreiden ohjaukseen kaikilla teollisuudenaloilla ja erityisesti kaivosteollisuudessa \cite[s. 262]{Hakapää}. %%s. 262: taajuusmuuttajat 
+Taajuusmuuttajia käytetään yhä enenevissä määrin vaihtovirtasähkömoottoreiden ohjaukseen kaikilla teollisuudenaloilla ja erityisesti kaivosteollisuudessa \cite[s. 262]{Hakapää}. %%s. 262: taajuusmuuttajat 
 Erilaiset käyttöympäristöt ja -sovellukset vaikuttavat taajuusmuuttajalta vaadittuun toiminallisuuteen ja fyysisiin ominaisuuksiin. Käyttökohteesta riippuvat ominaisuudet luovat taajuusmuuttajavalmistajille näin tarpeen kartoittaa eri teollisuudenalojen erityisvaatimuksia, jotta tuotteet pystytään kehittämään vastaamaan asiakkaiden tarpeita mahdollisimman hyvin. 
 \\\\
-Tämän työn tarkoituksena on tarkastella kaivosteollisuuden asettamia vaatimuksia taajuusmuuttajan toiminnallisuudelle ja kestävyydelle sekä kartoittaa millaisia eri sovelluksia taajuusmuuttajille kaivostoiminnassa esiintyy. Tämän työn yhteydessä kaivosteollisuudella tarkoitetaan kaivosta ja sen välittömässä läheisyydessä tapahtuvaa malmin siirtoa ja käsittelyä ja tarkastelu keskittyy yksinomaan siihen. Mineraalien jatkokäsittely kaivosalueen ulkopuolella muistuttaa jo tavanomaista prosessiteollisuutta, eikä siksi ole tämän työn kannalta mielenkiintoista.
+Yleisin taajuusmuuttajan sijoituspaikka on sisätiloissa esimerkiksi tuotantolaitoksen sähköhuoneessa. Tällöin ympäristöolosuhteet saadaan pysymään hyvin tasaisina ja taajuusmuuttajan toiminnalle edullisina. Lämpötila- tai kosteusvaihteluita ei ilmastointijärjestelmän ansiosta juuri ole, ja huoneen ilma on suodatettu pienpartikkeleista jo ennen sen pääsyä kosketuksiin taajuusmuuttajan kanssa. Kaivosteollisuudessa vastaavan tasaisen käyttöympäristön järjestäminen voi olla vaikeaa tai taloudellisesti kannattamatonta, jolloin taajuusmuuttajalta itseltään edellytetään kestävyyttä ja toimintavarmuutta vaativissakin käyttöympäristöissä. Myös kaivoksen sähköverkko asettaa taajuusmuuttajalle omat vaatimuksensa.
 \\\\
-Yleisin taajuusmuuttajan sijoituspaikka on sisätiloissa esimerkiksi tuotantolaitoksen sähköhuoneessa. Tällöin ympäristöolosuhteet saadaan pysymään hyvin tasaisina ja taajuusmuuttajan toiminnalle edullisina. Lämpötila- tai kosteusvaihteluita ei ilmastointijärjestelmän ansiosta juuri ole ja huoneen ilma on suodatettu pienpartikkeleista jo ennen sen pääsyä kosketuksiin taajuusmuuttajan kanssa. Kaivosteollisuudessa vastaavan tasaisen käyttöympäristön järjestäminen voi olla epäkäytännöllistä tai taloudellisesti kannattamatonta, jolloin taajuusmuuttajalta itseltään edellytetään kestävyyttä ja toimintavarmuutta vaativissakin käyttöympäristöissä. Myös kaivoksen sähköverkko asettaa taajuusmuuttajalle omat vaatimuksensa.
+Tämän työn tarkoituksena on tarkastella kaivosteollisuuden asettamia vaatimuksia taajuusmuuttajan toiminnallisuudelle ja kestävyydelle sekä kartoittaa sitä, millaisia eri sovelluksia taajuusmuuttajille kaivostoiminnassa esiintyy. Tämän työn yhteydessä kaivosteollisuudella tarkoitetaan kaivosta ja sen välittömässä läheisyydessä tapahtuvaa malmin siirtoa ja käsittelyä, ja tarkastelu keskittyy yksinomaan siihen. Mineraalien jatkokäsittely kaivosalueen ulkopuolella muistuttaa jo tavanomaista prosessiteollisuutta, eikä se siksi ole tämän työn kannalta mielenkiintoista.
 \\\\
-Työn alussa esitellään millaista toiminnallisuutta taajuusmuuttajien sisäisillä logiikkapiireillä voidaan toteuttaa ja mitä hyötyjä näillä voidaan saavuttaa perinteisiin ohjaustapoihin verrattuna. Seuraavassa osassa kerrotaan kaivosympäristön erityisvaatimukset lähtien liikkeelle ympäristöolosuhteista. Tarkastelun alla on myös kaivoksen sähköverkon ominaisuudet ja luotettavuuteen ja kaivoksen toimintaikään liittyviä asioita. Osan tarkoituksena on luoda selvä kuva kaivoksen asettamista vaatimuksista siellä käytettävälle laitteistolle jotta voidaan ymmärtää mitä taajuusmuuttajilta vaaditaan.
+Työn alussa esitellään millaista toiminnallisuutta taajuusmuuttajien sisäisillä logiikkapiireillä voidaan toteuttaa ja mitä hyötyjä näillä voidaan saavuttaa perinteisiin ohjaustapoihin verrattuna. Seuraavassa osassa kerrotaan kaivosympäristön erityisvaatimukset lähtien liikkeelle ympäristöolosuhteista. Tarkastelun alla on myös kaivoksen sähköverkon ominaisuudet ja luotettavuuteen ja kaivoksen toimintaikään liittyviä asioita. Luvun tarkoituksena on luoda kuva kaivoksen asettamista vaatimuksista siellä käytettävälle laitteistolle jotta voidaan ymmärtää mitä taajuusmuuttajilta vaaditaan.
 \\\\
-Viimeisessä osassa esitetään taajuusmuuttajien käyttökohteita kaivoksissa lähtien liikkeelle taajuusmuuttajien tyypillisestä sijoittelusta sekä tyypillisistä teho- ja jänniteluokista. Sovellukset-osio käy läpi suurimmat teollisuudenalan sähkövoimaa käyttävät sovellukset ja kertoo millaisia taajuusmuuttajaratkaisuja niissä käytetään ja mitä hyötyjä taajuusmuuttajien käyttö niissä tuo verrattuna perinteisiin ohjausratkaisuihin.
+Viimeisessä luvussa eritellään taajuusmuuttajien käyttökohteita kaivoksissa lähtien liikkeelle kaivosprosessista kokonaisuutena. Tämän luvun sovellukset-osio käy läpi suurimmat teollisuudenalan sähkövoimaa käyttävät sovellukset ja kertoo, millaisia taajuusmuuttajaratkaisuja niissä käytetään ja mitä hyötyjä taajuusmuuttajien käyttö niissä tuo verrattuna perinteisiin ohjausratkaisuihin.
 \\\\
-Työssä on oleellista taajuusmuuttajien hyödyntäminen ja niistä saatava lisäarvo kaivosteollisuuden asiakkaan näkökulmasta. Se keskittyy taajuusmuuttajien sovelluksiin ja niiden vaatimuksiin eikä niinkään taajuusmuuttajan tekniseen rakenteeseen. Työ esittää alan olemassa olevat taajuusmuuttajaratkaisut ja pohtii mitä lisäarvoa taajuusmuuttajilla voitaisiin vielä saavuttaa.
-%% blaablaa taajuusmuuttajien toiminta selitetään pääpiirteiseti koska paino sovelluksessa....
-
+Työn keskiössä on taajuusmuuttajien hyödyntäminen ja niistä saatava lisäarvo kaivosteollisuuden asiakkaan näkökulmasta. Työ keskittyy taajuusmuuttajien sovelluksiin ja niiden vaatimuksiin eikä niinkään taajuusmuuttajan tekniseen rakenteeseen. Työ esittää alan olemassa olevat taajuusmuuttajaratkaisut ja pohtii, mitä lisäarvoa taajuusmuuttajilla voitaisiin vielä saavuttaa.
 \clearpage
 
 %%--------------------------TOIMINNALLISUUS-----------------------------------
 \section{Taajuusmuuttajien toiminnallisuus}
 %%Tamut yleisesti
-Taajuusmuuttajat ovat laitteita, jotka muuttavat siihen syötetyn vaihtovirran amplitudia eli jännitettä ja sen taajuutta syöttäen sen siihen kytketylle sähkömoottorille. Taajuusmuuttajia käytetään vaihtovirtasähkömoottoreiden tehokkaaseen ohjaamiseen kaikkialla niiden tuodessa merkittäviä kustannussäästöjä perinteisiin ohjausmenetelmiin verrattuna. Suoraan sähköverkkoon kytketyt sähkömoottorit pyörivät sähköverkon määräämällä vakiotaajuudella eli esimerkiksi suomessa käytössä olevalla 50Hz taajuudella, jolloin pyörimisnopeuden säätöön tarvitaan esimerkiksi moottoriin kytketty vaihteisto tai jarru. Näillä tavoilla ohjatun moottorin pyörittämiseen syötetystä energiasta suuri osa kuluu esimerkiksi jarrun lämpenemiseen. Taajuusmuuttajalla pystytään tehokkaan nopeussäädön lisäksi ohjaamaan myös moottorin tuottamaa momenttia, mikä on tietyissä sovelluksissa kuten vinsseissä olennainen tekijä.
+Taajuusmuuttajat ovat laitteita, jotka muuttavat siihen syötetyn vaihtovirran amplitudia eli jännitettä ja sen taajuutta syöttäen sen siihen kytketylle sähkömoottorille. Taajuusmuuttajia käytetään vaihtovirtasähkömoottoreiden tehokkaaseen ohjaamiseen kaikkialla niiden tuodessa merkittäviä kustannussäästöjä perinteisiin ohjausmenetelmiin verrattuna. Suoraan sähköverkkoon kytketyt sähkömoottorit pyörivät sähköverkon määräämällä vakiotaajuudella eli esimerkiksi suomessa käytössä olevalla 50Hz taajuudella, jolloin pyörimisnopeuden säätöön tarvitaan esimerkiksi moottoriin kytketty vaihteisto tai jarru. Näillä tavoilla ohjatun moottorin pyörittämiseen syötetystä energiasta suuri osa kuluu esimerkiksi jarrun lämpenemiseen \cite{ABBinmining}. Taajuusmuuttajalla pystytään tehokkaan nopeussäädön lisäksi ohjaamaan myös moottorin tuottamaa momenttia, mikä on tietyissä sovelluksissa kuten vinsseissä olennainen tekijä.
 %%tarkista taajuusasia esim petriltä
 \\\\
-Tarkan nopeus ja momenttisäädön lisäksi taajuusmuuttajiin on viimeisten vuosikymmenten aikana kehittynyt paljon moottorin ohjaukseen liittyviä ominaisuuksia. Nykyaikaisissa taajuusmuuttajissa sisäänrakennettu mikroprosessori kykenee käsittelemään suuren määrän ohjaussignaaleja käyttäen perinteisiä digitaali- ja analogisignaaleja sekä kenttäväyliä. Sisäiset funktiot kykenevät monimutkaisiin moottorinohjaussykleihin, mikä vähentää tarvetta ulkoisille logiikkaohjaimille.
+Tarkan nopeus ja momenttisäädön lisäksi taajuusmuuttajiin on viimeisten vuosikymmenten aikana kehittynyt paljon moottorin ohjaukseen liittyviä ominaisuuksia. Nykyaikaisissa taajuusmuuttajissa sisäänrakennettu mikroprosessori kykenee käsittelemään suuren määrän ohjaussignaaleja käyttäen perinteisiä digitaali- ja analogisignaaleja sekä kenttäväyliä. Sisäiset funktiot kykenevät monimutkaisiin moottorinohjaussykleihin, mikä vähentää tarvetta ulkoisille logiikkaohjaimille. \cite{ABBtechnicalguide}
 \\\\
 Tässä osassa käsitellään taajuusmuuttajien sisäistä toiminnallisuutta ja toimintojen tuomia käytännön hyötyjä eri sovelluksissa. Tarkastelun alla ovat myös taajuusmuuttajien integrointi osaksi sovellusten automaatiojärjestelmää ja useita yhteen kytkettyjä taajuusmuuttajia käsittävien järjestelmien tuomat edut.
 
@@ -293,14 +267,14 @@ Tässä osassa käsitellään taajuusmuuttajien sisäistä toiminnallisuutta ja 
 %http://ieeexplore.ieee.org.libproxy.aalto.fi/stamp/stamp.jsp?tp=&arnumber=1355703 
 
 \subsection{Toimintasyklit}
-Olennainen osa taajuusmuuttajan toiminnallisuutta ovat siihen ohjelmoidut toimintasyklit eli automaattinen moottorinohjaus tietyn ohjelmoidun sarjan mukaan. Toimintasykli voidaan käynnistää käyttäjän toimesta mitä tahansa sisääntuloa esimerkiksi kenttäväylää hyödyntäen. 
+Olennainen osa taajuusmuuttajan toiminnallisuutta ovat siihen ohjelmoidut toimintasyklit eli automaattinen moottorinohjaus tietyn ohjelmoidun sarjan mukaan. Toimintasykli voidaan käynnistää käyttäjän toimesta mitä tahansa sisääntuloa esimerkiksi kenttäväylää hyödyntäen. \cite{ABBtechnicalguide}
 \\\\
-Yleisin ja yksinkertaisin käytetty toimintasykli lienee ramppikäynnistys ja ramppipysäytys. Ramppikäynnistys kiihdyttää moottorin ramppimaisesti haluttuun pyörimisnopeuteen halutussa ajassa huolimatta moottoriin kytketystä kuormasta.
-Ramppikäynnistys on moottorin ja siihen kytketyn laitteiston rasituksen kannalta edullinen hitaan kiihdytyksen aiheuttaessa pienen rasituksen kytketylle laitteistolle ja moottorille. Kytkettäessä ohjaamaton moottori sähköverkkoon, alkaa se pyöriä lähes välittömästi ominaistaajuudellaan aiheuttaen suuren rasituksen moottorille. Myös sähköverkon ja energiankulutuksen kannalta taajuusmuuttaja on hyödyllinen laite ohjaamattoman moottorin vetäessä käynnistyessään hyvin suuren virran. Taajuusmuuttajalla on mahdollista jännitettä ja taajuutta säätelemällä saavuttaa käynnistyksessä 150\% moottorin ominaismomentista käyttäen vain 50\% ominaistehosta \cite{ABBtechnicalguide}.
+Yleisimmät ja yksinkertaisimmat käytetyt toimintasyklit lienevät ramppikäynnistys ja ramppipysäytys. Ramppikäynnistys kiihdyttää moottorin ramppimaisesti haluttuun pyörimisnopeuteen halutussa ajassa huolimatta moottoriin kytketystä kuormasta.
+Ramppikäynnistys on moottorin ja siihen kytketyn laitteiston rasituksen kannalta edullinen hitaan kiihdytyksen aiheuttaessa pienen rasituksen kytketylle laitteistolle ja moottorille. Kytkettäessä sähköverkkoon, ohjaamaton moottori alkaa pyöriä lähes välittömästi ominaistaajuudellaan aiheuttaen suuren rasituksen moottorille ja siihen kytketylle kuormalle. Myös sähköverkon ja energiankulutuksen kannalta taajuusmuuttaja on hyödyllinen laite ohjaamattoman moottorin vetäessä käynnistyessään hyvin suuren virran. Taajuusmuuttajalla on mahdollista jännitettä ja taajuutta säätelemällä saavuttaa käynnistyksessä 150 prosenttias moottorin ominaismomentista käyttäen vain 50 prosenttia ominaistehosta \cite{ABBtechnicalguide}.
 \\\\
 Ramppipysäytys on hyödyllinen jos kytketty laite, esimerkiksi paperikone, ei saa pysähtyä liian nopeasti. Taajuusmuuttajilla on myös mahdollista pysäyttää kytketty laite nopeammin, kuin mitä siltä itsestään vastusvoimien johdosta kestäisi pysähtyä. Tällöin voidaan käyttää taajuusmuuttajaan kytkettyä erillistä jarruvastusta, joka muuttaa moottorin jarruttamisesta syntyneen sähköenergian suoraan lämmöksi \cite{ABBtechnicalguide}.
 \\\\
-Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\footnote{Proportional-integral-derivative-säädin, lyhyemmin PID-säädin, on yksi säätötekniikan perussäätimistä.}, joilla voidaan pitää esimerkiksi vesisäiliön pinta halutulla tasolla taajuusmuuttajaohjattua pumppua käyttäen. Tällöin taajuusmuuttaja saa ohjaussignaalina esimerkiksi säiliöön kytketyn korkeusanturin dataa ja sen perusteella ohjaa pumpun pyörimisnopeutta. Joihinkin taajuusmuuttajiin voidaan ohjelmoida myös toiminnallisuutta toimilohko-ohjelmoinnilla, esimerkiksi CodeSys-ohjelmointikielellä \cite{MyyntiHaastattelu}. Toimilohkoilla voidaan taajuusmuuttajaan toteuttaa esimerkiksi yksinkertainen tilakone ja näin siirtää laskentaa automaatiojärjestelmältä taajuusmuuttajaan tai yksinkertaisissa tapauksissa korvata se kokonaan. Automaatiojärjestelmän siirtyminen yhä enemmän taajuusmuuttajiin laskee kustannuksia tehokkaiden logiikkaohjainten tarpeen vähentyessä.
+Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\footnote{Proportional-Integral-Derivative-säädin, lyhyemmin PID-säädin, on yksi säätötekniikan perussäätimistä.}, joilla voidaan pitää esimerkiksi vesisäiliön pinta halutulla tasolla taajuusmuuttajaohjattua pumppua käyttäen. Tällöin taajuusmuuttaja saa ohjaussignaalina esimerkiksi säiliöön kytketyn korkeusanturin dataa ja sen perusteella ohjaa pumpun pyörimisnopeutta. Joihinkin taajuusmuuttajiin voidaan ohjelmoida myös toiminnallisuutta toimilohko-ohjelmoinnilla, esimerkiksi CodeSys-ohjelmointiympäristössä \cite{MyyntiHaastattelu}. Toimilohkoilla voidaan taajuusmuuttajaan toteuttaa esimerkiksi yksinkertainen tilakone ja näin siirtää laskentaa automaatiojärjestelmältä taajuusmuuttajaan tai yksinkertaisissa tapauksissa korvata se kokonaan. Automaatiojärjestelmän siirtyminen yhä enemmän taajuusmuuttajiin laskee kustannuksia tehokkaiden logiikkaohjainten tarpeen vähentyessä.
 
 	
 %-Millaisia tamuista löytyy
@@ -314,7 +288,7 @@ Taajuusmuuttajissa on myös edistyneempiä toimintoja kuten PID-säätimiä\foot
 %%-Multidrives? ACS800 OPM (open pit mine) control program?
 
 \subsection{Ohjaus ja -valvontajärjestelmät}
-Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia, I/O:ta ja kenttäväylää, käyttäen. Näistä tyypillisesti vain yhtä pystytään käyttämään kerrallaan. Paneeli on taajuusmuuttajaan kiinteästi asennettu tai johdolla yhdistetty yksikkö, jolla taajuusmuuttajan toimintoja pystytään ohjaamaan käsin. Nykyaikaisissa taajuusmuuttajissa paneeli sisältää yleensä painikkeiden lisäksi pienen LCD-näytön, joka helpottaa taajuusmuuttajan asetusten säätämistä ja toimii samalla myös valvontatyökaluna. Kuvassa~\ref{fig:acs880panel} on esimerkkinä ABB:n valmistaman ACS880 taajuusmuuttajan ohjauspaneeli. 
+Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmella eri tavalla: paneelia, I/O:ta tai kenttäväylää käyttäen. Näistä tyypillisesti vain yhtä pystytään käyttämään kerrallaan. Paneeli on taajuusmuuttajaan kiinteästi asennettu tai johdolla yhdistetty yksikkö, jolla taajuusmuuttajan toimintoja pystytään ohjaamaan käsin. Nykyaikaisissa taajuusmuuttajissa paneeli sisältää yleensä painikkeiden lisäksi pienen LCD-näytön, joka helpottaa taajuusmuuttajan asetusten säätämistä ja toimii samalla myös valvontatyökaluna. Kuvassa~\ref{fig:acs880panel} on esimerkkinä ABB:n valmistaman ACS880 taajuusmuuttajan ohjauspaneeli. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -326,20 +300,20 @@ Taajuusmuuttajaa on tyypillisesti mahdollista ohjata kolmea eri tapaa, paneelia,
 \end{figure}
 
 \noindent
-Toinen tapa taajuusmuuttajan ohjaukseen on I/O. I/O koostuu joukosta analogi- ja digitaalituloja, joilla taajuusmuuttajaa voidaan ohjata esimerkiksi ulkoisen logiikkaohjaimen PLC:n (Programmable Logic Controller) avulla. Analogiliitännät käyttävät yleensä standardoitua 4-20mA virtasilmukkaa tai 0-10V jännitesilmukkaa. Digitaalituloissa on käytössä 24V jännitesilmukka, joissa alle 5V jännitetaso tarkoittaa tilaa 0 ja yli 15V tarkoittaa tilaa 1. Taajuusmuuttajan I/O:ssa on lisäksi analogi- ja digitaalilähtöjä, jotka pystytään taajuusmuuttajan sisäistä logiikkaa käyttäen ohjelmoida ohjaamaan järjestelmän muita komponentteja. Nykyään suuremmissa automaatiojärjestelmissä ovat kenttäväylät alkaneet korvaamaan perinteisiä analogi- ja digitaaliliitäntöjä mahdollistaen näin kattavamman ohjauksen ja kustannustehokkaamman järjestelmän \cite{MyyntiHaastattelu}.
+Toinen tapa taajuusmuuttajan ohjaukseen on I/O. I/O koostuu joukosta analogi- ja digitaalituloja, joilla taajuusmuuttajaa voidaan ohjata esimerkiksi ulkoisen logiikkaohjaimen, PLC:n (Programmable Logic Controller), avulla. Analogiliitännät käyttävät yleensä standardoitua 4-20mA virtasilmukkaa tai 0-10V jännitesilmukkaa. Digitaalituloissa on käytössä 24V jännitesilmukka, joissa alle 5V jännitetaso tarkoittaa tilaa 0 ja yli 15V tarkoittaa tilaa 1. Taajuusmuuttajan I/O:ssa on lisäksi analogi- ja digitaalilähtöjä, jotka pystytään taajuusmuuttajan sisäistä logiikkaa käyttäen ohjelmoimaan ohjaamaan järjestelmän muita komponentteja. Nykyään suuremmissa automaatiojärjestelmissä ovat kenttäväylät alkaneet korvata perinteisiä analogi- ja digitaaliliitäntöjä mahdollistaen näin kattavamman ohjauksen ja kustannustehokkaamman järjestelmän \cite{MyyntiHaastattelu}.
 \\\\
 Kenttäväylillä tarkoitetaan joukkoa verkkoprotokollia, jotka on määritelty IEC 61158 -standardissa. Kenttäväylät ovat yleistyneet automaatiossa niiden tuomien kustannussäästöjen ja yksinkertaisuuden vuoksi. Aikaisemmin yleisesti käytössä olleet 4-20mA ja 0-10V analogi- ja 0-24V digitaalisignaalit mahdollistivat ainoastaan kahden laitteen välisen kommunikoinnin yhtä johdinta käyttäen. Kenttäväyläprotokollat sallivat useiden laitteiden kytkemisen samaan verkkoon. Näin useita signaaleita voi kulkea eri laitteiden välillä samaa johdinta pitkin, jolloin kaapeloinnin tarve vähenee huomattavasti. Nykyään lähes kaikki taajuusmuuttajat sisältävätkin mahdollisuuden kenttäväylän liittämiseen. Yleisesti taajuusmuuttajissa käytettyjä kenttäväyliä ovat esimerkiksi PROFIbus ja PROFInet. Muita kenttäväyliä kuten BACnet ja LONworks voidaan yhdistää käyttäjän tarpeen mukaan erillisten lisäkorttien avulla \cite{880hwman}.
 \\\\
 Kenttäväylät ovat mahdollistaneet yhä kattavampien automaatiojärjestelmien luomisen. Kenttäväyliä pitkin siirrettävän datan määrä on moninkertainen perinteisiin digitaalisignaaleihin verrattuna. Kenttäväylää hyödyntäviin taajuusmuuttajiin on esimerkiksi mahdollista ohjata etäältä tietokoneelle asennetun ohjelmiston kautta. Tällöin esimerkiksi virheitä voidaan ratkoa ilman, että taajuusmuuttajan luokse täytyy fyysisesti mennä \cite{MyyntiHaastattelu}. Tämä voi esimerkiksi kaivoksissa, missä etäisyydet voivat olla kilometriluokkaa, olla merkittävä etu.
 \\\\
-Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan toisiinsa ilman hintavaa kenttäväyläratkaisua. Tämä tulee kyseeseen esimerkiksi useamman pumpun muodostamissa pumppusysteemeissä, joissa yhden isäntälaitteen ohjaus halutaan saada aikaan kaikissa systeemin taajuusmuuttajissa. Tällöin voidaan käyttää niin sanottua master/slave-topologiaa, jossa taajuusmuuttajat ovat kytketty seuraamaan yhden taajuusmuuttajan ohjausta. Tällöin master yksikön ohjaus välittyy suoraan samanlaisena yhden tai useamman slave-yksikön ohjaukseksi. Lähes kaikki taajuusmuuttajavalmistajat sallivat laitteidensa välisen master/slave ratkaisun jotakin valmistajan omaa kommunikointiväylää hyödyntäen. Viime vuosina myös erilaiset sovellusohjelmistot ovat yleistyneet sallien useamman taajuusmuuttajan älykkään ohjauksen osana yhtä järjestelmää esimerkiksi pumppusovelluksessa. Näitä sovelluksia on avattu enemmän luvussa  \textit{4.2 Sovellukset}.
+Yksinkertaisissa sovelluksissa taajuusmuuttajia voidaan myös kytkeä suoraan toisiinsa ilman hintavaa kenttäväyläratkaisua. Tämä tulee kyseeseen esimerkiksi useamman pumpun muodostamissa pumppusysteemeissä, joissa yhden isäntälaitteen ohjaus halutaan saada aikaan kaikissa systeemin taajuusmuuttajissa. Tällöin voidaan käyttää niin sanottua master/slave-topologiaa, jossa taajuusmuuttajat ovat kytketty seuraamaan yhden taajuusmuuttajan ohjausta. Tällöin master yksikön ohjaus välittyy suoraan samanlaisena yhden tai useamman slave-yksikön ohjaukseksi. Lähes kaikki taajuusmuuttajavalmistajat sallivat laitteidensa välisen master/slave ratkaisun jotakin valmistajan omaa kommunikointiväylää hyödyntäen. Viime vuosina myös erilaiset sovellusohjelmistot ovat yleistyneet sallien useamman taajuusmuuttajan älykkään ohjauksen osana yhtä järjestelmää esimerkiksi pumppusovelluksessa. Näitä sovelluksia on avattu enemmän luvussa  \textit{4.2 Sovellukset}. \cite{880hwman}
 
 
 %----------TURVALLISUUS------------
 \subsection{Turvallisuustoiminnot}
 Yhä tiukentuvat turvallisuusmääräykset eri teollisuuden aloilla ovat saaneet taajuusmuuttajavalmistajat kehittämään taajuusmuuttajiin sisäisiä turvallisuustoimintoja. Turvallisuustoiminnoilta vaaditaan erittäin korkeaa luotettavuutta ja ne ovatkin useiden standardien määrittelemiä. Jotta toiminta voidaan hyväksyä viralliseksi standardin määräämäksi turvallisuustoiminnoksi, täyttyy se testata perinpohjaisesti. Turvallisuustoimintojen luotettavuus ilmoitetaan IEC 61508 -standardin \cite{IEC61508} mukaisella SIL-tunnuksella (Safety Integrity Level). SIL kuvaa todennäköisyyttä, jolla turvallisuustoiminto lopettaa toimintansa vaaraa aiheuttaen. SIL1 on tasoista vähiten varma aiheuttaen vaarallisen toiminnon tunnin sisällä 10\textsuperscript{-3}-10\textsuperscript{-5}\% todennäköisyydellä. SIL4 on vastaavasti luotettavin turvallisuustaso aiheuttaen vaarallisen toiminnon seuraavan tunnin sisällä 10\textsuperscript{-6}-10\textsuperscript{-7}\% todennäköisyydellä.
 \\\\
-Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on IEC 60204 -standardin \cite{IEC60204-1} määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
+Turvallisuustoiminnoista yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Off). STO on IEC 60204 -standardin \cite{IEC60204-1} määrittelemä turvallisuustoiminto, joka aktivoituessaan katkaisee moottorin akselille momenttia aiheuttavan sähkövirran. Käytännössä STO on siis hätäpysäytystoiminto, jolla moottori saadaan lopettamaan momentin tuottaminen. STO ei kuitenkaan välttämättä pysäytä moottoria nopeasti, vaan kuormaan kertynyt pyörimismäärä voi pitää kuorman liikkeessä vielä pitkään STO:n kytkeytymisen jälkeenkin. Kuva~\ref{fig:STO} esittää STO-funktion toiminnan kun se kytketään päälle moottorin pyöriessä. STO on erityisen hyödyllinen toiminto, koska hätäpysäytyksen toiminnallisuus pystytään toteuttamaan täysin ohjelmallisesti taajuusmuuttajan sisällä. Tämä poistaa hintavien kontaktorien\footnote{Kontaktori on sähköisesti ohjattava kytkin, joita on perinteisesti käytetty moottorille menevän virran katkaisemiseen.} tarpeen tuoden kustannussäästöjä ja helpottaen asennustyötä.
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.5]{STO}
@@ -350,7 +324,7 @@ Näistä yksinkertaisin ja yleisimmin toteutettu on STO-toiminto (Safe Torque Of
 \end{figure}
 
 \noindent
-STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1), joka on kuvattu kuvassa ~\ref{fig:SS1}, hidastaa moottorin ramppimaisesti pysähdyksiin ja aktivoi tämän jälkeen STO:n. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa voi olla turvatoiminnot laukaisevien tuloporttien lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan laitteiston muita turvalaitteita kuten kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa \cite{FSO}.
+STO-toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvallisuustoimintoja, jotka tekevät kytkeytyessään määritellyn toimintasyklin. Esimerkiksi SS1-toiminto (Safe Stop 1), joka on kuvattu kuvassa ~\ref{fig:SS1}, hidastaa moottorin ramppimaisesti pysähdyksiin ja aktivoi tämän jälkeen STO:n. Nämä toiminnot on yleensä toteutettu taajuusmuuttajaan lisäosana saatavassa turvamoduulissa. Moduuleissa voi olla turvatoiminnot laukaisevien tuloporttien lisäksi rele- tai analogilähtöjä. Lähdöillä pystytään ohjaamaan laitteiston muita turvalaitteita kuten kuormaan kytkettyä mekaanista jarrua, joka voidaan ohjelmoida kytkeytymään samaan aikaan esimerkiksi STO-toiminnon kanssa \cite{FSO}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -362,7 +336,7 @@ STO Toiminnon lisäksi EN 60204-1 -standardi määrittelee sarjan muita turvalli
 \end{figure}
 
 \noindent
-STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Nykyään turvasignaalit onkin mahdollista kuljettaa myös osana kenttäväylän prosessidataa esimerkiksi PROFIsafe kommunikointiteknologiaa käyttäen. PROFIsafea pystytään käyttämään PROFIbus tai PROFInet kenttäväylän kanssa samassa kenttäväyläkaapelissa. Turvasignaalien yhdistäminen samaan kenttäväylään prosessidatan kanssa vähentää asennus- ja kaapelointikuluja ja yksinkertaistaa automaatiojärjestelmää \cite{MyyntiHaastattelu}. Kenttäväylien yleistyessä prosessiautomaatiossa, myös turvatoiminnot toteutetaan yhä enenevässä määrin kenttäväyliä hyödyntäen \cite{Profisafe}.
+STO:n ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä järjestelmiä, tarkoittaen että muiden järjestelmien toiminta ei saa vaikuttaa turvallisuustoiminnon toimintaan. Tämä on järkevää turvallisuustoimintojen luotettavuuden kannalta, mutta epätehokasta koska turvasignaalit vaativat oman signaaliväylänsä. Suuressa automaatiojärjestelmässä signaalijohdinten määrä voi kasvaa ongelmalliseksi. Nykyään turvasignaalit onkin mahdollista kuljettaa myös osana kenttäväylän prosessidataa esimerkiksi PROFIsafe kommunikointiteknologiaa käyttäen. PROFIsafea pystytään käyttämään PROFIbus tai PROFInet kenttäväylän kanssa samassa kenttäväyläkaapelissa. Turvasignaalien yhdistäminen samaan kenttäväylään prosessidatan kanssa vähentää asennus- ja kaapelointikuluja ja yksinkertaistaa automaatiojärjestelmää \cite{MyyntiHaastattelu}. Kenttäväylien yleistyessä prosessiautomaatiossa, myös turvatoiminnot toteutetaan yhä enenevässä määrin kenttäväyliä hyödyntäen \cite{Profisafe}.
 \\\\
 %%-turvallisuus tärkeää, kaivokset vaarallisia jne.\\
 %%-STO, miten voisi hyödyntää?\\
@@ -388,7 +362,7 @@ STO ja muiden turvallisuustoimintojen on standardin mukaan oltava eristettyjä j
 \subsection{Verkkoon jarruttavat taajuusmuuttajat ja jaettu välipiiri}
 Taajuusmuuttajatekniikan kehittyessä ovat yhä monimutkaisemmat taajuusmuuttajajärjestelmät tulleet mahdollisiksi. Esimerkkeinä näistä tekniikoista ovat nykyään jo yleisesti käytössä olevat verkkoon jarruttavat taajuusmuuttajat ja välipiirin välityksellä toisiinsa kytketyt taajuusmuuttajat. Jotta nämä tekniikat voidaan ymmärtää täytyy tietää perusteet taajuusmuuttajan sisäisestä rakenteesta.
 \\\\
-Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirillinen taajuusmuuttaja (Voltage-Source Inverter, VSI). Kuvassa~\ref{fig:VSI} nähdään VSI-taajuusmuuttajan kolme pääkomponenttia: tasasuuntaaja, välipiiri ja vaihtosuuntaaja. Syöttöverkon vaihtojännite muutetaan ensin tasasuuntaajalla välipiirin tasajännitteeksi ja sitten taas moottorille syötettäväksi vaihtojännitteeksi vaihtosuuntaajalla. Ohjausyksikkö tarkkailee ja säätää kaikkia kolmea komponenttia siten, että ulos tulevan sähkön ominaisuudet ovat halutunlaiset.
+Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirillinen taajuusmuuttaja (Voltage-Source Inverter, VSI). Kuvassa~\ref{fig:VSI} nähdään VSI-taajuusmuuttajan kolme pääkomponenttia: tasasuuntaaja, välipiiri ja vaihtosuuntaaja. Syöttöverkon vaihtojännite muutetaan ensin tasasuuntaajalla välipiirin tasajännitteeksi ja sitten taas moottorille syötettäväksi vaihtojännitteeksi vaihtosuuntaajalla. Ohjausyksikkö tarkkailee ja säätää kaikkia kolmea komponenttia siten, että ulos tulevan sähkön ominaisuudet ovat halutunlaiset. \cite{ABBtechnicalguide}
 
 \begin{figure}[H]
 	\begin{center}
@@ -400,9 +374,9 @@ Yleisin käytössä oleva taajuusmuuttajarakenne on niin sanottu välipiirilline
 \end{figure}
 
 \noindent
-Välipiiriin varastoitu tasajännite toimii energiavarastona vaihtosuuntaajalle, jonka vaatima virta voi vaihdella suuresti kuorman muuttuessa. Useissa sovelluksissa, kuten liukuhihnoissa, tarvitaan useita moottoreita ohjaamaan samaa laitetta. Tällöin on mahdollista, että osa samaan laitteeseen kytketyistä moottoreista on jarruttavassa tilassa ja osa kiihdyttävässä. Kuten aikaisemmin todettiin, jarruttavat taajuusmuuttajat joutuvat purkamaan ylimääräisen energian välipiiristä esimerkiksi jarruvastukseen, jolloin energia menee hukkaan. Yhdistämällä useita taajuusmuuttajia välipiirin välityksellä toisiinsa voidaan vähentää hukkaenergian määrää. Tällöin jarruttavan taajuusmuuttajan luoma ylimääräinen sähköenergia pystytään käyttämään toisessa samaan välipiiriin kytketyssä taajuusmuuttajassa moottorin kiihdyttämiseen.
+Välipiiriin varastoitu tasajännite toimii energiavarastona vaihtosuuntaajalle, jonka vaatima virta voi vaihdella suuresti kuorman muuttuessa. Useissa sovelluksissa, kuten liukuhihnoissa, tarvitaan useita moottoreita ohjaamaan samaa laitetta. Tällöin on mahdollista, että osa samaan laitteeseen kytketyistä moottoreista on jarruttavassa tilassa ja osa kiihdyttävässä. Kuten aikaisemmin todettiin, jarruttavat taajuusmuuttajat joutuvat purkamaan ylimääräisen energian välipiiristä esimerkiksi jarruvastukseen, jolloin energia menee hukkaan. Yhdistämällä useita taajuusmuuttajia välipiirin välityksellä toisiinsa voidaan vähentää hukkaenergian määrää. Tällöin jarruttavan taajuusmuuttajan luoma ylimääräinen sähköenergia pystytään käyttämään toisessa samaan välipiiriin kytketyssä taajuusmuuttajassa moottorin kiihdyttämiseen. \cite{ABBtechnicalguide}
 \\\\
-Taajuusmuuttajista on myös saatavilla malleja, joita on mahdollista käyttää generaattoreina, eli laitteina, jotka muuttavat kuorman mekaanista energiaa syöttöverkon sähköenergiaksi. Tällöin puhutaan niin sanotuista verkkoon jarruttavaista taajuusmuuttajista. Välipiiriin kertyvä ylimääräinen jännite on siis mahdollista purkaa jarruvastuksen sijasta takaisin sähköverkkoon. Ne ovat rakenteeltaan samankaltaisia VSI-tyyppisiin taajuusmuuttajiin verrattuna, mutta tasasuuntaaja on korvattu toisella vaihtosuuntaajalla. Tällöin taajuusmuuttaja kykenee siis ottamaan välipiiristä energiaa kumpaa tahansa vaihtosuuntaajaa käyttäen ja syöttämään sitä moottorille tai sähköverkkoon. Ominaisuus on hyödyllinen esimerkiksi tuotantolaitoksen sisäisessä sähköverkossa, missä laitteet ovat ajoittain kiihdyttävässä ja jarruttavassa liikkeessä. Tällöin hidastuksista aiheutuvaa energiaa ei tarvitse purkaa hukkalämmöksi, vaan se voidaan syöttää takaisin laitoksen sähköverkkoon ja näin käyttää missä tahansa laitoksen prosessissa.
+Taajuusmuuttajista on myös saatavilla malleja, joita on mahdollista käyttää generaattoreina, eli laitteina, jotka muuttavat kuorman mekaanista energiaa syöttöverkon sähköenergiaksi. Tällöin puhutaan niin sanotuista verkkoon jarruttavaista taajuusmuuttajista. Välipiiriin kertyvä ylimääräinen jännite on siis mahdollista purkaa jarruvastuksen sijasta takaisin sähköverkkoon. Ne ovat rakenteeltaan samankaltaisia VSI-tyyppisiin taajuusmuuttajiin verrattuna, mutta tasasuuntaaja on korvattu toisella vaihtosuuntaajalla. Tällöin taajuusmuuttaja kykenee siis ottamaan välipiiristä energiaa kumpaa tahansa vaihtosuuntaajaa käyttäen ja syöttämään sitä moottorille tai sähköverkkoon. Ominaisuus on hyödyllinen esimerkiksi tuotantolaitoksen sisäisessä sähköverkossa, missä laitteet ovat ajoittain kiihdyttävässä ja jarruttavassa liikkeessä. Tällöin hidastuksista aiheutuvaa energiaa ei tarvitse purkaa hukkalämmöksi, vaan se voidaan syöttää takaisin laitoksen sähköverkkoon ja näin käyttää missä tahansa laitoksen prosessissa. \cite{ABBtechnicalguide}
 
 
 
@@ -417,24 +391,24 @@ Taajuusmuuttajista on myös saatavilla malleja, joita on mahdollista käyttää 
 \subsection{Ympäristöolosuhteet}
 Kaivosympäristö on sähkölaitteille toimintaympäristönä erittäin rasittava \cite[s. 251]{Hakapää}. Sähkölaitteille kaivoksissa rasitusta aiheuttavia tekijöitä ovat lämpötila, kosteus, ilman epäpuhtaudet ja mekaaniset rasitukset.
 \\\\
-Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, ilman  epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavatkin taajuusmuuttajia eri suojausluokissa vastaamaan sovellusten vaatimuksia.
+Suurin ympäristön aiheuttama vaara taajuusmuuttajien toiminnalle on ylikuumeneminen ja elektronisten komponenttien vaurioituminen kosteuden, ilman  epäpuhtauksien, mekaanisten iskujen tai tärinän seurauksena. Jotta taajuusmuuttajan luotettava toiminta voidaan taata, täytyy taajuusmuuttajan koteloinnin olla soveltuva käyttöympäristöönsä. Lähes kaikki taajuusmuuttajavalmistajat valmistavatkin taajuusmuuttajia eri suojausluokissa vastaamaan eri sovellusten vaatimuksia.
 \\\\
-Euroopassa yleisesti käytössä oleva luokitus sähkölaitteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen lähtien täysin suojaamattomasta IP00-luokasta ja päätyen täysin vesi- ja pölytiiviiseen IP69-luokitukseen. Liite~\ref{Liite 1} kuvaa eri tasoisten IP-luokitusten mukaiset suojaustasot. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiveysluokitus.
+Euroopassa yleisesti käytössä oleva luokitus sähkölaitteen vesi- ja pölytiiveydelle on kansainvälisen sähköalan standardointitoimiston IEC:n IP-luokitus. Luokitus on kaksiosainen ja se yltää täysin suojaamattomasta IP00-luokasta täysin vesi- ja pölytiiviiseen IP69-luokitukseen. Liite~\ref{Liite 1} kuvaa eri tasoisten IP-luokitusten mukaiset suojaustasot. Pohjois-Amerikassa on käytössä vastaava NEMA-tiiviysluokitus.
 \\\\
-Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, jännitteellisten komponenttien ollessa täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan esimerkiksi tehtaan seinälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66 laitteet kestävät suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen omaavat laitteet ovat luonnollisesti fyysisesti suurempia ja mekaanisesti haastavampia rakentaa jäähdytyksen ongelmallisuuden vuoksi.
+Markkinoilla olevat taajuusmuuttajat ulottuvat suojaamattomista IP00-laitteista aina lähes vesitiiviisiin IP66-laitteisiin. IP00 taajuusmuuttajat asennetaan poikkeuksetta ulkoisiin koteloihin, sillä jännitteelliset komponentit ovat niissä täysin esillä. IP21 on yleinen käytössä oleva luokka taajuusmuuttajille, jotka tulevat kuivaan tilaan, esimerkiksi tehtaan seinälle. Märkiin tai muuten erityistä suojausta vaativiin sovelluksiin tarkoitetut IP66-laitteet kestävät sitä vastoin suoran painevesiruiskun kaikista suunnista ja ovat täysin pölysuojattuja. Suuremman suojausluokituksen laitteet ovat luonnollisesti fyysisesti suurempia ja jäähdytyksen ongelmallisuuden vuoksi mekaanisesti haastavampia rakentaa.
 \\\\
-Seuraavissa kappaleissa eritellään eri ympäristötekijöiden piirteet kaivosympäristössä. Tarkastelun alla ovat myös vaikutukset mitä näillä olosuhteilla on taajuusmuuttajien toiminnalle sekä miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia avolouhosten olosuhteiden ollessa tavallista ulkoilmakäyttöä vastaavat. %%such metatext
+Seuraavissa kappaleissa eritellään eri ympäristötekijöiden piirteet kaivosympäristössä. Tarkastelun alla ovat myös vaikutukset mitä näillä olosuhteilla on taajuusmuuttajien toiminnalle, sekä se, miten nämä asiat on otettu huomioon taajuusmuuttajien suunnittelussa. Käsittely koskee pääosin maanalaisia kaivoksia, sillä avolouhosten olosuhteet ovat tavallista ulkoilmakäyttöä vastaavat.
 
 \subsubsection{Lämpö}
 %%-Kaivosten lämpötilat
 %%-Laitteiden käyttölämpötilat, derating
 %%-Jäähdytysratkaisut(neste,kanava,perinteinen,cold plate,...)
-Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset\cite[s.305]{Hakapää}. 
+Maanalaisissa kaivoksissa lämpöolosuhteet eroavat huomattavasti maanpäällisistä. Kaivoksessa lämpöä aiheuttaa itse kallioperän lämpö, ilman puristuminen, lämpimät pohjavesivuodot, koneet, valaistus ja räjäytykset \cite[s. 305]{Hakapää}. 
 \\\\
-Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa syvemmälle mentäessä noin 25-30 \textdegree C/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30-40 \textdegree C:seen riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}. %% s.62: maan lämpeneminen/km 
-Esimerkkinä todettakoon, että Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli kolmeenkymmeneen asteeseen \cite{Pyhäsalmi}. Hyvin suunnitellussa kaivoksessa kuitenkaan harvoin on ongelmana, että kaivoksen sisälämpötila olisi liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä jotta lämpötila pysyy koneille ja henkilöstölle edullisena. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille. Taajuusmuuttajien käyttöä osana kaivoksen ilmanvaihtojärjestelmää käsitellään tarkemmin luvussa \textit{4.2.5 Ilmanvaihto}. Kaivoksen lämpötilan noustessa esimerkiksi tuuletusjärjestelmän häiriön takia taajuusmuuttajien sisäinen lämpötilan tarkkailu osaa automaattisesti alentaa tuotettua sähkövirtaa ja näin komponenteissa syntyvää lämpömäärää. Tämä estää laitteen vioittumisen ylikuumenemisen takia.
+Etenkin syvissä kaivoksissa kallioperän lämpö on suurimpia kaivoksen sisäilman lämmittäjiä. Kallioperän lämpötila kasvaa syvemmälle mentäessä noin 25--30 \textdegree C/km, joten jo kilometrin syvyisessä kaivoksessa lämpötila voi yltää 30--40 \textdegree C:seen riippuen paikallisesta ilmastosta \cite[s. 62]{maanlampo}.
+Esimerkiksi Suomen syvin metallikaivos Pyhäsalmella on 1400 metriä syvä, jolloin lämpötila ilman ilmanvaihtoa kohoaa yli 30 \textdegree C:seen \cite{Pyhäsalmi}. Mikäli kaivos on suunniteltu hyvin, kaivoksen sisälämpötila on harvoin kuitenkaan liian korkea laitteiden toiminnalle. Olennaista on, että lämpö pystytään johtamaan ulos sitä tuottavista laitteista ja ilmaa lämmittävästä kallioperästä. Ilmanvaihtojärjestelmän suunnittelun tärkeys tulee tässä vahvasti esille. Taajuusmuuttajien käyttöä osana kaivoksen ilmanvaihtojärjestelmää käsitellään tarkemmin luvussa \textit{4.2.5 Ilmanvaihto}. Kaivoksen lämpötilan noustessa esimerkiksi tuuletusjärjestelmän häiriön takia taajuusmuuttajien sisäinen lämpötilan tarkkailu osaa automaattisesti alentaa tuotettua sähkövirtaa ja näin komponenteissa syntyvää lämpömäärää. Tämä estää laitteen vioittumisen ylikuumenemisen takia.
 \\\\
-Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vastaanottamastaan energiasta moottorille \cite{ABBinmining}. Energiasta 2\% kuitenkin muuttuu taajuusmuuttajan sisäisenä häviönä lämpöenergiaksi. Tämä tarkoittaa esimerkiksi 500kW taajuusmuuttajan vaativan noin 10kW jäähdytystehon toimiakseen jatkuvasti. Tämä lämpöenergia poistetaan taajuusmuuttajasta ilma- tai nestejäähdytyksen avulla ympäristöön.
+Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita sillä ne pystyvät siirtämään noin 98 prosenttia vastaanottamastaan energiasta moottorille \cite{ABBinmining}. Energiasta 2 prosenttia kuitenkin muuttuu taajuusmuuttajan sisäisenä häviönä lämpöenergiaksi. Tämä tarkoittaa, että esimerkiksi 500kW taajuusmuuttaja vaatii noin 10kW jäähdytystehon toimiakseen jatkuvasti. Tämä lämpöenergia poistetaan taajuusmuuttajasta ilma- tai nestejäähdytyksen avulla ympäristöön.
  
 %%derating ja muut suojat????
 
@@ -442,35 +416,35 @@ Taajuusmuuttajat ovat hyvin energiatehokkaita laitteita siirtäen noin 98\% vast
 %%-Kaivosten kosteus, sumu, kaapelit vesitiiviitä
 %%-Laitteiden kosteuskestävyys?
 %%-IP ja - NEMA-luokitukset?
-Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä vetenä. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin korkeaksi suljetun tilan sitoessa kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95\% suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
+Kosteus ilmenee kaivoksissa kahtena ilmiönä: ilmankosteutena ja nestemäisenä vetenä. Suurimman uhan sähkölaitteen toiminnalle aiheuttaa nestemäinen vesi, jota kondensoituu kosteasta ilmasta. Kaivoksissa suhteellinen ilmankosteus saattaa nousta hyvinkin korkeaksi, koska suljettu tila sitoo kostean ilmamassan.  Syvimmissä kaivoksissa voidaan saavuttaa jopa yli 95 prosentin suhteellinen ilmankosteus \cite{manchao}. Kondensoituvan veden lisäksi kaivoksissa täytyy ottaa huomion myös katosta mahdollisesti tihkuva vesi.
 \\\\
-Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkia ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle \cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä, jolloin ilmalla ei ole lainkaan pääsyä kosketuksiin elektroniikan kanssa. Kaivoksen tilapäisen ja muuttuvan luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
+Kaivoksen tekniikkaa suunniteltaessa on otettava huomioon sähkölaitteiden kosteudensieto ja sijoitettava laitteet joko eristettyyn sähkötilaan tai hankkittava ne riittävällä suojausluokituksella varustettuna. Ilmajäähdytteisten laitteiden haasteena on yleisesti niiden pienempi IP-luokitus, mikä sallii veden kondensoitumisen laitteen sisälle \cite{Pallasmaa}. Vesijäähdytys tarjoaa yleisesti paremman tiiveysluokituksen, sillä laitetta viilentää ilman sijasta suljettu nestejärjestelmä, jolloin ilmalla ei ole lainkaan pääsyä kosketuksiin elektroniikan kanssa. Kaivoksen tilapäisen ja muuttuvan luonteen vuoksi nestejärjestelmät voivat kuitenkin osoittautua epäkannattaviksi.
 \\\\
-Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy korkeamman suojausluokan laitteissa jäähdytysilma johtaa laitteen läpi sen pääsemättä kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: kosteudelle herkän elektroniikan sisältävään ilmalta eristettyyn osioon ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
+Jotta myös ilmajäähdytteisiä laitteita pystytään käyttämään vaativissa olosuhteissa täytyy jäähdytysilma korkeamman suojausluokan laitteissa johtaa laitteen läpi niin, että se ei pääse kosketuksiin elektroniikan kanssa. Tämä on usein toteutettu jakamalla laite sisäisesti kahteen osaan: ilmalta eristettyyn osioon, joka sisältää kosteudelle herkän elektroniikan, ja jäähdytysosioon, jossa jäähdytyselementti  sijaitsee.  Lämpö johtuu komponenteista jäähdytyselementin säleikköön, josta se johtuu edelleen säleikön läpi kulkevaan ilmaan. Ilma kierrätetään laitteen läpi tuulettimilla, joiden täytyy kestää ympäristön olosuhteet. Tuuletin onkin yksi ilmajäähdytteisen taajuusmuuttajan herkimmin hajoavia komponentteja \cite{Muttilainen}. Kuva~\ref{fig:IP55} esittää IP55 luokitellun taajuusmuuttajan, jossa jäähdytysilma ohjataan jäähdytyselementin kautta sen pääsemättä kosketuksiin elektroniikan kanssa.
 
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.9]{IP55}
 	\end{center}
 	\caption{ACS880-01 taajuusmuuttaja IP55-koteloinnilla.
-		 \cite[s.28]{880hwman}}
+		 \cite[s. 28]{880hwman}}
 	\label{fig:IP55}
 \end{figure}
 
 \noindent
-Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolella esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmön poistamisen tuuletuskanavan välityksellä. Kuvassa~\ref{fig:flange} esitetään hahmotelma laippa-asennetusta taajuusmuuttajasta, jossa jäähdytyselementti on eristetty omaan tilaansa.
+Toinen mahdollisuus on sijoittaa jäähdytyselementti laitteen ulkopuolelle, jolloin yleisesti puhutaan niin sanotusta laippa-asennuksesta (flange-installation). Tällä tekniikalla taajuusmuuttaja pysytään upottamaan ulkoiseen koteloon ja kierrättämään jäähdytysilma kotelon ulkopuolelta esimerkiksi tuuletuskanavassa. Tämä eristää taajuusmuuttajan täysin tuuletusilmasta ja sallii tehokkaan lämmönpoistamisen tuuletuskanavan välityksellä. Kuvassa~\ref{fig:flange} esitetään hahmotelma laippa-asennetusta taajuusmuuttajasta, jossa jäähdytyselementti on eristetty omaan tilaansa.
 
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics{flange}
 	\end{center}
 	\caption{Hahmotelma laippa-asennetusta taajuusmuuttajasta.
-		 \cite[s.6]{danfoss}}
+		 \cite[s. 6]{danfoss}}
 	\label{fig:flange}
 \end{figure}
 
 \noindent
-Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen omaavia sähkölaitteita \cite[s.253]{Hakapää}. Jos taajuusmuuttajia sijoitetaan näihin keskitettyihin sähköhuoneisiin, korostuu taajuusmuuttajan valinnassa sen kyky tarkasti ohjata pitkien moottorikaapelien päässä olevia moottoreita. Kaivoksissa esimerkiksi puhaltimia täytyy sijoittaa kaukaisimpiinkin tunneleihin riittävän ilmanvaihdon takaamiseksi. Taajuusmuuttajavalmistajat ilmoittavat tyypillisesti suurimman sallitun moottorikaapelien pituuden, jonka jälkeen erilaisia suotimia on otettava käyttöön.
+Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kosteuden- ja pölynkestäviä sähköhuoneita, joissa pystytään käyttämään normaalin IP21 tai IP20 tiiveysluokituksen sähkölaitteita \cite[s. 253]{Hakapää}. Jos taajuusmuuttajia sijoitetaan näihin keskitettyihin sähköhuoneisiin, korostuu taajuusmuuttajan valinnassa sen kyky tarkasti ohjata pitkien moottorikaapelien päässä olevia moottoreita. Kaivoksissa esimerkiksi puhaltimia täytyy sijoittaa kaukaisimpiinkin tunneleihin riittävän ilmanvaihdon takaamiseksi. Taajuusmuuttajavalmistajat ilmoittavat tyypillisesti suurimman sallitun moottorikaapelien pituuden, jonka jälkeen erilaisia suotimia on otettava käyttöön.
 
 
 
@@ -493,12 +467,12 @@ Kaivoksen kiinteissä asennuksissa on mahdollista rakentaa myös kokonaisia kost
 %%-Elektroniikan eristys (flange)
 Kaivoksen ilmassa on kosteuden lisäksi pölyä ja muita kemikaaleja, joita muodostuu työkoneiden toiminnan ja räjäytysten seurauksena. Samoista seikoista johtuen myös hiekkaa voi kulkeutua kosketuksiin sähkölaitteiden kanssa. Hiekkaa ja pölyä esiintyy kaikissa ulkoympäristöissä, mutta niiden haitallisuus sähkölaitteiden toiminnalle määräytyy paljolti ympäröivän kosteuden ja maaperän laadun seurauksena. Kaivosympäristössä pölyn joukossa on kaivoksen luonteesta riippuen vaihtelevat määrät yhdisteitä, jotka kosteuden kanssa voivat aiheuttaa korroosiota.
 \\\\
-Korroosio on tietyissä olosuhteissa merkittävä sähkölaitteita rasittava tekijä. Korroosiota tapahtuu varauksellisen hiukkasen joutuessa kosketuksiin sähkölaitteen metallisen pinnan kanssa elektrolyytin, esimerkiksi veden, välityksellä. Voimakas korroosiota aiheuttava ioni on esimerkiksi kloridi (Cl\textsuperscript{-}), jota esiintyy kaikissa suolaisissa ympäristöissä. Lisäksi voimakkaasti korrosoivia ioneja ovat myös dieselkoneiden pakokaasuista vapautuvat rikin (SO\textsuperscript{x}) ja typen oksidit(NO\textsuperscript{x}) \cite[s. 290]{Hakapää}. Sähkölaitetta suunniteltaessa käyttöympäristön mahdolliset korroosiovaikutukset täytyy ottaa huomioon laitteen materiaalivalinnoissa. Esimerkiksi muovit ja alumiini ovat korroosionkestoltaan hyviä materiaaleja ja ne ovatkin yleisesti käytössä taajuusmuuttajien kuorissa.
+Korroosio on tietyissä olosuhteissa merkittävä sähkölaitteita rasittava tekijä. Korroosiota tapahtuu varauksellisen hiukkasen joutuessa kosketuksiin sähkölaitteen metallisen pinnan kanssa elektrolyytin, esimerkiksi veden, välityksellä. Voimakas korroosiota aiheuttava ioni on esimerkiksi kloridi (Cl\textsuperscript{-}), jota esiintyy kaikissa suolaisissa ympäristöissä. Lisäksi voimakkaasti korroosiota aiheuttavia ioneja ovat myös dieselkoneiden pakokaasuista vapautuvat rikin (SO\textsuperscript{x}) ja typen oksidit(NO\textsuperscript{x}) \cite[s. 290]{Hakapää}. Sähkölaitetta suunniteltaessa käyttöympäristön mahdolliset korroosiovaikutukset täytyy ottaa huomioon laitteen materiaalivalinnoissa. Esimerkiksi muovit ja alumiini ovat korroosionkestoltaan hyviä materiaaleja ja ne ovatkin yleisesti käytössä taajuusmuuttajien kuorissa.
 \\\\
-Korroosion lisäksi pöly ja hiekka voivat aiheuttaa sähkölaitteen ylikuumenemisen tai sähkövian. Pölyisissä ympäristöissä on pidettävä huoli että pöly ja muu hienorakeinen aines kuten hiekka ei pääse tukkimaan sähkölaitteiden mekaanisia tai sähköisiä osia. Yleisin pölyn aiheuttama ongelma lienee ilmajäähdytteisen sähkölaitteen jäähdytyselementin peittyminen pölyllä ja muilla epäpuhtauksilla alentaen jäähdytyselementin lämmönsiirtokykyä. Ilman epäpuhtaudet voivat vaikuttaa haitallisesti myös ilmaa jäähdytyselementin läpi puhaltavaan puhaltimeen, mikä voi pahimmassa tapauksessa estää puhaltimen toiminnan.\cite{Pallasmaa} Puhaltimen vikaantuminen aiheuttaa nopeasti laiteen ylikuumenemisen ja sammumisen vikajärjestelmien kytkeytyessä. Joissakin taajuusmuuttajissa on vakio-ominaisuutena redundanttiset puhaltimet tarkoittaen, että yhden puhaltimen vikaantuminen ei estä laitteen toimintaa kokonaan.
+Korroosion lisäksi pöly ja hiekka voivat aiheuttaa sähkölaitteen ylikuumenemisen tai sähkövian. Pölyisissä ympäristöissä on pidettävä huoli että pöly ja muu hienorakeinen aines kuten hiekka ei pääse tukkimaan sähkölaitteiden mekaanisia tai sähköisiä osia. Yleisin pölyn aiheuttama ongelma lienee ilmajäähdytteisen sähkölaitteen jäähdytyselementin peittyminen pölyllä ja muilla epäpuhtauksilla alentaen jäähdytyselementin lämmönsiirtokykyä. Ilman epäpuhtaudet voivat vaikuttaa haitallisesti myös ilmaa jäähdytyselementin läpi puhaltavaan puhaltimeen, mikä voi pahimmassa tapauksessa estää puhaltimen toiminnan. \cite{Pallasmaa} Puhaltimen vikaantuminen aiheuttaa nopeasti laiteen ylikuumenemisen ja sammumisen vikajärjestelmien kytkeytyessä. Joissakin taajuusmuuttajissa on vakio-ominaisuutena redundanttiset puhaltimet tarkoittaen, että yhden puhaltimen vikaantuminen ei estä laitteen toimintaa kokonaan.
 %%miten estetään (putsaus ym. materiaalivalinnat IP9001 puhallin)
 \\\\
-Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen elektronisten osien kanssa. Yhdistettynä kosteuden kanssa elektroniikan päälle kertynyt pöly voi muuttua johtavaksi aiheuttaen pahimmassa tapauksessa vuotovirtoja tai läpilyönnin. \cite{Pallasmaa} Pölyn ja muiden hiukkasten aiheuttamien sähkö-, lämpö-, ja korroosio-ongelmien takia on tärkeää huolehtia sähkölaitteiden asianmukaisesta huollosta. Sähkölaitteen kotelo tulisi säännöllisesti puhdistaa kertyneestä liasta ja tarkistaa ettei korroosiota ole päässyt syntymään. Kaivossuunnittelussa tulisi ottaa huomioon kaivoksen ilmanlaatu ja mitoittaa laitteiden suojausluokitus sitä vastaavaksi. Vaihtoehtoisesti voidaan käyttää muita tapoja kuten eristettyä sähköhuonetta tai aikaisemmin mainittua laippa-asennusta.
+Hienorakeinen pöly voi helposti kulkeutua kosketuksiin myös sähkölaitteen elektronisten osien kanssa. Yhdistettynä kosteuden kanssa elektroniikan päälle kertynyt pöly voi muuttua johtavaksi aiheuttaen pahimmassa tapauksessa vuotovirtoja tai läpilyönnin. \cite{Pallasmaa} Pölyn ja muiden hiukkasten aiheuttamien sähkö-, lämpö-, ja korroosio-ongelmien takia on tärkeää huolehtia sähkölaitteiden asianmukaisesta huollosta. Sähkölaitteen kotelo tulisi säännöllisesti puhdistaa kertyneestä liasta ja tarkistaa ettei korroosiota ole päässyt syntymään. Kaivossuunnittelussa tulisi ottaa huomioon kaivoksen ilmanlaatu ja mitoittaa laitteiden suojausluokitus sitä vastaavaksi. Vaihtoehtoisesti voidaan käyttää muita tapoja kuten eristettyä sähköhuonetta tai aikaisemmin mainittua laippa-asennusta. Tietyntyyppisissä kaivoksissa, esimerkiksi Kittilän kultakaivoksessa, edes suurimmalla kotelointiluokalla koteloidut laitteet eivät kestä kaivoksen korroosiota aiheuttavia tekijöitä, minkä vuoksi taajuusmuuttajien sijoittaminen sähköhuoneeseen jää ainoaksi vaihtoehdoksi \cite{MyyntiHaastattelu}.
 
 %-kiviainesta
 %-räjähteitä
@@ -513,7 +487,7 @@ Sähkölaitteet voivat kuljetuksen, asennuksen ja käytön aikana altistua täri
 \\\\
 Kaivosympäristössä taajuusmuuttajaan kohdistuvat mekaaniset rasitukset riippuvat paljolti laitteen asennuspaikasta. Kaivoksen kiinteissä järjestelmissä kuten ilmanvaihdossa taajuusmuuttajat on tyypillisesti asennettu seinälle tai lattialle sähkötiloihin. Suuremmissa laitteissa kuten murskaimissa ja työkoneissa taajuusmuuttajat ovat asennettuna osaksi koneen rakennetta ja liikkuvat koneen mukana altistuen täten vaihteleville olosuhteille.
 \\\\
-Kaivoksen kiinteät taajuusmuuttajat on tyypillisesti asennettu eristettyyn sähkötilaan \cite{MyyntiHaastattelu}. Jos kaivoksessa louhitaan malmia käyttäen räjähteitä täytyy laitteiden sijoittelussa ottaa huomioon etäisyys räjäytyspaikkaan tärinän kulkeutuessa kallioperässä pitkiäkin matkoja . Jos laitteita ei pystytä sijoittamaan tarpeeksi kauas, voidaan käyttää tärinänvaimentimia, jotka asennetaan taajuusmuuttajan ja asennuskohteen väliin. Tärinänvaimentimet muuttavat tärinän liike-energian kitkan avulla lämmöksi. Kumi on tyypillinen tärinänvaimentimissa käytetty materiaali sen elastisten ominaisuuksien vuoksi.
+Kaivoksen kiinteät taajuusmuuttajat on tyypillisesti asennettu eristettyyn sähkötilaan \cite{MyyntiHaastattelu}. Jos kaivoksessa louhitaan malmia käyttäen räjähteitä täytyy laitteiden sijoittelussa ottaa huomioon etäisyys räjäytyspaikkaan tärinän kulkeutuessa kallioperässä pitkiäkin matkoja \cite{Sirkko}. Jos laitteita ei pystytä sijoittamaan tarpeeksi kauas, voidaan käyttää tärinänvaimentimia, jotka asennetaan taajuusmuuttajan ja asennuskohteen väliin. Tärinänvaimentimet muuttavat tärinän liike-energian kitkan avulla lämmöksi. Kumi on tyypillinen tärinänvaimentimissa käytetty materiaali sen elastisten ominaisuuksien vuoksi.
 \\\\
 Hyvin tärinäsuojatun taajuusmuuttajan suurimmat mekaaniset rasitukset aiheutuvat kuljetuksesta ja asennuksesta. Vaikkakin mahdollista, on laitteen vaurioituminen kuljetuksen tai asennuksen aikana epätodennäköistä. Sijoitetun pääoman suuruudesta johtuen kaivosteollisuuden taajuusmuuttajat asennetaan pääosin ammattilaisten toimesta ja niitä käsitellään asianmukaisella huolellisuudella. Kestävällä pakkauksella voidaan varmistaa laitteen päätyminen ehjänä sovelluskohteeseen saakka.
 \\\\ 
@@ -524,7 +498,7 @@ Työkoneisiin kuten murskaimiin asennetut taajuusmuuttajat altistuvat vaihteleva
 \subsection{Kaivoksen sähköverkko}
 Kaivokset ovat suuria sähkönkuluttajia. Kaivosalueella sähköä kuluttavat itse kaivanto, rikastamo, toimistotilat ja joskus myös asuinrakennukset. Jos sähkö tilataan ulkoiselta toimittajalta, toimitetaan se yleensä 110kV suurjännitelinjaa pitkin ja muunnetaan kaivosalueella jakelujännitteeksi. Suomessa suurin sallittu jakeluverkon jännite on 20kV. Suuren jakelujännitteen etuna ovat pienemmät häviöt pitkillä etäisyyksillä ja mahdollisuus käyttää poikkipinta-alaltaan pienempiä siirtokaapeleita. \cite[s. 251-253]{Hakapää}
 \\\\
-Jakelujännite muunnetaan edelleen käyttöjännitteeksi jakelumuuntajilla. Kaivosalueilla on yleisesti käytössä 400V:n kolmivaihejärjestelmä. 400V järjestelmän etuna, en että tavallista 230V vaihtovirtaa saadaan suoraan samasta järjestelmästä yhden vaihe- ja nollajohtimen väliltä. Toinen standardisoitu jännite on 690V käyttöjännite, jota käytettäessä päästään pitempiin kaapelietäisyyksiin ja pienempiin johtimien poikkipinta-aloihin. \cite[s. 251-253]{Hakapää}
+Jakelujännite muunnetaan edelleen käyttöjännitteeksi jakelumuuntajilla. Kaivosalueilla on yleisesti käytössä 400V:n kolmivaihejärjestelmä. 400V järjestelmän etuna on, että tavallista 230V vaihtovirtaa saadaan suoraan samasta järjestelmästä yhden vaihe- ja nollajohtimen väliltä. Toinen standardisoitu jännite on 690V käyttöjännite, jota käytettäessä päästään pitempiin kaapelietäisyyksiin ja pienempiin johtimien poikkipinta-aloihin. \cite[s. 251-253]{Hakapää}
 \\\\
 Joissakin tapauksissa voi myös olla kannattavaa tuottaa kaivosalueen tarvitsema sähköenergia paikanpäällä. Syrjäisillä alueilla vai olla mahdollista että tarpeeksi vahvaa verkkoa ei ole saatavilla tai että verkkoa ei ole ollenkaan. Tämä tulee harvoin kysymykseen Suomessa vahvan ja kattavan sähköverkon ansiosta. Myös sähköverkon luotettavuus pitää olla korkea. Jos katkokset sähkönjakelussa ovat alueella yleisiä voi voimantuotanto paikanpäällä olla kannattavampi vaihtoehto suuremmista kustannuksista huolimatta. Voimantuotanto paikanpäällä toteutetaan yleensä dieselvoimalaitoksella, jossa dieselmoottorit tuottavat sähköenergiaa generaattoreiden välityksellä. Kompromissi näiden kahden väliltä on varavoimalaitos, joka tuottaa vaaditun energian paikanpäällä sähkökatkoksen aikana. \cite[s. 251-253]{Hakapää}
 \\\\
@@ -539,7 +513,7 @@ Luonteestaan johtuen kaivokset ovat tilapäisiä rakennelmia eliniän riippuessa
 \\\\
 Kaivosteollisuuden vaatiman huomattavan suuren alkuinvestoinnin seurauksena lähes kaikki kaivosteollisuuden toimijat ovat suurikokoisia yrityksiä, joilla on näin resurssit suunnitella kaivostensa automaatiojärjestelmä itse aina logiikkaohjainten ohjelmistoja myöten. Yrityksen oman logiikkasuunnittelun ansiosta tarve taajuusmuuttajavalmistajien omille automaatiosovelluksille vähenee \cite{MyyntiHaastattelu}. Oman automaatiojärjestelmän käyttö on yrityksen kannalta järkevää, sillä korjaus ja päivitys voidaan näin hoitaa oman henkilöstön avulla ilman tarvetta ulkoisille toimijoille. \cite{MyyntiHaastattelu} Taajuusmuuttajavalmistajat ovat lähestyneet tätä ongelmaa tarjoamalla omia avoimen rajapinnan kehitysympäristöjä taajuusmuuttajille esimerkiksi CodeSys-kieltä käyttäen \cite{880hwman}.
 \\\\
-Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastuminen tietyn järjestelmän komponentin kuten taajuusmuuttajan rikkoutumisen seurauksena on merkittävä kaivoksen kannattavuuteen vaikuttava tekijä kiinteiden kulujen ollessa suuret tuotannon määrästä huolimatta. Lisäksi taajuusmuuttajia käytetään turvallisuuden kannalta kriittisissä toiminnoissa kuten ilmanvaihdossa. Tämän takia taajuusmuuttajilta edellytetään ensisijaisesti korkeaa luotettavuutta ja hyviä tukitoimintoja.\cite{MyyntiHaastattelu}
+Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastuminen tietyn järjestelmän komponentin kuten taajuusmuuttajan rikkoutumisen seurauksena on merkittävä kaivoksen kannattavuuteen vaikuttava tekijä kiinteiden kulujen ollessa suuret tuotannon määrästä huolimatta. Lisäksi taajuusmuuttajia käytetään turvallisuuden kannalta kriittisissä toiminnoissa kuten ilmanvaihdossa. Tämän takia taajuusmuuttajilta edellytetään ensisijaisesti korkeaa luotettavuutta ja hyviä tukitoimintoja. \cite{MyyntiHaastattelu}
 %%Viitteet jotenkin järkevämmin???
 
 
@@ -555,14 +529,16 @@ Kaivostoiminnassa käyttökatkot eli kaivostoiminnan pysähtyminen tai hidastumi
 \clearpage
 
 
-\section{Taajuusmuuttajien sovellukset kaivoksissa}
-Kaivosteollisuus käsittää laajan joukon aliprosesseja, joissa kussakin käytetään siihen suunniteltuja koneita. Näitä kaivosalueella tapahtuvia malmin rikastamisen välivaiheita ovat louhiminen räjäyttämällä tai poraamalla, louheen siirto, murskaus ja rikastus. Kuvassa~\ref{fig:Kaivosprosessi} nähdään kaivosprosessin päävaiheet. Polttoaineen hinnan kasvaessa kaivoksissa on siirrytty pääosin sähköä voimanaan käyttäviin koneisiin, mikä on luonut tarpeen sähkömoottorien tehokkaalle ohjaukselle taajuusmuuttajilla. Nykyään dieselkoneita käytetään lähinnä vain liikkuvassa kalustossa, mihin sähkönsiirto johdinta pitkin tai akuston avulla voi olla hankalaa tai epäkannattavaa.
+\section{Kaivosprosessi ja taajuusmuuttajien sovellukset}
+Tämä luku käsittelee kaivosta prosessina ja niitä sovelluksia, joissa tämän tutkimuksen perusteella koetaan, että taajuusmuuttajien käytöstä voisi olla hyötyä. Kaivos sisältää useita toisiinsa kytkeytyviä aliprosesseja ja sen takia onkin tärkeä ymmärtää kaivos kokonaisuutena ennen aliprosessien tarkasteluun siirtymistä. Luku käsittelee ensiksi kaivosprosessin vaiheita kokonaisuutena ja siirtyy sen jälkeen sovelluskohtaiseen tarkasteluun, joissa taajuusmuuttajien käyttö on otettu huomioon.
+\subsection{Kaivosprosessi}
+Kaivosteollisuus käsittää laajan joukon aliprosesseja, joissa kussakin käytetään siihen suunniteltuja koneita. Näitä kaivosalueella tapahtuvia malmin rikastamisen välivaiheita ovat louhiminen räjäyttämällä tai poraamalla, louheen siirto, murskaus ja rikastus. Kuvassa~\ref{fig:Kaivosprosessi} nähdään kaivosprosessin päävaiheet. Polttoaineen hinnan kasvaessa kaivoksissa on siirrytty pääosin sähköä voimanaan käyttäviin koneisiin, mikä on luonut tarpeen sähkömoottorien tehokkaalle ohjaukselle taajuusmuuttajilla. Nykyään dieselkoneita käytetään lähinnä vain liikkuvassa kalustossa, mihin sähkönsiirto johdinta pitkin tai akuston avulla voi olla hankalaa tai epäkannattavaa \cite{MetsoHaastattelu}.
 \\\\ 
 %Mitä kaikkea tapahtuu (louhinta,murskaus, rikastus, siirto, ym). Sähkönkäyttö. Teollisuuden laajuus, kehittyminen, automaation taso
 
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics{Kaivosprosessi}
+	\includegraphics[scale=0.8]{Kaivosprosessi}
 	\end{center}
 	\caption{Kaivosprosessin päävaiheet.
 		\cite{Kaivosprosessi}}
@@ -570,25 +546,26 @@ Kaivosteollisuus käsittää laajan joukon aliprosesseja, joissa kussakin käyte
 	
 \end{figure}
 \noindent
-Louhe saadaan irti maaperästä räjäyttämällä tai louhimalla. Louhinnassa voidaan käyttää useita eri menetelmiä, mitkä riippuvat paljolti maaperän laadusta ja louhittavasta mineraalista. Irroitettu louhe täytyy ennen rikastusprosessia hienontaa murskaamalla. Murskaus tapahtuu yleensä kahdessa tai kolmessa osassa, esi-,väli- ja hienomurskauksessa, jossa kussakin raekoko pienenee noin kuudennekseen alkuperäisestä \cite[s. 198]{Hakapää}. Esimurskaus voidaan suorittaa jo kaivoksen sisällä, jolloin murskattu malmi on helppo siirtää kaivoksesta esimerkiksi kuljetinta käyttäen. Suurirakeinen malmi täytyy kuljetttaa dumppereilla eli kaivoskäyttöön suunnitelluilla siirtokoneilla murskattavaksi. 
+Louhe saadaan irti maaperästä räjäyttämällä tai louhimalla. Louhinnassa voidaan käyttää useita eri menetelmiä, mitkä riippuvat paljolti maaperän laadusta ja louhittavasta mineraalista. Irrotettu louhe täytyy ennen rikastusprosessia hienontaa murskaamalla. Murskaus tapahtuu yleensä kahdessa tai kolmessa osassa, esi-,väli- ja hienomurskauksessa, jossa kussakin raekoko pienenee noin kuudennekseen alkuperäisestä \cite[s. 198]{Hakapää}. Esimurskaus voidaan suorittaa jo kaivoksen sisällä, jolloin murskattu malmi on helppo siirtää kaivoksesta esimerkiksi kuljetinta käyttäen. Suurirakeinen malmi täytyy kuljettaa dumppereilla eli kaivoskäyttöön suunnitelluilla siirtokoneilla murskattavaksi. 
 \\\\
 Murskauksessa louhe murskataan pienempään muotoon puristamalla tai iskemällä. Louhe syötetään murskaimeen syöttimellä, jonka tyyppi riippuu siirrettävän louheen luonteesta. Ennen murskaimia louhe voidaan syöttää seulaan joka erottelee suuren ja pienen aineksen toisistaan niin, ettei seuraavaan murskausvaiheeseen päädy tarpeettomasti sille liian pientä ainesta. Hienonnusprosessin jälkeen malmi rikastetaan. Rikastuksessa malmista erotetaan tarpeeton sivuaines, jotta halutun mineraalin pitoisuus nousee. Tämä voidaan tehdä malmista riippuen usealla tavalla. \cite[s. 197-199]{Hakapää}
 \\\\
 Tämä kappale käsittelee mainittujen prosessivaiheiden suorittamiseen tarvittavien laitteiden toimintaa. Tarkastelun alla ovat koneet, joissa erityisesti käytetään taajuusmuuttajia tai niille olisi potentiaalisia käyttömahdollisuuksia. Tarkastelussa on myös taajuusmuuttajien yleinen teholuokka kyseisissä sovelluksissa ja niiden sijoittelu kaivosympäristöön.
 
 
-\subsection{Taajuusmuuttajien kokoluokat ja sijoittelu}
--5.12 Excu Metsolle Tampereelle. Sieltä tietoa tähän
+%\subsection{Taajuusmuuttajien kokoluokat ja sijoittelu}
+%-5.12 Excu Metsolle Tampereelle. Sieltä tietoa tähän
 
--Teho- ja jänniteluokat (kuvia!)\\
--Seinä,lattia,floorstanding\\
--Asennuspaikat\\
--fyysinen koko?\\
--Hyvät/huonot puolet\\
--kaapelien pituus, EMC\\
--Kommunikointi (kenttäväylät, analogisignaalit)\\
+%-Teho- ja jänniteluokat (kuvia!)\\
+%-Seinä,lattia,floorstanding\\
+%-Asennuspaikat\\
+%-fyysinen koko?\\
+%-Hyvät/huonot puolet\\
+%-kaapelien pituus, EMC\\
+%-Kommunikointi (kenttäväylät, analogisignaalit)\\
 
 \subsection{Sovellukset}
+Tässä osiossa käsitellään kaivoksen koneita ja prosesseja, joissa taajuusmuuttajat ovat jo yleisesti käytössä tai niiden käyttöönotolla voitaisiin tämän tutkimuksen perusteella saavuttaa huomattavia etuja nykyisiin ratkaisuihin verrattuna.
 
 \subsubsection{Kaivoskoneet}
 Kaivoksissa käytetään joukkoa erilaisia liikkuvia työkoneita. Niitä käytetään pääasiassa räjähteiden asentamiseen ja poraamiseen sekä malmin liikuttamiseen ja käsittelyyn. Näitä ovat esimerkiksi kaivinkoneet, louhosautot, kauhakuormaajat, porausvaunut ja LHD:t (Load Haul Dump)\footnote{"LHD:t ovat tehokkaita ja suurikauhaisia lastauskoneita, jotka on suunniteltu työskentelemään maanalaisissa kaivoksissa ja ahtaissa tiloissa." \cite[s. 192]{Hakapää}}. Sähkökäyttöisten ajoneuvojen käyttö on yleistynyt kaivoksissa polttoainekustannusten noustessa ja sähkövoimatekniikan kehittyessä. Myös dieseliä ja sähköä vuorotellen käyttäviä hybridiajoneuvoja esiintyy \cite{Brown}.
@@ -658,9 +635,9 @@ Murskaimet ovat laitteita, joilla louheen raekokoa pienennetään rikastusta var
 \\\\
 Murskaus voi perustua iskuun tai puristukseen. Molemmille tyypeille on ominaista, että sähkömoottoreista saatavalla pyörivällä liikkeellä kiviainesta joko puristetaan murskaimen osien välissä tai kiviin kohdistetaan voimakas isku pyörivän terän avulla. Leuka-, kierto-, heiluri-, ja karamurskaimet ovat esimerkkejä puristavasta murskaimesta ja iskupalkkimurskaimet iskuperiaatteella toimivasta. \cite[s. 200-203]{Hakapää}
 \\\\
-Taajuusmuuttajalla murskaimen pyörimisnopeutta voidaan reaaliaikaisesti säätää, mikä vaikuttaa suoraan syntyvän kiviaineksen ominaisuuksiin \cite{Hulthen}. Aikaisemmin jos pyörimisnopeutta on haluttu muuttaa, on murskain täytynyt pysäyttää ja välitystä moottorin ja murskainosan välillä vaihtaa. Myös murskainosien kulumisesta aiheutuu muutoksia murskatun kiviaineksen laatuun, mitä täytyy kompensoida pyörimisnopeutta tai murskaimen halkaisijaa muuttamalla. Taajuusmuuttajalla tämä kompensointi voidaan tehdä reaaliaikaisesti. Hulthenin tutkimuksessa \cite{Hulthen} taajuusmuuttajalla ohjatun kartiomurskaimen pyörimisnopeutta säädettiin automaattisesti perustuen massavirta-antureilta saatuun dataan. Tällä menetelmällä saavutettiin 15\% kasvu murskaimen kapasiteetissa perinteiseen ohjaamattomaan ratkaisuun verrattuna.
+Taajuusmuuttajalla murskaimen pyörimisnopeutta voidaan reaaliaikaisesti säätää, mikä vaikuttaa suoraan syntyvän kiviaineksen ominaisuuksiin \cite{Hulthen}. Aikaisemmin jos pyörimisnopeutta on haluttu muuttaa, on murskain täytynyt pysäyttää ja välitystä moottorin ja murskainosan välillä vaihtaa \cite{MetsoHaastattelu}. Myös murskainosien kulumisesta aiheutuu muutoksia murskatun kiviaineksen laatuun, mitä täytyy kompensoida pyörimisnopeutta tai murskaimen halkaisijaa muuttamalla. Taajuusmuuttajalla tämä kompensointi voidaan tehdä reaaliaikaisesti. Hulthenin tutkimuksessa \cite{Hulthen} taajuusmuuttajalla ohjatun kartiomurskaimen pyörimisnopeutta säädettiin automaattisesti perustuen massavirta-antureilta saatuun dataan. Tällä menetelmällä saavutettiin 15\% kasvu murskaimen kapasiteetissa perinteiseen ohjaamattomaan ratkaisuun verrattuna.
 \\\\
-Itse murskaimen lisäksi murskaamoon kuuluu joukko murskaimelle louhetta syöttäviä laitteita. Näihin kuuluvat kuljettimet ja syöttimet. Moderneissa murskaimissa kaikkia toimintoja ohjataan keskitetysti ohjaamosta. Käynnistyssykli on yleensä automaattinen logiikan hoitaessa koneen komponenttien oikean käynnistysjärjestyksen. Taajuusmuuttajilla moottoreiden ohjaaminen helpottuu ja esimerkiksi ramppikäynnistyksiä voidaan käyttää vähentämään mekaanista rasitusta.
+Itse murskaimen lisäksi murskaamoon kuuluu joukko murskaimelle louhetta syöttäviä laitteita. Näihin kuuluvat kuljettimet ja syöttimet. Moderneissa murskaimissa kaikkia toimintoja ohjataan keskitetysti ohjaamosta. Käynnistyssykli on yleensä automaattinen logiikan hoitaessa koneen komponenttien oikean käynnistysjärjestyksen. Taajuusmuuttajilla moottoreiden ohjaaminen helpottuu ja esimerkiksi ramppikäynnistyksiä voidaan käyttää vähentämään mekaanista rasitusta. \cite{MetsoHaastattelu} 
 
 %\subsubsection{Hissit}
 %-Tarvitseeko tälle oman kappaleen?
@@ -683,13 +660,13 @@ Kittilän kultakaivoksella puhallinautomaatio on rakennettu käyttäen ABB:n ACS
 \subsubsection{Pumput}
 Kaivoksiin kertyy vettä ympäristön asettamista syistä kuten pohjavesien valumista ja paikallisista sääolosuhteista johtuen. Lisäksi kaivosprosessin eri vaiheet kuten pölyn sidonta ja poraaminen vaativat vettä, joka tuodaan kaivokseen putkistoa pitkin vesijohtoverkosta tai esimerkiksi läheisestä järvestä. Tätä kaivokseen kertyvää vesimassaa täytyy jatkuvasti pumpata ylös kaivoksesta, jotta kaivos ei tulvi. Kaivoksessa erityisen haasteen pumppaamiselle aiheuttaa veden seassa oleva kiinteä aines. Kiinteä aines täytyy saostaa pois vedestä kaivoksen sisällä ennen pumppaamista, jotta nestemäiselle aineelle tarkoitetut pumput eivät tukkiudu tai vaurioidu. Pumppaus on myös mahdollista tehdä siihen suunnitelluilla lietepumpuilla, jolloin saostusta ei tarvita. Saostus tapahtuu sille rakennetuissa saostusaltaissa, joista pumput pumppaavat puhdistunutta vettä pois. \cite[s. 307]{Hakapää}
 \\\\
-Pumppuilla ohjataan pääsääntöisesti painetta, virtausnopeutta tai säiliön pinnankorkeutta. Pumppujen ohjaus on perinteisesti toteutettu anturilla, joka kytkee pumpun päälle kun tietty raja-arvo ylitetään ja pois kun se taas alitetaan. \cite[s. 315]{Hakapää}. Ratkaisu on hyvin yksinkertainen, mutta energiankulutus on suurta, sillä pumppua käytetään yleensä kaukana optimaaliselta toiminta-alueelta. Kaksiarvoinen pumpun ohjaus aiheuttaa myös äkillisiä paineenvaihteluita putkistoon, mikä aiheuttaa rasituksia itse pumpulle ja putkistolle.
+Pumpuilla ohjataan pääsääntöisesti painetta, virtausnopeutta tai säiliön pinnankorkeutta. Pumppujen ohjaus on perinteisesti toteutettu anturilla, joka kytkee pumpun päälle kun tietty raja-arvo ylitetään ja pois kun se taas alitetaan. \cite[s. 315]{Hakapää}. Ratkaisu on hyvin yksinkertainen, mutta energiankulutus on suurta, sillä pumppua käytetään yleensä kaukana optimaaliselta toiminta-alueelta. Kaksiarvoinen pumpun ohjaus aiheuttaa myös äkillisiä paineenvaihteluita putkistoon, mikä aiheuttaa rasituksia itse pumpulle ja putkistolle.
 \\\\
-Taajuusmuuttajilla pumppuja pystytään muiden sovellusten tapaan ohjaamaan portaattomasti. Painetta, virtausnopeutta tai pinnankorkeutta voidaan ohjata takaisinkytkennällä käyttäen PID-säätöä, jolloin prosessiarvon, esimerkiksi paineen, heilahtelut pienenevät huomattavasti. Sovelluskohtaisella ohjelmistolla varustetut ABB:n ACQ810 taajuumuuttajat pystyvät arvioimaan virtausta myös ilman virtaus- tai painesensoreita, mikä vähentää käyttöönottokuluja tilanteissa, joissa suurta tarkkuutta ei tarvita \cite{ACQ810}. Ohjelmistossa on myös automaattisia toimintoja kuten pumpun puhdistus, joka puhdistaa pumpun nopeilla suunnanvaihdoksilla käyttäjän toimesta tai määräajoin \cite{ACQ810}. Kuten luvussa 1 mainittiin, taajuusmuuttaja mahdollistaa helpon prosessiarvon etäohjauksen ja -valvonnan, sekä turvallisuustoiminnot esimerkiksi kenttäväylää hyödyntäen.
+Taajuusmuuttajilla pumppuja pystytään muiden sovellusten tapaan ohjaamaan portaattomasti. Painetta, virtausnopeutta tai pinnankorkeutta voidaan ohjata takaisinkytkennällä käyttäen PID-säätöä, jolloin prosessiarvon, esimerkiksi paineen, heilahtelut pienenevät huomattavasti. Sovelluskohtaisella ohjelmistolla varustetut ABB:n ACQ810 taajuusmuuttajat pystyvät arvioimaan virtausta myös ilman virtaus- tai painesensoreita, mikä vähentää käyttöönottokuluja tilanteissa, joissa suurta tarkkuutta ei tarvita \cite{ACQ810}. Ohjelmistossa on myös automaattisia toimintoja kuten pumpun puhdistus, joka puhdistaa pumpun nopeilla suunnanvaihdoksilla käyttäjän käskystä tai määräajoin \cite{ACQ810}. Kuten luvussa 1 mainittiin, taajuusmuuttaja mahdollistaa helpon prosessiarvon etäohjauksen ja -valvonnan, sekä turvallisuustoiminnot esimerkiksi kenttäväylää hyödyntäen.
 \\\\
 Taajuusmuuttajien tuoma uusi pumppusovellus on rinnankytkettyjen puppujen ohjaaminen energiatehokkaalla ja pumppuja vähiten rasittavalla tavalla. Useampi taajuusmuuttaja kommunikoin tällöin keskenään säätäen jokaisen pumpun toiminnan mahdollisimman lähelle optimaalista toimintapistettä, pitäen samalla ohjatun prosessiarvon halutulla tasolla. Pumppuvian ilmetessä taajuusmuuttajat automaattisesti kytkevät kyseisen pumpun pois päältä ja jatkavat toimintaa jäljellä olevilla pumpuilla. \cite{ACQ810} 
 \\\\
-Kaivoksissa pumpun toiminta perustuu useimmiten pinnankorkeuden säätelyyn, pumppujen tarkoituksen ollessa vain veden poistaminen kaivoksen sisältä esimerkiksi saostusaltaasta. Tällöin pumpulta vaaditaan kestävyyttä pumpattavan nesteen ollessa usein kiintoainepitoista ja mahdollisesti hapanta. Tällöin taajuusmuuttajalla ohjattu pumppu on hyödyksi seurattaessa pumpun tilaa etenkin lietepumppauksessa, missä pumpun joutuvat hyvin kovalle rasitukselle. Taajuusmuuttajalla kyetään pumppua valvomaan etäältä ja tarvittaessa tehdä esimerkiksi puhdistustoiminto, jos pumpun kapasiteetin huomataan laskeneen. Pumpattaessa puhdasta vettä esimerkiksi porausyksiköille on ohjattavana suureena porausyksikön vedenpaine, minkä halutaan pysyvän vakiona. Tällöin vaaditaan jatkuvaa takaisinkytkettyä ohjausta, mihin vaaditaan nopeasti paineen vaihteluun reagoiva pumppu. Taajuusmuuttajalla tämä pystytään toteuttamaan yksinkertaisesti taajuusmuuttajan PID-säätimellä.
+Kaivoksissa pumpun toiminta perustuu useimmiten pinnankorkeuden säätelyyn, pumppujen tarkoituksen ollessa vain veden poistaminen kaivoksen sisältä esimerkiksi saostusaltaasta. Tällöin pumpulta vaaditaan kestävyyttä pumpattavan nesteen ollessa usein kiintoainepitoista ja mahdollisesti hapanta. Tällöin taajuusmuuttajalla ohjattu pumppu on hyödyksi seurattaessa pumpun tilaa etenkin lietepumppauksessa, missä pumpun joutuvat hyvin kovalle rasitukselle. Taajuusmuuttajalla pumppua kyetään valvomaan etäältä ja tarvittaessa tehdä esimerkiksi puhdistustoiminto, jos pumpun tehon huomataan laskeneen. Pumpattaessa puhdasta vettä esimerkiksi porausyksiköille on ohjattavana suureena porausyksikön vedenpaine, minkä halutaan pysyvän vakiona. Tällöin vaaditaan jatkuvaa takaisinkytkettyä ohjausta, mihin vaaditaan nopeasti paineen vaihteluun reagoiva pumppu. Taajuusmuuttajalla tämä pystytään toteuttamaan yksinkertaisesti taajuusmuuttajan PID-säätimellä.
 
 \subsubsection{Kompressorit}
 Moderneissa kallioporakoneissa hydrauliset järjestelmät ovat pääosin korvanneet paineilmaa voimanlähteenään käyttäneet koneet \cite[s. 143]{Hakapää}. Paineilmalla on kuitenkin edelleen rooli joissakin porasovelluksissa, ruiskubetonoinnissa ja räjähdysaineen panostuksessa. Paineilmaa verten kaivoksiin on yleensä rakennettu ruostumattomasta teräksestä valmistettu paineilmaverkosto, johon syöttävät ilmaa omaan tilaansa asennetut kompressorit \cite[s. 269]{Hakapää}.
@@ -729,11 +706,13 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{Hakapää}Hakapää,\ A. ja Lappalainen,\ P. \textit{Kaivos- ja louhintatekniikka.} 2.\ painos. Helsinki: Vammalan kirjapaino Oy, 2007.
 
-\bibitem{ABBtechnicalguide}ABB Drives \textit{Technical guide book}. Helsinki, 2008.
+\bibitem{ABBinmining}ABB Oy. \textit{ABB drives in mining}. Saatavissa: \url{http://www05.abb.com/global/scot/scot216.nsf/veritydisplay/2205e72865c2c747c1257a620026d001/$file/Mining%20brochure_EN_lowres.pdf}. Päivitetty 2012. Viitattu 6.10.2014.
 
-\bibitem{MyyntiHaastattelu}Antti Hedman. Myyntipäällikkö. ABB Oy. Haastattelu, 17.10.2014. Pitäjänmäki, Helsinki.
+\bibitem{ABBtechnicalguide}ABB Drives. \textit{Technical guide book}. Helsinki, 2008.
 
-\bibitem{acs880panel}ABB Oy. \textit{ACS880 Control Panel}. Kuva. Saatavissa: \url{http://www04.abb.com/global/seitp/seitp202.nsf/0/2996a31f6d99e961c1257864004ae0c1/$file/HM2011-02b.jpg}. Viitattu 28.10.2014
+\bibitem{MyyntiHaastattelu}Antti Hedman, Myyntipäällikkö. ABB Oy. Haastattelu, 17.10.2014. Pitäjänmäki, Helsinki.
+
+\bibitem{acs880panel}ABB Oy. \textit{ACS880 Control Panel}. Kuva. Saatavissa: \url{http://www04.abb.com/global/seitp/seitp202.nsf/0/2996a31f6d99e961c1257864004ae0c1/$file/HM2011-02b.jpg}. Viitattu 28.10.2014.
 
 \bibitem{880hwman}ABB Oy. \textit{Laiteopas, ACS880-01-taajuusmuuttajat, versio E}. Saatavissa: \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/71ce8071e2a7ae2bc1257bd70046ade1/$file/FI_ACS880-01_0_55to250kW_HW_E_plus_update_notice_screen.pdf}. Päivitetty 29.6.2012. Viitattu 9.10.2014.
 
@@ -751,17 +730,15 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{VSI}Joensuu, T. Eronen, T. \textit{Taajuusmuuttajan ohjauksen suunnittelu}. Insinöörityö. Metropolia Ammattikorkeakoulu. 2013.% Saatavissa: \url{http://www.theseus.fi/bitstream/handle/10024/67121/Taajuusmuuttajan_ohjauksen_suunnittelu.pdf?sequence=1}. 
 
-\bibitem{maanlampo}Fridleifsson, I. Bertani, R. Huenges, E. Lund, J. Rybach, L. \textit{The possible role and contribution of geothermal energy to the mitigation of climate change.} IPCC Scoping Meeting on Renewable Energy Sources. Luebeck, Saksa, 2008. Saatavissa: \url{http://www.ipcc.ch/pdf/supporting-material/proc-renewables-lubeck.pdf}
+\bibitem{maanlampo}Fridleifsson, I. Bertani, R. Huenges, E. Lund, J. Rybach, L. \textit{The possible role and contribution of geothermal energy to the mitigation of climate change.} IPCC Scoping Meeting on Renewable Energy Sources. Luebeck, Saksa, 2008. Saatavissa: \url{http://www.ipcc.ch/pdf/supporting-material/proc-renewables-lubeck.pdf}.
 
 \bibitem{Pyhäsalmi}CUPP. \textit{Pyhäsalmen kaivos.} Saatavissa: \url{http://www.cupp.fi/index.php?option=com_content&view=article&id=3&Itemid=41&lang=fi	}. Päivitetty 26.3.2013. Viitattu 6.10.2014.
 
-\bibitem{ABBinmining}ABB Oy. \textit{ABB drives in mining}. Saatavissa: \url{http://www05.abb.com/global/scot/scot216.nsf/veritydisplay/2205e72865c2c747c1257a620026d001/$file/Mining%20brochure_EN_lowres.pdf}. Päivitetty 2012. Viitattu 6.10.2014.
-
-\bibitem{manchao}Man-chao, H. \textit{Application of HEMS cooling technology in deep mine heat hazard control}. Mining Science and Technology (China), 19. Painos, Numero 3. S. 269-275. 2009. Saatavissa: \url{http://dx.doi.org/10.1016/S1674-5264(09)60051-X}
+\bibitem{manchao}Man-chao, H. \textit{Application of HEMS cooling technology in deep mine heat hazard control}. Mining Science and Technology (China), 19. Painos, Numero 3. S. 269-275. 2009. Saatavissa: \url{http://dx.doi.org/10.1016/S1674-5264(09)60051-X}.
 
 \bibitem{Pallasmaa}Pallasmaa, A. \textit{Ulkokäyttöön Tarkoitetun Tehoelektroniikkalaitteen Konseptisuunnittelu}. Diplomityö. Teknillinen korkeakoulu. Espoo. 2009.
 
-\bibitem{Muttilainen}Muttilainen, A. \textit{Lifetime and Reliability of a Frequency Converter’s Fan.} Diplomityö. Aalto-yliopisto, Sähkötekniikan korkeakoulu. Espoo. 2013
+\bibitem{Muttilainen}Muttilainen, A. \textit{Lifetime and Reliability of a Frequency Converter’s Fan.} Diplomityö. Aalto-yliopisto, Sähkötekniikan korkeakoulu. Espoo. 2013.
 
 \bibitem{danfoss}Danfoss Drives. \textit{VLT AutomationDrive Series}. Saatavissa: \url{http://www.danfoss.com/NR/rdonlyres/2270DF18-D4AD-4808-824E-4942B247F078/0/2011_AutomationDrive_176R0571_Web.pdf}. Päivitetty: 8/2011. Viitattu: 26.11.2014.
 
@@ -771,25 +748,30 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \bibitem{Vibration}Steinberg, S. \textit{Vibration analysis for electronic equipment}. New York, Yhdysvallat: Wiley, 2000.
 
+\bibitem{MetsoHaastattelu}Veijo Väyrynen, sähkösuunnittelija. Juha Kenttälä, kehityspäällikkö. Metso Oy. Haastattelu, 5.12.2014. Tampere.
+
 \bibitem{Kaivosprosessi}opasnet.org. Kuva. Saatavissa: \url{http://fi.opasnet.org/fi/Tiedosto:Kaivostoiminnanyleisprosessi.png}. Päivitetty 11.2.2012. Viitattu 12.11.2014.
 
 %% metsolähteet tähän
 
-\bibitem{Brown}Brown, G. Elbacher, B. Koellner, W. \textit{Increased productivity with AC drives for mining excavators and haul trucks}. Industry Applications Conference. Conference Record of the 2000 IEEE, 1. painos, s.28,37. 2000. Saatavissa: \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=880962}
+\bibitem{Brown}Brown, G. Elbacher, B. Koellner, W. \textit{Increased productivity with AC drives for mining excavators and haul trucks}. Industry Applications Conference. Conference Record of the 2000 IEEE, 1. painos, s.28,37. 2000. Saatavissa: \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=880962}.
 
-\bibitem{LHD}Sandvik Oy. \textit{Ground-breaking Electricity}. Saatavissa: \url{minestories.com/ground-breaking-electricity}. Päivitetty: 2014. Viitattu: 12.11.2014
+\bibitem{LHD}Sandvik Oy. \textit{Ground-breaking Electricity}. Saatavissa: \url{minestories.com/ground-breaking-electricity}. Päivitetty: 2014. Viitattu: 12.11.2014.
 
 \bibitem{Ruokolainen}Ruokolainen, P. \textit{Louheensiirtomenetelmät suurella louhoksella.} Kandidaatintyö. Aalto-yliopisto, Kemian tekniikan korkeakoulu. Espoo. 2011.
 
-\bibitem{conveyor}Carmeuse Lime \& Rock. Kuva. Saatavissa: \url{http://www.carmeuseky.com/wp-content/uploads/2012/07/conveyor.png}. Viitattu 9.11.2014
+\bibitem{conveyor}Carmeuse Lime \& Rock. Kuva. Saatavissa: \url{http://www.carmeuseky.com/wp-content/uploads/2012/07/conveyor.png}. Viitattu 9.11.2014.
 
-\bibitem{Rodriguez}Rodriguez, J. Pontt, J. Becker, N. Weinstein, A. \textit{Regenerative drives in the megawatt range for high-performance downhill belt conveyors}. Industry Applications. IEEE Transactions, 38. painos, numero 1. S. 203-210. 2002. Saatavissa: \url{http://ieeexplore.ieee.org/xpl/abstractKeywords.jsp?tp=&arnumber=980377}
+\bibitem{Rodriguez}Rodriguez, J. Pontt, J. Becker, N. Weinstein, A. \textit{Regenerative drives in the megawatt range for high-performance downhill belt conveyors}. Industry Applications. IEEE Transactions, 38. painos, numero 1. S. 203-210. 2002. Saatavissa: \url{http://ieeexplore.ieee.org/xpl/abstractKeywords.jsp?tp=&arnumber=980377}.
 
-\bibitem{Hulthen}Erik Hulthén, C. Evertsson, M. \textit{Real-time algorithm for cone crusher control with two variables}. Minerals Engineering, 24. Painos, numero 9. S. 987-994. 2011.  Saatavissa: \url{http://dx.doi.org/10.1016/j.mineng.2011.04.007}
+\bibitem{Hulthen}Erik Hulthén, C. Evertsson, M. \textit{Real-time algorithm for cone crusher control with two variables}. Minerals Engineering, 24. Painos, numero 9. S. 987-994. 2011.  Saatavissa: \url{http://dx.doi.org/10.1016/j.mineng.2011.04.007}.
 
 \bibitem{ACQ810}ABB Oy. \textit{ABB drives for water and wastewater}. Saatavissa: \url{http://www05.abb.com/global/scot/scot201.nsf/veritydisplay/a572a4ae2cc86f8ac1257c6e005094de/$file/EN_ACQ810forwaterandwastewaterREVF_13.5.2014.pdf}. Päivitetty 13.5.2014. Viitattu 26.11.2014.
 
 \bibitem{IP}IEC 60529. \textit{Degrees of protection provided by enclosures (IP Code).} Versio 2.2. Geneve, Sveitsi: International Electrotechnical Commission, 2013. 214 s.
+
+
+
 %%tekstistä puuttuvat lähteet
 
 
@@ -845,7 +827,7 @@ Kirjallisten lähteiden, haastatteluiden ja yritysvierailun perusteella on ilmei
 
 \thesisappendix
 \section{Liite 1: Kotelointiluokitus standardin IEC 60529 mukaan \label{Liite 1}}
-EN 60529 -standardin mukaisen IP-koodin ensimmäisen tunnusnumeron merkitys \cite{IP}.
+IEC 60529 -standardin mukaisen IP-koodin ensimmäisen tunnusnumeron merkitys \cite{IP}.
 \\\\
 \tabulinesep=5pt
 \begin{tabu} to \textwidth {|X[2,c]|X[3c]|X[3c]|} 
@@ -863,8 +845,7 @@ EN 60529 -standardin mukaisen IP-koodin ensimmäisen tunnusnumeron merkitys \cit
 \end{tabu}
 \\\\
 \\\\
-\\\\
-EN 60529 -standardin mukaisen IP-koodin toisen tunnusnumeron merkitys \cite{IP}.
+IEC 60529 -standardin mukaisen IP-koodin toisen tunnusnumeron merkitys \cite{IP}.
 \\\\
 \tabulinesep=5pt
 \begin{tabu} to \textwidth {|X[2,c]|X[6,c]|} 
